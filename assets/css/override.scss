@@ -1,0 +1,23 @@
+$primary: #f74780;
+$secondary: #e73971;
+
+.custom-menu-items {
+  text-decoration: underline;
+  text-decoration-color: $primary;
+  text-underline-offset: 5px;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+
+// This dirty fix took me 2 hours
+@media (max-width: 991px) {
+  html,
+  body {
+    overflow: visible !important;
+    position: relative !important;
+    height: auto !important;
+  }
+}
