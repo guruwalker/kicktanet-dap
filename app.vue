@@ -1,11 +1,13 @@
 <template>
   <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <NuxtPage />
   </div>
 </template>
 
-<script>
 
+<script setup lang="ts">
+onMounted(async () => {
+	const wow = await import('wow.js')
+	new wow.default().init()
+});
 </script>

@@ -1,47 +1,37 @@
 <template>
-  <section id="page-404" class="bg--white-300 division">
-    <div class="container">
-      <div class="row justify-content-center">
-        <!-- 404 PAGE TEXT -->
-        <div class="col-md-9 col-lg-8">
-          <div class="page-404-txt text-center">
-            <!-- Image -->
-            <div class="rel page-404-img">
-              <img
-                class="img-fluid"
-                src="/assets/images/error-404.png"
-                alt="error-404-img"
-              />
+    <div>
+        <nuxt-layout name="layout-eleven">
+
+            <!-- not found area start -->
+            <div class="tp-error-area pt-120 pb-120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <div class="tp-error-wrapper text-center">
+                                <h4 class="tp-error-title">Oops!</h4>
+                                <div class="tp-error-thumb mb-50">
+                                    <img src="/images/error/error.png" alt="error-img" />
+                                </div>
+                                <div class="tp-error-content">
+                                    <h4 class="tp-error-title-sm">{{error?.message}}</h4>
+                                    <p>{{ error?.statusCode }} Sorry, "we couldn't" find your page.</p>
+                                    <nuxt-link class="tp-btn-inner" href="/">Back to Home</nuxt-link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- not found area end -->
 
-            <!-- Text -->
-            <h2 class="s-56 w-700 color--dark">Page Not Found</h2>
-            <h6 class="s-22 color--grey">
-              Oops! The page you are looking for might have been moved, renamed
-              or might never existed
-            </h6>
-
-            <!-- Button -->
-            <a href="/" class="btn btn--theme hover--theme"
-            @click="handleError" >Back to home</a
-            >
-          </div>
-        </div>
-        <!-- END 404 PAGE TEXT -->
-      </div>
-      <!-- End row -->
+        </nuxt-layout>
     </div>
-    <!-- End container -->
-  </section>
-  <hr class="divider divider-light" />
-
 </template>
 
-
 <script setup lang="ts">
-const props = defineProps({
-  error: Object
-})
-
-const handleError = () => clearError({ redirect: '/' })
+definePageMeta({
+    layout: false,
+});
+useSeoMeta({ title: "Error Page" });
+defineProps(["error"]);
 </script>

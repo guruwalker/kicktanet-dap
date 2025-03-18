@@ -1,66 +1,43 @@
-import { resolve } from "path";
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  alias: {
-    "@": resolve(__dirname, "/"),
-  },
-
-  site: {
-    name: "Kisoko Portal",
-    description: "",
-    url: "https://kisoko.org",
-    language: "en",
-  },
-
-  css: [
-    "~/assets/css/vendors/bootstrap.min.css",
-    "~/assets/css/vendors/flaticon.css",
-    "~/assets/css/vendors/menu.css",
-    "~/assets/css/vendors/fade-down.css",
-    "~/assets/css/vendors/magnific-popup.css",
-    // "~/assets/css/vendors/animate.css",
-    "~/assets/css/main.scss",
-    "~/assets/css/override.scss",
-    "~/assets/css/responsive.scss",
-    "~/assets/css/color-scheme/blue.scss",
-    "~/assets/css/color-scheme/crocus.scss",
-    "~/assets/css/color-scheme/green.scss",
-    "~/assets/css/color-scheme/magenta.scss",
-    "~/assets/css/color-scheme/pink.scss",
-    "~/assets/css/color-scheme/skyblue.scss",
-    "~/assets/css/color-scheme/violet.scss",
-    "animate.css",
-    "animate.css/animate.min.css",
-  ],
-
+  compatibilityDate: '2024-11-01',
+  devtools: { enabled: true },
   modules: [
     [
-      "@nuxtjs/google-fonts",
+      '@pinia/nuxt',
       {
-        families: {
-          "Helvetica+Neue": {
-            wght: [300, 400, 500, 600, 700],
-          },
-          "Plus+Jakarta+Sans": {
-            wght: [400, 500, 600, 700],
-          },
-          Inter: {
-            wght: [400, 500, 600, 700, 800],
-          },
-          download: true,
-          inject: true,
-        },
+        autoImports: [
+          'defineStore',
+          ['defineStore', 'definePiniaStore'],
+        ],
       },
     ],
-    "nuxt-swiper",
-    "@nuxtjs/robots",
-    "@nuxtjs/sitemap",
-    "@nuxt/ui",
   ],
-
-  colorMode: {
-    classSuffix: "",
-    preference: "light",
+  app: {
+    head: {
+      title: "Acadia - University & Online Course vue nuxt Template",
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      script: [
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js",
+        },
+      ],
+    }
   },
-
-  compatibilityDate: "2024-03-08",
-});
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: "modern",
+        },
+      }
+    }
+  },
+  css: [
+    "@/assets/css/animate.css",
+    "swiper/css/bundle",
+    "@/assets/css/font-awesome-pro.css",
+    "@/assets/scss/main.scss",
+  ],
+})
