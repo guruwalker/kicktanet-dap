@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       "@nuxtjs/google-fonts",
       {
         families: {
-          Rubik: {
+          "Helvetica+Neue": {
             wght: [300, 400, 500, 600, 700],
           },
           "Plus+Jakarta+Sans": {

@@ -33,6 +33,73 @@ onUnmounted(() => {
 const isActive = (path: string) => {
   return route.path === path ? "active-link" : "";
 };
+
+const phases = [
+  {
+    id: 1,
+    title: "Component 1",
+    description:
+      "Identification of digital inclusion gaps in Mandera and Busia counties.",
+    link: "/phases/component-1",
+    status: "Completed",
+  },
+  {
+    id: 2,
+    title: "Component 2",
+    description:
+      "Capacity building of Community Digital Champions (CDCs) for digital literacy training.",
+    link: "/phases/component-2",
+    status: "In Progress",
+  },
+  {
+    id: 3,
+    title: "Component 3",
+    description:
+      "Deployment of digital infrastructure and setup of community hubs.",
+    link: "/phases/component-3",
+    status: "Not Started",
+  },
+  {
+    id: 4,
+    title: "Component 4",
+    description:
+      "Implementation of digital literacy training programs across targeted groups.",
+    link: "/phases/component-4",
+    status: "Not Started",
+  },
+  {
+    id: 5,
+    title: "Component 5",
+    description:
+      "Engagement with local government and policymakers for support.",
+    link: "/phases/component-5",
+    status: "Not Started",
+  },
+  {
+    id: 6,
+    title: "Component 6",
+    description:
+      "Monitoring, evaluation, and tracking of digital literacy progress.",
+    link: "/phases/component-6",
+    status: "Not Started",
+  },
+  {
+    id: 7,
+    title: "Component 7",
+    description:
+      "Showcasing success stories and digital transformation impact.",
+    link: "/phases/component-7",
+    status: "Not Started",
+  },
+  {
+    id: 8,
+    title: "Component 8",
+    description:
+      "Sustainability planning and long-term strategy for digital inclusion.",
+    link: "/phases/component-7",
+    status: "Not Started",
+  },
+];
 </script>
 
 <template>
@@ -41,63 +108,84 @@ const isActive = (path: string) => {
       <!-- HEADER BLACK LOGO -->
       <div class="desktoplogo">
         <NuxtLink to="/" class="logo-black"
-          ><img src="/assets/images/logo-pink.png" alt="logo"
+          ><img src="/assets/images/usiu-logo.png" alt="logo"
         /></NuxtLink>
       </div>
       <!-- HEADER WHITE LOGO -->
       <div class="desktoplogo">
         <NuxtLink to="/" class="logo-white"
-          ><img src="/assets/images/logo-white.png" alt="logo"
+          ><img src="/assets/images/usiu-logo.png" alt="logo"
         /></NuxtLink>
       </div>
 
       <!-- MAIN MENU -->
       <nav class="wsmenu clearfix">
         <ul class="wsmenu-list nav-theme">
+          <!-- Home -->
           <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink
-              to="/"
-              class="h-link"
-              :class="isActive('/')"
+            <NuxtLink to="/" class="h-link">Home</NuxtLink>
+          </li>
+
+          <!-- About -->
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/about" class="h-link">About</NuxtLink>
+          </li>
+
+          <!-- Phases (Mega Menu) -->
+          <li aria-haspopup="true" class="has-submenu">
+            <NuxtLink to="/phases" class="h-link">Phases</NuxtLink>
+            <ul class="sub-menu">
+              <li v-for="phase in phases" :key="phase.slug">
+                <NuxtLink :to="`${phase.link}`">{{
+                  phase.title
+                }}</NuxtLink>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Mandera County Visit -->
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/mandera-visit" class="h-link"
+              >Mandera County Visit</NuxtLink
             >
-              For Hospitals
-            </NuxtLink>
+          </li>
+
+          <!-- Press & Partners -->
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/press" class="h-link">Press</NuxtLink>
           </li>
           <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink
-              to="/"
-              class="h-link"
-              :class="isActive('/')"
-            >
-              For Pharmacies
-            </NuxtLink>
+            <NuxtLink to="/partners" class="h-link">Partners</NuxtLink>
           </li>
-          <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink
-              to="/"
-              class="h-link"
-              :class="isActive('/')"
-            >
-              For Families
-            </NuxtLink>
-          </li>
-          <!-- SIGN IN LINK -->
+
+          <!-- FAQs -->
+          <!-- <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/faqs" class="h-link">FAQs</NuxtLink>
+          </li> -->
+
+          <!-- Contact -->
+          <!-- <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/contact" class="h-link">Contact</NuxtLink>
+          </li> -->
+
+          <!-- Authentication Links -->
           <li
             class="nl-simple reg-fst-link mobile-last-link"
             aria-haspopup="true"
           >
-            <NuxtLink to="/login-2" class="h-link">Sign in</NuxtLink>
+            <NuxtLink to="/login" class="h-link">Sign In</NuxtLink>
           </li>
-          <!-- SIGN UP BUTTON -->
-          <li class="nl-simple" aria-haspopup="true">
+          <!-- <li class="nl-simple" aria-haspopup="true">
             <NuxtLink
-              to="/signup-2"
+              to="/signup"
               class="btn r-04 btn--theme hover--tra-white last-link"
-              >Sign up</NuxtLink
             >
-          </li>
+              Sign Up
+            </NuxtLink>
+          </li> -->
         </ul>
       </nav>
+
       <!-- END MAIN MENU -->
     </div>
   </div>

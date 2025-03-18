@@ -2,7 +2,7 @@
   <div id="page" class="page font--jakarta">
     <NavigationHeader />
     <slot />
-    <NavigationFooter />
+    <!-- <NavigationFooter /> -->
   </div>
 </template>
 
