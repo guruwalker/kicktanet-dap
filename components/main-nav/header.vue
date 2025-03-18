@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import menuData from "@/data/menu-data";
+import menuData from "@/data/main-nav-data";
 defineProps<{ sm_mega_title?: string }>();
 
 const { isSticky } = useSticky();
@@ -39,7 +39,7 @@ function handleOffcanvas() {
           </div>
           <div class="col-lg-6 col-md-6 d-none d-lg-block">
             <div class="tp-header-right-list d-flex justify-content-md-end">
-              <a href="#">Campus</a>
+              <a href="#">Downloads</a>
               <a href="#">Students</a>
               <a href="#"> Staffs</a>
               <a href="#"> Alumni </a>
@@ -139,7 +139,7 @@ function handleOffcanvas() {
               class="tp-header-contact d-flex align-items-center justify-content-end"
             >
               <div class="tp-header-btn d-none d-md-block ml-30">
-                <NuxtLink to="/university-application-form"
+                <NuxtLink to="/login"
                   >Login
                 </NuxtLink>
               </div>

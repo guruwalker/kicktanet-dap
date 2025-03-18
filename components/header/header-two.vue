@@ -62,27 +62,25 @@ function handleCartMini() {
                   <ul>
                     <li>
                       <NuxtLink to="/course-with-sidebar"
-                        >English Learning</nuxt-link
+                        >English Learning</NuxtLink
                       >
                     </li>
                     <li>
                       <NuxtLink to="/course-with-sidebar"
-                        >Web Development</nuxt-link
+                        >Web Development</NuxtLink
+                      >
+                    </li>
+                    <li>
+                      <NuxtLink to="/course-with-sidebar">Logo Design</NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink to="/course-with-sidebar"
+                        >Motion Graphics</NuxtLink
                       >
                     </li>
                     <li>
                       <NuxtLink to="/course-with-sidebar"
-                        >Logo Design</nuxt-link
-                      >
-                    </li>
-                    <li>
-                      <NuxtLink to="/course-with-sidebar"
-                        >Motion Graphics</nuxt-link
-                      >
-                    </li>
-                    <li>
-                      <NuxtLink to="/course-with-sidebar"
-                        >Video Edition</nuxt-link
+                        >Video Edition</NuxtLink
                       >
                     </li>
                   </ul>
@@ -118,7 +116,7 @@ function handleCartMini() {
                 } d-none d-xxl-block`"
               >
                 <NuxtLink class="tp-btn-inner" href="/course-with-filter"
-                  >Enroll Now</nuxt-link
+                  >Enroll Now</NuxtLink
                 >
               </div>
 
