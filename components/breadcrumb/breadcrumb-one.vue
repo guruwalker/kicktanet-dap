@@ -10,9 +10,9 @@
             <div class="tp-breadcrumb__content">
               <div class="tp-breadcrumb__list inner-after">
                 <span class="white">
-                  <nuxt-link to="/">
+                  <NuxtLink to="/">
                     <svg-home />
-                  </nuxt-link>
+                  </NuxtLink>
                 </span>
                 <span v-if="admission" class="white">Admission</span>
                 <span class="white">{{ subtitle }}</span>
@@ -26,8 +26,7 @@
       </div>
     </section>
   </template>
-  
+
   <script setup lang="ts">
   defineProps<{title: string, subtitle: string, admission?: boolean}>()
   </script>
-  

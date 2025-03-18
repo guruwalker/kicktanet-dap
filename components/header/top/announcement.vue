@@ -6,7 +6,7 @@
                   <div class="tp-announcement-wrap text-center">
                      <div class="tp-announcement-content d-flex justify-content-center">
                         <p>Price of $15 (<span>35% off</span>) for a limited time only, back up to $39 soon.</p>
-                        <nuxt-link class="tp-announcement-btn" href="/shop-grid">Shop Now</nuxt-link>
+                        <NuxtLink class="tp-announcement-btn" href="/shop-grid">Shop Now</NuxtLink>
                      </div>
                      <div class="tp-announcement-close">
                         <button class="hide-button" @click="showAnnouncement = false">

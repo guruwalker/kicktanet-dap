@@ -16,12 +16,12 @@
                   <span class="tp-hero-subtitle">{{ slider.subtitle }}</span>
                   <h2 class="tp-hero-title">{{ slider.title }}</h2>
                   <div class="tp-hero-btn">
-                    <nuxt-link class="tp-btn" href="/university-program">
+                    <NuxtLink class="tp-btn" href="/university-program">
                       Enroll Now
                       <span>
                         <svg-arrow-right-one />
                       </span>
-                    </nuxt-link>
+                    </NuxtLink>
                   </div>
                 </div>
               </div>

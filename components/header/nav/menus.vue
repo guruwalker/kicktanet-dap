@@ -9,9 +9,9 @@
           'tp-static': menu.home_dropdown || menu.pages_dropdown,
         }"
       >
-        <nuxt-link :href="menu.link">
+        <NuxtLink :to="menu.link">
           {{ menu.sm_mega_menus && sm_mega_title ? sm_mega_title : menu.title }}
-        </nuxt-link>
+        </NuxtLink>
 
         <!-- Home Dropdown -->
         <div v-if="menu.home_dropdown" class="tp-megamenu-main tp-megamenu-container">
@@ -31,7 +31,7 @@
         <!-- Submenus -->
         <ul v-if="menu.dropdown_menus" class="tp-submenu">
           <li v-for="dm in menu.dropdown_menus" :key="dm.id">
-            <nuxt-link :href="dm.link">{{ dm.title }}</nuxt-link>
+            <NuxtLink :to="dm.link">{{ dm.title }}</NuxtLink>
           </li>
         </ul>
       </li>

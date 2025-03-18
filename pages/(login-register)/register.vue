@@ -11,7 +11,7 @@
                     <div class="tp-login-from-box">
                         <div class="tp-login-from-heading text-center">
                             <h4 class="tp-login-from-title">Create an Account</h4>
-                            <p>Already have an account? <nuxt-link href="/login"> Sign In</nuxt-link></p>
+                            <p>Already have an account? <NuxtLink to="/login"> Sign In</NuxtLink></p>
                         </div>
                         <!-- form start -->
                         <form-register />

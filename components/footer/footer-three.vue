@@ -31,7 +31,7 @@
                                 <div class="tp-footer-widget-link">
                                     <ul>
                                         <li v-for="link in footerLinks.link_one" :key="link.id">
-                                            <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                                            <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                                         </li>
                                     </ul>
                                 </div>
@@ -43,7 +43,7 @@
                                 <div class="tp-footer-widget-link">
                                     <ul>
                                         <li v-for="link in footerLinks.link_two" :key="link.id">
-                                            <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                                            <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                                         </li>
                                     </ul>
                                 </div>

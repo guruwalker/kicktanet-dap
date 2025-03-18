@@ -1,9 +1,9 @@
 <template>
     <div class="tp-blog-stories-item p-relative mb-50">
         <div class="tp-blog-stories-thumb">
-            <nuxt-link :to="`/blog-details/${blog.id}`">
+            <NuxtLink :to="`/blog-details/${blog.id}`">
                 <img :src="blog.img" :alt="blog.title" />
-            </nuxt-link>
+            </NuxtLink>
         </div>
         <div class="tp-blog-stories-content">
             <div class="tp-blog-stories-tag-wrap d-flex">
@@ -11,7 +11,7 @@
                 <span>{{ blog.date }}</span>
             </div>
             <h4 class="tp-blog-stories-title">
-                <nuxt-link :to="`/blog-details/${blog.id}`">{{ blog.title }}</nuxt-link>
+                <NuxtLink :to="`/blog-details/${blog.id}`">{{ blog.title }}</NuxtLink>
             </h4>
             <div class="tp-blog-stories-user-box d-flex align-items-center">
                 <div v-if="blog.author_img" class="tp-blog-stories-user-thumb">

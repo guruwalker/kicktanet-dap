@@ -24,7 +24,7 @@
                         <div class="row align-items-end">
                             <div class="col-xl-6 col-md-4">
                                 <div class="tp-cart-update">
-                                    <nuxt-link href="/cart" class="tp-cart-update-btn">Go To Cart</nuxt-link>
+                                    <NuxtLink to="/cart" class="tp-cart-update-btn">Go To Cart</NuxtLink>
                                 </div>
                             </div>
                         </div>

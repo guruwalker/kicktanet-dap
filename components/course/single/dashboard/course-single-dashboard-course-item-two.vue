@@ -1,9 +1,9 @@
 <template>
     <div class="tp-dashboard-course tp-dashboard-course-2 mb-25">
         <div class="tp-dashboard-course-thumb">
-            <nuxt-link :to="`/course-details/${course.id}`">
+            <NuxtLink :to="`/course-details/${course.id}`">
                 <img :src="course.thumbnail" :alt="removeTagInText(course.title)" />
-            </nuxt-link>
+            </NuxtLink>
         </div>
         <div class="tp-dashboard-course-content">
             <div class="tp-dashboard-rating">
@@ -15,9 +15,9 @@
                 <span>({{ course.total_rating }} Reviews)</span>
             </div>
             <h4 class="tp-dashboard-course-title">
-                <nuxt-link :to="`/course-details/${course.id}`">
+                <NuxtLink :to="`/course-details/${course.id}`">
                     {{ removeTagInText(course.title) }}
-                </nuxt-link>
+                </NuxtLink>
             </h4>
             <div class="tp-dashboard-course-meta">
                 <span>
@@ -35,9 +35,9 @@
                 </div>
                 <div class="tp-course-action d-flex align-items-center">
                     <div class="tpd-action-inexact-btn">
-                        <nuxt-link :to="`/create-new-course`" class="tpd-action-btn">
+                        <NuxtLink :to="`/create-new-course`" class="tpd-action-btn">
                             <svg-pen-one />
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                     <!-- item action -->
                     <course-single-dashboard-item-action :courseId="course.id" />

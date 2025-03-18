@@ -9,7 +9,7 @@
                             <p>Unravel secrets with author’s brilliant plot twists.</p>
                         </div>
                         <div class="tp-shop-author-btn">
-                            <nuxt-link href="/instructor">All Authors <span><svg-arrow-right-sm /></span></nuxt-link>
+                            <NuxtLink to="/instructor">All Authors <span><svg-arrow-right-sm /></span></NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                         </div>
                         <div class="tp-shop-author-content">
                             <span>{{ item.booksCount }} Books</span>
-                            <h4 class="tp-shop-author-item-title"><nuxt-link href="/my-account">{{ item.name }}</nuxt-link></h4>
+                            <h4 class="tp-shop-author-item-title"><NuxtLink to="/my-account">{{ item.name }}</NuxtLink></h4>
                         </div>
                     </div>
                 </div>

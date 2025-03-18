@@ -43,45 +43,45 @@ function handleCartMini() {
           <div class="col-xxl-3 col-xl-3 col-lg-6 col-6">
             <div class="tp-header-2-right d-flex align-items-center">
               <div class="tp-header-inner-logo tp-header-logo">
-                <nuxt-link href="/">
+                <NuxtLink to="/">
                   <img src="/images/logo/logo-black.png" alt="logo" />
-                </nuxt-link>
+                </NuxtLink>
               </div>
               <div
                 class="tp-header-2-category tp-header-inner-category home-2 d-none d-md-block"
               >
-                <nuxt-link
+                <NuxtLink
                   class="tp-header-2-category-icon"
                   href="/course-with-sidebar"
                 >
                   <p>
                     <span><svg-dots /></span>Category
                   </p>
-                </nuxt-link>
+                </NuxtLink>
                 <div class="tp-header-2-category-list">
                   <ul>
                     <li>
-                      <nuxt-link href="/course-with-sidebar"
+                      <NuxtLink to="/course-with-sidebar"
                         >English Learning</nuxt-link
                       >
                     </li>
                     <li>
-                      <nuxt-link href="/course-with-sidebar"
+                      <NuxtLink to="/course-with-sidebar"
                         >Web Development</nuxt-link
                       >
                     </li>
                     <li>
-                      <nuxt-link href="/course-with-sidebar"
+                      <NuxtLink to="/course-with-sidebar"
                         >Logo Design</nuxt-link
                       >
                     </li>
                     <li>
-                      <nuxt-link href="/course-with-sidebar"
+                      <NuxtLink to="/course-with-sidebar"
                         >Motion Graphics</nuxt-link
                       >
                     </li>
                     <li>
-                      <nuxt-link href="/course-with-sidebar"
+                      <NuxtLink to="/course-with-sidebar"
                         >Video Edition</nuxt-link
                       >
                     </li>
@@ -117,7 +117,7 @@ function handleCartMini() {
                   inner ? '' : 'home-2'
                 } d-none d-xxl-block`"
               >
-                <nuxt-link class="tp-btn-inner" href="/course-with-filter"
+                <NuxtLink class="tp-btn-inner" href="/course-with-filter"
                   >Enroll Now</nuxt-link
                 >
               </div>

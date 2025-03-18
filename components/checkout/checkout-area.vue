@@ -4,9 +4,9 @@
 
             <div v-if="cartStore.cart_products.length === 0" class="text-center pt-50">
                 <h3 class="py-2">No items found in cart to checkout</h3>
-                <nuxt-link href="/shop-grid" class="tp-btn-inner">
+                <NuxtLink to="/shop-grid" class="tp-btn-inner">
                    Return to shop
-                </nuxt-link>
+                </NuxtLink>
             </div>
 
             <div class="row" v-if="cartStore.cart_products.length > 0">
@@ -118,7 +118,7 @@
                                                     placeholder="Notes about your order, e.g. special notes for delivery." v-bind="field"></textarea>
                                                 </field>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -140,10 +140,10 @@
                                     </li>
 
                                     <!-- Shipping Options -->
-                                    <checkout-shipping-option 
-                                      :options="shippingOptions" 
+                                    <checkout-shipping-option
+                                      :options="shippingOptions"
                                       :selected-option="shipping"
-                                      @option-change="handleShipping" 
+                                      @option-change="handleShipping"
                                     />
 
                                     <!-- Total -->
@@ -157,10 +157,10 @@
                             </div>
 
                             <!-- checkout payment -->
-                            <checkout-payment 
-                              :options="paymentOptions" 
+                            <checkout-payment
+                              :options="paymentOptions"
                               :selected-option="paymentMethod"
-                                @optionChange="handlePayment" 
+                                @optionChange="handlePayment"
                             />
                             <!-- checkout payment -->
 

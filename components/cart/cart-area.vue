@@ -3,7 +3,7 @@
         <div class="container">
              <div v-if="cartState.cart_products.length === 0" className='text-center pt-50'>
                 <h3>No Cart Items Found</h3>
-                <nuxt-link href="/shop-grid" className="tp-cart-checkout-btn mt-20">Continue Shipping</nuxt-link>
+                <NuxtLink to="/shop-grid" className="tp-cart-checkout-btn mt-20">Continue Shipping</NuxtLink>
             </div>
             <div class="row" v-else>
                 <div class="col-xl-9 col-lg-8">
@@ -66,15 +66,15 @@
                                     <label @click="handleShippingCost('free')" for="free_shipping">Free shipping</label>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="tp-cart-checkout-total d-flex align-items-center justify-content-between">
                             <span>Total</span>
                             <span>{{ formatPrice(cartState.totalPriceQuantity.total + shipCost, true) }}</span>
                         </div>
                         <div class="tp-cart-checkout-proceed">
-                            <nuxt-link href="/checkout" class="tp-cart-checkout-btn w-100">
+                            <NuxtLink to="/checkout" class="tp-cart-checkout-btn w-100">
                                 Proceed to Checkout
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const handleCouponSubmit = () => {
   console.log(couponCode.value)
 }
 
-// handle shipping cost 
+// handle shipping cost
 const handleShippingCost = (value:number | string) => {
     if(value === 'free'){
       shipCost.value = 0;

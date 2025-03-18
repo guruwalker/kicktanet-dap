@@ -8,7 +8,7 @@
                         :data-wow-delay="banner.wowDelay">
                         <h3 class="tp-banner-sm-2-title" v-html="banner.title"></h3>
                         <div class="tp-banner-sm-2-btn">
-                            <nuxt-link :href="banner.btnLink">{{ banner.btnText }}</nuxt-link>
+                            <NuxtLink :to="banner.btnLink">{{ banner.btnText }}</NuxtLink>
                         </div>
                         <div class="tp-banner-sm-2-shape-1">
                             <img :src="banner.image" alt="banner">
@@ -31,7 +31,7 @@ const bannerData = [
         id: 1,
         title: `Earn a <br>
             <span>Certificate
-                <img class="tp-underline-shape-11 wow bounceIn" data-wow-duration="1.5s" 
+                <img class="tp-underline-shape-11 wow bounceIn" data-wow-duration="1.5s"
                     data-wow-delay=".4s" src="/images/unlerline/banner-2-svg-1.svg" alt="">
             </span>`,
         btnText: "View Programs",
@@ -44,7 +44,7 @@ const bannerData = [
         id: 2,
         title: `Best <br>Rated
             <span>Courses
-                <img class="tp-underline-shape-11 wow bounceIn" data-wow-duration="1.5s" 
+                <img class="tp-underline-shape-11 wow bounceIn" data-wow-duration="1.5s"
                     data-wow-delay=".4s" src="/images/unlerline/banner-2-svg-2.svg" alt="">
             </span>`,
         btnText: "View Programs",

@@ -23,17 +23,17 @@
                         :pagination="{ clickable: true, el: '.tp-program-dot' }" :modules="[Pagination]"
                         :breakpoints="{ 1200: { slidesPerView: 3 }, 992: { slidesPerView: 3 }, 768: { slidesPerView: 2 }, 576: { slidesPerView: 1 }, 0: { slidesPerView: 1 } }"
                         class="swiper tp-program-active wow fadeInUp" data-wow-delay=".6s">
-                        
+
                         <swiper-slide v-for="(item) in university_classic_program_data" :key="item.id"
                             class="tp-program-item grey-bg mb-50">
                             <div class="tp-program-thumb fix">
-                                <nuxt-link href="/university-application-form">
+                                <NuxtLink to="/university-application-form">
                                     <img :src="item.img" alt="program-thumb">
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                             <div class="tp-program-content">
                                 <h3 class="tp-program-title">
-                                    <nuxt-link href="/university-application-form">{{ item.title }}</nuxt-link>
+                                    <NuxtLink to="/university-application-form">{{ item.title }}</NuxtLink>
                                 </h3>
                                 <p v-html="item.description"></p>
                                 <div class="tp-program-tag">
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="tp-program-btn">
-                                <nuxt-link href="/university-application-form">Apply Now</nuxt-link>
+                                <NuxtLink to="/university-application-form">Apply Now</NuxtLink>
                             </div>
                         </swiper-slide>
                     </swiper>
@@ -55,11 +55,11 @@
                 </div>
                 <div class="col-12">
                     <div class="tp-program-all text-center">
-                        <p>Explore the most appropriate promgram.​​ <nuxt-link href="/university-program">View all Programs
+                        <p>Explore the most appropriate promgram.​​ <NuxtLink to="/university-program">View all Programs
                                 <span>
                                     <svg-arrow-right-sm-three />
                                 </span>
-                            </nuxt-link>
+                            </NuxtLink>
                         </p>
                     </div>
                 </div>

@@ -8,9 +8,9 @@
             </div>
             <div class="col-6">
                 <div class="tp-dashboard-course-details text-sm-end">
-                    <nuxt-link href="/course-with-filter">
+                    <NuxtLink to="/course-with-filter">
                         Browse All Course <i class="fa-regular fa-angle-right"></i>
-                    </nuxt-link>
+                    </NuxtLink>
                 </div>
             </div>
         </div>

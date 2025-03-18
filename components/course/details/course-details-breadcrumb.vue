@@ -6,7 +6,7 @@
                 <div class="col-sm-12">
                     <div class="tp-breadcrumb__content">
                         <div class="tp-breadcrumb__list course-details mb-70">
-                            <span><nuxt-link href="/"><svg-home /></nuxt-link></span>
+                            <span><NuxtLink to="/"><svg-home /></NuxtLink></span>
                             <span>Courses / Design / {{ removeTagInText(course.title) }}</span>
                         </div>
 

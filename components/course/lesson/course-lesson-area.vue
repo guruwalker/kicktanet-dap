@@ -53,11 +53,11 @@
                     </div>
                     <div class="tpd-continue-learning-popup-main d-flex align-items-center">
                         <p>Your Progress: 8 of 10 (80%)</p>
-                        <nuxt-link to="/course-details/1">
+                        <NuxtLink to="/course-details/1">
                             <span class="crose">
                                 <svg-close-two />
                             </span>
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                 </div>
 

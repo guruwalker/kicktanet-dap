@@ -12,12 +12,12 @@
                                 </span>
                             </div>
                             <h4 class="tp-service-title">
-                                <nuxt-link href="/university-about">
+                                <NuxtLink to="/university-about">
                                     <div v-html="item.title"></div>
-                                </nuxt-link>
+                                </NuxtLink>
                             </h4>
                             <div class="tp-service-btn">
-                                <nuxt-link href="/university-about"><span><svg-arrow-right-two /></span></nuxt-link>
+                                <NuxtLink to="/university-about"><span><svg-arrow-right-two /></span></NuxtLink>
                             </div>
                         </div>
                         <div class="tp-service-content">
@@ -30,10 +30,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tp-service-all text-center">
-                        <span>Trusted by the worlds 
-                            <nuxt-link href="/university-about">Best University
+                        <span>Trusted by the worlds
+                            <NuxtLink to="/university-about">Best University
                                 <svg-arrow-right-sm-two />
-                            </nuxt-link>
+                            </NuxtLink>
                         </span>
                     </div>
                 </div>

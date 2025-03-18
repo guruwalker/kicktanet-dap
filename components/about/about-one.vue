@@ -54,11 +54,11 @@
                             </div>
 
                             <div class="tp-about-btn pt-10">
-                                <nuxt-link class="tp-btn tp-btn-sm" href="/university-apply">Book an Appointment
+                                <NuxtLink class="tp-btn tp-btn-sm" href="/university-apply">Book an Appointment
                                     <span>
                                         <svg-arrow-right-one/>
                                     </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

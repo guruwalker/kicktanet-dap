@@ -1,9 +1,9 @@
 <template>
     <div class="tp-dashboard-course mb-25">
         <div class="tp-dashboard-course-thumb">
-            <nuxt-link :to="`/course-details/${course.id}`">
+            <NuxtLink :to="`/course-details/${course.id}`">
                 <img :src="course.thumbnail" alt="thumbnail" />
-            </nuxt-link>
+            </NuxtLink>
         </div>
         <div class="tp-dashboard-course-content">
             <div class="tp-dashboard-rating">
@@ -15,9 +15,9 @@
                 <span>({{ course.total_rating }} Reviews)</span>
             </div>
             <h4 class="tp-dashboard-course-title">
-                <nuxt-link :to="`/course-details/${course.id}`">
+                <NuxtLink :to="`/course-details/${course.id}`">
                     {{ removeTagInText(course.title) }}
-                </nuxt-link>
+                </NuxtLink>
             </h4>
             <div class="tp-dashboard-course-meta">
                 <span>
@@ -40,9 +40,9 @@
                 </div>
             </div>
             <div class="tp-dashboard-course-btn">
-                <nuxt-link class="tpd-btn-border w-100" :to="`/dashboard/instructor-certificate`">
+                <NuxtLink class="tpd-btn-border w-100" :to="`/dashboard/instructor-certificate`">
                     Download Certificate
-                </nuxt-link>
+                </NuxtLink>
             </div>
         </div>
     </div>

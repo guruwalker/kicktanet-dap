@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="tp-shop-cta-btn text-start text-lg-end">
-                            <nuxt-link href="/shop-grid">Shop Now <span><svg-arrow-right-sm /></span></nuxt-link>
+                            <NuxtLink to="/shop-grid">Shop Now <span><svg-arrow-right-sm /></span></NuxtLink>
                         </div>
                     </div>
                 </div>

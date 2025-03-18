@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                     <h4 class="tp-live-title">
-                                        <nuxt-link href="/course-details-2/1">The complete digital Marketing <br> Course - 12 Courses in 5</nuxt-link>
+                                        <NuxtLink to="/course-details-2/1">The complete digital Marketing <br> Course - 12 Courses in 5</NuxtLink>
                                     </h4>
                                     <div class="tp-live-total">
                                         <div class="tp-live-total-student">
@@ -63,13 +63,13 @@
                                             <img src="/images/teacher/live-2-teacher-2.png" alt="">
                                         </div>
                                         <div class="tp-live-join">
-                                            <nuxt-link class="tp-btn-border" href="/contact">
+                                            <NuxtLink class="tp-btn-border" href="/contact">
                                                 <span>
                                                     <svg-join/>
                                                 </span>
                                                 Join Now
                                                 <i> <svg-arrow-right-four /> </i>
-                                            </nuxt-link>
+                                            </NuxtLink>
                                         </div>
                                     </div>
                                 </div>

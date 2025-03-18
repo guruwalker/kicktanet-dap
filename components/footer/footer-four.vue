@@ -30,9 +30,9 @@
                             <div class="col-lg-2 col-sm-6">
                                 <div class="tp-footer-widget tp-footer-4-col-1 mb-30">
                                     <div :class="`tp-footer-4-btn ${inner ? 'tp-footer-btn-inner' : ''}`">
-                                        <nuxt-link class="active" to="/university-apply">Apply Now</nuxt-link>
-                                        <nuxt-link to="/contact">Contact Us</nuxt-link>
-                                        <nuxt-link to="/contact">Visit Us</nuxt-link>
+                                        <NuxtLink class="active" to="/university-apply">Apply Now</NuxtLink>
+                                        <NuxtLink to="/contact">Contact Us</NuxtLink>
+                                        <NuxtLink to="/contact">Visit Us</NuxtLink>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                                 <div class="tp-footer-widget tp-footer-widget-4 has-border tp-footer-4-col-2 mb-30">
                                     <div class="tp-footer-widget-link">
                                         <ul>
-                                            <li><nuxt-link to="/about">About Us</nuxt-link></li>
+                                            <li><NuxtLink to="/about">About Us</NuxtLink></li>
                                             <li><a href="#">Courses</a></li>
                                             <li><a href="#">Parent Portal</a></li>
                                             <li><a href="#">News & Blogs</a></li>
@@ -86,9 +86,9 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-3">
                             <div class="tp-footer-4-logo tp-header-logo">
-                                <nuxt-link to="/">
+                                <NuxtLink to="/">
                                     <img src="/images/logo/logo-white.png" alt="logo" />
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5">

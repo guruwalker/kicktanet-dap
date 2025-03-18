@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-sm-12">
                     <div class="tp-breadcrumb__list tp-event-details-breadcrumb-list pb-120">
-                        <span><nuxt-link href="/"><svg-home /></nuxt-link></span>
+                        <span><NuxtLink to="/"><svg-home /></NuxtLink></span>
                         <span>Event</span>
                         <span>Global Education Fall Meeting for Everyone</span>
                     </div>

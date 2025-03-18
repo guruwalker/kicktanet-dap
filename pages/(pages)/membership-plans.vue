@@ -32,9 +32,9 @@
                            </ul>
                         </div>
                         <div class="tp-pricing-inner-btn">
-                           <nuxt-link class="tp-btn-4" href="/contact">
+                           <NuxtLink class="tp-btn-4" href="/contact">
                               {{ plan.btnText }}
-                           </nuxt-link>
+                           </NuxtLink>
                         </div>
                      </div>
                   </div>

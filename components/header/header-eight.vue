@@ -5,9 +5,9 @@
                <div class="row align-items-center">
                   <div class="col-xxl-2 col-xl-2 col-6">
                      <div class="tp-header-logo">
-                        <nuxt-link href="/">
+                        <NuxtLink to="/">
                            <img src="/images/logo/logo-breadcrumb.png" alt="logo">
-                        </nuxt-link>
+                        </NuxtLink>
                      </div>
                   </div>
                   <div class="col-xxl-7 col-xl-7 d-none d-xl-block">
@@ -25,7 +25,7 @@
                            </button>
                         </div>
                         <div class="tp-header-inner-btn d-none d-md-block">
-                           <nuxt-link class="tp-btn-3" href="/university-schedule">Plan a Visit</nuxt-link>
+                           <NuxtLink class="tp-btn-3" href="/university-schedule">Plan a Visit</NuxtLink>
                         </div>
                         <div class="tp-header-red-sidebar">
                            <button @click="handleOffcanvas" class="offcanvas-open-btn">

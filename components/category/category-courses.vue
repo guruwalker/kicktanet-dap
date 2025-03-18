@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div v-for="category in categories" :key="category.id" class="col-lg-3 col-sm-6">
-                    <nuxt-link href="/course-with-filter"
+                    <NuxtLink to="/course-with-filter"
                         class="tp-course-categories-item p-relative mb-25 wow fadeInUp"
                         :data-wow-delay="category.delay">
                         <div class="tp-course-categories-icon">
@@ -13,7 +13,7 @@
                         </div>
                         <h3 class="tp-course-categories-title">{{ category.title }}</h3>
                         <p>{{ category.courseCount }} Courses</p>
-                    </nuxt-link>
+                    </NuxtLink>
                 </div>
             </div>
         </div>

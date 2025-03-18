@@ -10,10 +10,10 @@
                             </p>
                             <ul>
                                 <li v-for="(item, index) in menuSection.items" :key="index">
-                                    <nuxt-link :to="item.href">
+                                    <NuxtLink :to="item.href">
                                         <span v-html="item.icon"></span>
                                         {{ item.title }}
-                                    </nuxt-link>
+                                    </NuxtLink>
                                 </li>
                             </ul>
                         </li>
@@ -24,7 +24,7 @@
                 <div class="tp-user-banner-text">
                     <h4 class="tp-user-banner-title">Online Education</h4>
                     <div class="tp-user-banner-btn">
-                        <nuxt-link class="tp-btn-course" href="/dashboard/instructor-my-course">View Course</nuxt-link>
+                        <NuxtLink class="tp-btn-course" href="/dashboard/instructor-my-course">View Course</NuxtLink>
                     </div>
                 </div>
                 <div class="tp-user-banner-shape">

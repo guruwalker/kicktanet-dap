@@ -25,7 +25,7 @@
                                 <span> ({{ course.totalRatings }} Ratings)</span>
                             </div>
                             <h4 class="tp-progress-title">
-                                <nuxt-link :to="`/course-details-2/1`">{{ course.title }}</nuxt-link>
+                                <NuxtLink :to="`/course-details-2/1`">{{ course.title }}</NuxtLink>
                             </h4>
                             <p>
                                 Completed Lessons:

@@ -6,7 +6,7 @@
                     <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
                         <div class="tp-footer-widget tp-footer-shop-col-1 mb-30">
                             <div class="tp-footer-widget-logo mb-20 tp-header-logo">
-                                <nuxt-link href="/"><img src="/images/logo/logo-black.png" alt=""></nuxt-link>
+                                <NuxtLink to="/"><img src="/images/logo/logo-black.png" alt=""></NuxtLink>
                             </div>
                             <div class="tp-footer-widget-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur <br> adipisc ing elit.</p>
@@ -31,7 +31,7 @@
                             <div class="tp-footer-widget-link">
                                 <ul>
                                     <li v-for="link in footerLinks.link_one" :key="link.id">
-                                        <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                                        <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                                     </li>
                                 </ul>
                             </div>
@@ -43,7 +43,7 @@
                             <div class="tp-footer-widget-link">
                                 <ul>
                                     <li v-for="link in footerLinks.link_two" :key="link.id">
-                                        <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                                        <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                                     </li>
                                 </ul>
                             </div>

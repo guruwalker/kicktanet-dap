@@ -48,9 +48,9 @@
                                         <a href="#">{{ tab.location }}</a>
                                     </div>
                                     <div class="tp-about-campus-btn">
-                                        <nuxt-link class="tp-btn" to="/university-campus">
+                                        <NuxtLink class="tp-btn" to="/university-campus">
                                             Find out More
-                                        </nuxt-link>
+                                        </NuxtLink>
                                     </div>
                                 </div>
                             </div>

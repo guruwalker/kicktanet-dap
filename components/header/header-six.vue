@@ -9,9 +9,9 @@
                     <div class="col-xxl-4 col-lg-6 col-6">
                         <div class="tp-header-2-right d-flex align-items-center">
                             <div class="tp-header-shop-logo tp-header-logo pr-20">
-                                <nuxt-link href="/">
+                                <NuxtLink to="/">
                                     <img src="/images/logo/logo-black.png" alt="logo">
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                             <div class="tp-header-shop-search p-relative d-none d-lg-block">
                                 <form action="#">
@@ -43,7 +43,7 @@
                                 </button>
                             </div>
                             <div class="tp-header-shop-btn d-none d-lg-block">
-                                <nuxt-link class="tp-btn-inner" href="/shop-grid">Buy our book</nuxt-link>
+                                <NuxtLink class="tp-btn-inner" href="/shop-grid">Buy our book</NuxtLink>
                             </div>
 
 
@@ -74,7 +74,7 @@
 
 <script setup lang="ts">
 import { useCartStore } from '@/pinia/useCartStore';
-// prop type 
+// prop type
 type IProps = {
     inner?: boolean;
 };

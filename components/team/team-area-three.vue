@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="tp-event-details-item-content">
                                         <h4 class="tp-event-details-item-title color-9">
-                                            <nuxt-link href="/my-account">{{ item.name }}</nuxt-link>
+                                            <NuxtLink to="/my-account">{{ item.name }}</NuxtLink>
                                         </h4>
                                         <p>{{ item.title }}</p>
                                         <div class="tp-event-details-item-social">

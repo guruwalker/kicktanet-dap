@@ -13,9 +13,9 @@
                 <div v-for="(item) in kids_event_data" :key="item.id" class="col-lg-4 col-md-6">
                     <div class="tp-event-3-item mb-30 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tp-event-3-thumb">
-                            <nuxt-link :href="`/event-details/${item.id}`">
+                            <NuxtLink :to="`/event-details/${item.id}`">
                                 <img :src="item.image" :alt="item.title">
-                            </nuxt-link>
+                            </NuxtLink>
                             <div class="tp-event-3-date">
                                 <span>{{ item.date.day }}</span>
                                 <p>{{ item.date.month }}</p>
@@ -23,10 +23,10 @@
                         </div>
                         <div class="tp-event-3-content">
                             <h3 class="tp-event-3-title">
-                                <nuxt-link :href="`/event-details/${item.id}`">{{ item.title }}</nuxt-link>
+                                <NuxtLink :to="`/event-details/${item.id}`">{{ item.title }}</NuxtLink>
                             </h3>
                             <span>
-                                <img src="/images/icon/location.svg" alt="location"> 
+                                <img src="/images/icon/location.svg" alt="location">
                                 {{ item.location }}
                             </span>
                         </div>

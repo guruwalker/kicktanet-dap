@@ -5,10 +5,10 @@
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-6 col-6">
                         <div class="tp-header-5-logo tp-header-logo">
-                            <nuxt-link href="/">
+                            <NuxtLink to="/">
                                 <img class="logo-1" src="/images/logo/logo-white.png" alt="logo">
                                 <img class="logo-2" src="/images/logo/logo-black.png" alt="logo">
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                     </div>
                     <div class="col-xl-8 d-none d-xl-block">

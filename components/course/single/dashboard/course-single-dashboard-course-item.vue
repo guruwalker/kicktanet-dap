@@ -10,9 +10,9 @@
             </span>
         </div>
         <div class="tp-dashboard-course-thumb">
-            <nuxt-link :to="`/course-details/${course.id}`">
+            <NuxtLink :to="`/course-details/${course.id}`">
                 <img :src="course.thumbnail" alt="thumbnail" />
-            </nuxt-link>
+            </NuxtLink>
         </div>
         <div class="tp-dashboard-course-content">
             <div class="tp-dashboard-rating">
@@ -24,9 +24,9 @@
                 <span>({{ course.total_rating }} Reviews)</span>
             </div>
             <h4 class="tp-dashboard-course-title">
-                <nuxt-link :to="`/course-details/${course.id}`">
+                <NuxtLink :to="`/course-details/${course.id}`">
                     {{ removeTagInText(course.title) }}
-                </nuxt-link>
+                </NuxtLink>
             </h4>
             <div class="tp-dashboard-course-meta">
                 <span>

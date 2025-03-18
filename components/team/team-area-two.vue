@@ -11,7 +11,7 @@
                                 in mei.</p>
                         </div>
                         <div class="tp-trainer-5-btn">
-                            <nuxt-link class="tp-btn-4" href="/university-leadership">Get started</nuxt-link>
+                            <NuxtLink class="tp-btn-4" href="/university-leadership">Get started</NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                                     <div class="tp-trainer-5-content">
                                         <div class="tp-trainer-5-info">
                                             <h4 class="tp-trainer-5-title">
-                                                <nuxt-link href="/my-account">{{ item.name }}</nuxt-link>
+                                                <NuxtLink to="/my-account">{{ item.name }}</NuxtLink>
                                             </h4>
                                             <span>{{ item.title }}</span>
                                         </div>

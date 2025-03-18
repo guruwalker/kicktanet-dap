@@ -7,7 +7,7 @@
                 <div class="col-sm-12">
                     <div class="tp-breadcrumb__content">
                         <div class="tp-breadcrumb__list">
-                            <span><nuxt-link href="/"><svg-home /></nuxt-link></span>
+                            <span><NuxtLink to="/"><svg-home /></NuxtLink></span>
                             <span class="color">Blog & Stories</span>
                         </div>
                         <h3 class="tp-breadcrumb__title">Blog & Stories</h3>
@@ -34,7 +34,7 @@
                         <div class="tp-blog-stories-banner-content">
                             <a class="tp-blog-stories-banner-sub" href="#">Art & Design</a>
                             <h3 class="tp-blog-stories-banner-title">
-                                <nuxt-link href="/blog-details/1">The Importance of Intrinsic <br> Motivation for Students</nuxt-link>
+                                <NuxtLink to="/blog-details/1">The Importance of Intrinsic <br> Motivation for Students</NuxtLink>
                             </h3>
                             <div class="tp-blog-stories-banner-user d-flex align-items-center">
                                 <div class="tp-blog-stories-user-thumb">

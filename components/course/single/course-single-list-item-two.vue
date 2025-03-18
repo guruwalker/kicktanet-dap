@@ -2,9 +2,9 @@
     <div class="tp-course-filter-item mb-25 d-flex">
         <!-- Thumbnail -->
         <div class="tp-course-filter-thumb">
-            <nuxt-link :to="`/course-details/${course.id}`">
+            <NuxtLink :to="`/course-details/${course.id}`">
                 <img class="course-pink" :src="course.thumbnail" :alt="course.title" />
-            </nuxt-link>
+            </NuxtLink>
         </div>
 
         <!-- Content -->
@@ -26,9 +26,9 @@
 
             <!-- Title -->
             <h4 :class="title_cls || 'tp-course-filter-title'">
-                <nuxt-link :to="`/course-details/${course.id}`">
+                <NuxtLink :to="`/course-details/${course.id}`">
                     {{ sm_title ? removeTagInText(course.title).slice(0, 28) + '...' : removeTagInText(course.title) }}
-                </nuxt-link>
+                </NuxtLink>
             </h4>
 
             <!-- Meta Information -->
@@ -61,7 +61,7 @@
                     <course-price :discount="course.discount" :price="course.price" />
                 </div>
                 <div class="tp-course-filter-btn">
-                    <nuxt-link :to="`/course-details/${course.id}`">Preview this Course</nuxt-link>
+                    <NuxtLink :to="`/course-details/${course.id}`">Preview this Course</NuxtLink>
                 </div>
             </div>
         </div>

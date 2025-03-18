@@ -22,12 +22,12 @@
                                 <h4>{{ sc.title }}</h4>
                             </div>
                             <div class="tp-shop-feature-btn">
-                                <nuxt-link href="/shop-grid">
+                                <NuxtLink to="/shop-grid">
                                     Shop Now
                                     <span>
                                         <svg-arrow-right-sm />
                                     </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </template>
@@ -39,12 +39,12 @@
                                 <h4>{{ c.title }}</h4>
                             </div>
                             <div class="tp-shop-feature-btn">
-                                <nuxt-link href="/shop-grid">
+                                <NuxtLink to="/shop-grid">
                                     Shop Now
                                     <span>
                                         <svg-arrow-right-sm />
                                     </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </template>

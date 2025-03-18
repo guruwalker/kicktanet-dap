@@ -11,9 +11,9 @@ import { footerLinks } from "@/data/footer-links";
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="tp-footer-widget tp-footer-2-col-1 mb-30">
                 <div class="tp-footer-widget-logo mb-20 tp-header-logo">
-                  <nuxt-link href="/"
+                  <NuxtLink to="/"
                     ><img src="/images/logo/logo-black.png" alt=""
-                  /></nuxt-link>
+                  /></NuxtLink>
                 </div>
                 <div class="tp-footer-widget-content">
                   <p>
@@ -23,12 +23,12 @@ import { footerLinks } from "@/data/footer-links";
                 </div>
                 <div class="tp-footer-contact">
                   <div class="tp-footer-btn">
-                    <nuxt-link class="tp-btn-round" href="/contact"
+                    <NuxtLink class="tp-btn-round" href="/contact"
                       >Contact Us
                       <span>
                         <svg-arrow-right-four />
                       </span>
-                    </nuxt-link>
+                    </NuxtLink>
                   </div>
                 </div>
               </div>
@@ -39,7 +39,7 @@ import { footerLinks } from "@/data/footer-links";
                 <div class="tp-footer-widget-link">
                   <ul>
                     <li v-for="link in footerLinks.link_one" :key="link.id">
-                      <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                      <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                     </li>
                   </ul>
                 </div>
@@ -51,7 +51,7 @@ import { footerLinks } from "@/data/footer-links";
                 <div class="tp-footer-widget-link">
                   <ul>
                     <li v-for="link in footerLinks.link_two" :key="link.id">
-                      <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                      <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                     </li>
                   </ul>
                 </div>

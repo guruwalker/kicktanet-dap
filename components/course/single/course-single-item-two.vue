@@ -23,7 +23,7 @@ v<template>
                 </h5>
             </div>
             <h4 class="tp-course-5-title">
-                <nuxt-link :to="`/course-details/${course.id}`">{{ course.title }}</nuxt-link>
+                <NuxtLink :to="`/course-details/${course.id}`">{{ course.title }}</NuxtLink>
             </h4>
             <div class="tp-course-meta">
                 <span>

@@ -7,9 +7,9 @@
                     <div class="tp-breadcrumb__content">
                         <div class="tp-breadcrumb__list">
                             <span>
-                                <nuxt-link href="/">
+                                <NuxtLink to="/">
                                     <svg-home />
-                                </nuxt-link>
+                                </NuxtLink>
                             </span>
                             <span>{{title}}</span>
                             <span>{{ subtitle }}</span>

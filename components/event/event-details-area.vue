@@ -129,7 +129,7 @@
                         </div>
                         <div class="tp-event-details-item-content">
                             <h4 class="tp-event-details-item-title">
-                                <nuxt-link href="/my-account">{{ speaker.name }}</nuxt-link>
+                                <NuxtLink to="/my-account">{{ speaker.name }}</NuxtLink>
                             </h4>
                             <p>{{ speaker.title }}</p>
                             <div class="tp-event-details-item-social">

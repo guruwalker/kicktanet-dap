@@ -56,9 +56,9 @@
                             <div class="tpd-quiz-details">
                                 <div class="tpd-quiz-details-box d-flex">
                                     <div class="tpd-quiz-details-btn mr-15">
-                                        <nuxt-link class="tpd-border-btn" href="/dashboard/instructor-quiz">
+                                        <NuxtLink class="tpd-border-btn" href="/dashboard/instructor-quiz">
                                             Details
-                                        </nuxt-link>
+                                        </NuxtLink>
                                     </div>
                                     <div class="tpd-action-inexact-btn">
                                         <button class="border-bg">

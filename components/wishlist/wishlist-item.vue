@@ -1,13 +1,13 @@
 <template>
     <tr>
         <td class="tp-cart-img">
-            <nuxt-link :href="`/shop-details/${item.id}`">
+            <NuxtLink :to="`/shop-details/${item.id}`">
                 <img :src="item.img" :alt="item.title" />
-            </nuxt-link>
+            </NuxtLink>
         </td>
 
         <td class="tp-cart-title">
-            <nuxt-link :href="`/shop-details/${item.id}`">{{ item.title }}</nuxt-link>
+            <NuxtLink :to="`/shop-details/${item.id}`">{{ item.title }}</NuxtLink>
         </td>
 
         <td class="tp-cart-price"><span>{{ formatPrice(item.price, true) }}</span></td>

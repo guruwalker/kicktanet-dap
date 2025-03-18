@@ -60,7 +60,7 @@
                             <img :src="item.image" :alt="item.name">
                         </div>
                         <div class="tp-team-2-content">
-                            <h4 class="tp-team-2-title"><nuxt-link href="/my-account">{{ item.name }}</nuxt-link></h4>
+                            <h4 class="tp-team-2-title"><NuxtLink to="/my-account">{{ item.name }}</NuxtLink></h4>
                             <span>{{ item.title }}</span>
                         </div>
                     </div>

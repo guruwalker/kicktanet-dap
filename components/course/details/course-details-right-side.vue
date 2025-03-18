@@ -13,8 +13,8 @@
                 <CoursePrice :discount="course.discount" :price="course.price" />
             </div>
             <div class="tp-course-details-2-widget-btn">
-                <nuxt-link class="active" href="/cart">Add to Cart</nuxt-link>
-                <nuxt-link href="/course-with-filter">Buy Course</nuxt-link>
+                <NuxtLink class="active" href="/cart">Add to Cart</NuxtLink>
+                <NuxtLink to="/course-with-filter">Buy Course</NuxtLink>
                 <p>30-Day Money-Back Guarantee</p>
             </div>
 

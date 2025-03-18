@@ -15,11 +15,11 @@
                 <div class="col-lg-6">
                     <div class="tp-course-6-btn text-lg-end mb-60">
                         <div class="tp-hero-6-btn">
-                            <nuxt-link class="tp-btn-inner" href="/blog-stories">See All Articles
+                            <NuxtLink class="tp-btn-inner" href="/blog-stories">See All Articles
                                 <span>
                                     <svg-arrow-right-four />
                                 </span>
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -30,9 +30,9 @@
                     <div class="tp-blog-6-item">
                         <div class="tp-blog-stories-item p-relative mb-50">
                             <div class="tp-blog-stories-thumb">
-                                <nuxt-link :href="`/blog-details/${blog.id}`">
+                                <NuxtLink :to="`/blog-details/${blog.id}`">
                                     <img :src="blog.img" :alt="blog.title" />
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                             <div class="tp-blog-stories-content">
                                 <div class="tp-blog-stories-tag-wrap d-flex">
@@ -40,7 +40,7 @@
                                     <span>{{ blog.date }}</span>
                                 </div>
                                 <h4 class="tp-blog-stories-title">
-                                    <nuxt-link :href="`/blog-details/${blog.id}`">{{ blog.title }}</nuxt-link>
+                                    <NuxtLink :to="`/blog-details/${blog.id}`">{{ blog.title }}</NuxtLink>
                                 </h4>
                                 <div class="tp-blog-stories-user-box d-flex align-items-center">
                                     <div class="tp-blog-stories-user-thumb">

@@ -14,7 +14,7 @@
               <h4 class="tp-login-from-title">Sign in</h4>
               <p>
                 Dont have an account?
-                <nuxt-link href="/register">Create Now</nuxt-link>
+                <NuxtLink to="/register">Create Now</NuxtLink>
               </p>
             </div>
             <!-- form start -->

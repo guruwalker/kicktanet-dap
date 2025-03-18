@@ -2,16 +2,16 @@
     <tr>
         <!-- Product Image -->
         <td class="tp-cart-img">
-            <nuxt-link :href="`/shop-details/${item.id}`">
+            <NuxtLink :to="`/shop-details/${item.id}`">
                 <img :src="item.image" :alt="item.title" />
-            </nuxt-link>
+            </NuxtLink>
         </td>
 
         <!-- Product Title -->
         <td class="tp-cart-title">
-            <nuxt-link :href="`/shop-details/${item.id}`">
+            <NuxtLink :to="`/shop-details/${item.id}`">
                 {{ item.title }}
-            </nuxt-link>
+            </NuxtLink>
         </td>
 
         <!-- Product Price -->

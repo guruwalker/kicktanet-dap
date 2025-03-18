@@ -19,10 +19,10 @@
                                     <span>{{item.subtitle}}</span>
                                     <h3 class="tp-shop-banner-title">{{item.title}}</h3>
                                     <div class="tp-shop-banner-btn">
-                                        <nuxt-link href="/shop-grid">Shop Now <span>
+                                        <NuxtLink to="/shop-grid">Shop Now <span>
                                               <svg-arrow-right-sm/>
                                             </span>
-                                        </nuxt-link>
+                                        </NuxtLink>
                                     </div>
                                 </div>
                             </div>

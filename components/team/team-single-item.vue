@@ -9,19 +9,19 @@
                     </a>
                 </div>
                 <div class="tp-leadership-btn">
-                    <nuxt-link to="/my-profile">
+                    <NuxtLink to="/my-profile">
                         Details
                         <span>
                             <svg-up-arrow-two />
                         </span>
-                    </nuxt-link>
+                    </NuxtLink>
                 </div>
             </div>
         </div>
         <div class="tp-leadership-content">
             <span>{{ item.title }}</span>
             <h4 class="tp-leadership-title">
-                <nuxt-link to="/my-profile">{{ item.name }}</nuxt-link>
+                <NuxtLink to="/my-profile">{{ item.name }}</NuxtLink>
             </h4>
         </div>
     </div>

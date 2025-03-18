@@ -36,10 +36,10 @@
             <div class="row align-items-end">
                 <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-6">
                     <div class="tp-hero-3-apply-btn wow fadeInUp" data-wow-delay=".4s">
-                        <nuxt-link href="/contact">
+                        <NuxtLink to="/contact">
                             <span><img src="/images/hero/hero-3/apply-btn-shape.png" alt=""></span> <br>
                             Apply Now
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">

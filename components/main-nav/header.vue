@@ -61,14 +61,14 @@ function handleOffcanvas() {
         <div class="row align-items-center">
           <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
             <div class="tp-header-logo-1 tp-header-logo">
-              <nuxt-link href="/">
+              <NuxtLink to="/">
                 <img class="logo-1" src="/images/logo/logo.png" alt="logo" />
                 <img
                   class="logo-2"
                   src="/images/logo/logo-black-1.png"
                   alt="logo"
                 />
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
           <div class="col-xxl-8 col-xl-7 d-none d-xl-block">
@@ -84,13 +84,13 @@ function handleOffcanvas() {
                       'tp-static': menu.home_dropdown || menu.pages_dropdown,
                     }"
                   >
-                    <nuxt-link :href="menu.link">
+                    <NuxtLink :to="menu.link">
                       {{
                         menu.sm_mega_menus && sm_mega_title
                           ? sm_mega_title
                           : menu.title
                       }}
-                    </nuxt-link>
+                    </NuxtLink>
 
                     <!-- Home Dropdown -->
                     <div
@@ -125,7 +125,7 @@ function handleOffcanvas() {
                     <!-- Submenus -->
                     <ul v-if="menu.dropdown_menus" class="tp-submenu">
                       <li v-for="dm in menu.dropdown_menus" :key="dm.id">
-                        <nuxt-link :href="dm.link">{{ dm.title }}</nuxt-link>
+                        <NuxtLink :to="dm.link">{{ dm.title }}</NuxtLink>
                       </li>
                     </ul>
                   </li>
@@ -139,9 +139,9 @@ function handleOffcanvas() {
               class="tp-header-contact d-flex align-items-center justify-content-end"
             >
               <div class="tp-header-btn d-none d-md-block ml-30">
-                <nuxt-link href="/university-application-form"
+                <NuxtLink to="/university-application-form"
                   >Login
-                </nuxt-link>
+                </NuxtLink>
               </div>
               <div class="tp-header-bar d-xl-none ml-30">
                 <button @click="handleOffcanvas" class="offcanvas-open-btn">

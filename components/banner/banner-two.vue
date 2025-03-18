@@ -18,9 +18,9 @@
                             </h2>
                             <p>{{ banner.description }}</p>
                             <div class="tp-banner-5-btn">
-                                <nuxt-link :class="banner.buttonClass" to="/contact">
+                                <NuxtLink :class="banner.buttonClass" to="/contact">
                                     {{ banner.buttonText }}
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

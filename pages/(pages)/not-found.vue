@@ -15,7 +15,7 @@
                                 <div class="tp-error-content">
                                     <h4 class="tp-error-title-sm">Something went Wrong...</h4>
                                     <p>Sorry, "we couldn't" find your page.</p>
-                                    <nuxt-link class="tp-btn-inner" href="/">Back to Home</nuxt-link>
+                                    <NuxtLink class="tp-btn-inner" href="/">Back to Home</NuxtLink>
                                 </div>
                             </div>
                         </div>

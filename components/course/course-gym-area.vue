@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="tp-course-5-btn text-center wow fadeInUp" data-wow-delay=".5s">
-                        <nuxt-link class="tp-btn-4" href="/course-with-filter">View all courses</nuxt-link>
+                        <NuxtLink class="tp-btn-4" href="/course-with-filter">View all courses</NuxtLink>
                     </div>
                 </div>
             </div>

@@ -5,8 +5,8 @@
                 <div class="col-xl-8 col-lg-10">
                     <div class="tp-section mb-40 text-center wow fadeInUp" data-wow-delay=".4s">
                     <h5 class="tp-section-3-subtitle">Top Categories</h5>
-                    <h3 class="tp-section-3-title">Most demanding 
-                        <span>Categories 
+                    <h3 class="tp-section-3-title">Most demanding
+                        <span>Categories
                             <img class="tp-underline-shape-5 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="/images/shape/bottom-line/line-2-category.svg" alt="line">
                         </span>.
                     </h3>
@@ -16,7 +16,7 @@
             <div class="row">
 
                 <div v-for="c in category_data" :key="c.id" class="col-lg-3 col-md-4 col-sm-6">
-                    <nuxt-link href="/course-categories" class="tp-category-item mb-25 wow fadeInUp" :data-wow-delay="`.${c.id}s`">
+                    <NuxtLink to="/course-categories" class="tp-category-item mb-25 wow fadeInUp" :data-wow-delay="`.${c.id}s`">
                     <div class="tp-category-icon">
                         <span :class="c.color"><img :src="c.icon" alt="icon"></span>
                     </div>
@@ -24,7 +24,7 @@
                         <h4 class="tp-category-title">{{ c.title }}</h4>
                         <span>{{c.description}}</span>
                     </div>
-                    </nuxt-link>
+                    </NuxtLink>
                 </div>
 
             </div>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                         <div class="tp-category-banner-btn">
-                            <nuxt-link class="tp-btn-2" href="/contact">Get Started</nuxt-link>
+                            <NuxtLink class="tp-btn-2" href="/contact">Get Started</NuxtLink>
                         </div>
                     </div>
                 </div>

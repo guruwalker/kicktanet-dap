@@ -14,13 +14,13 @@
                 <div v-for="(item) in kids_program_data" class="col-xl-4 col-md-6">
                     <div class="tp-program-3-item mb-40 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tp-program-3-thumb">
-                            <nuxt-link href="/university-program">
+                            <NuxtLink to="/university-program">
                                 <img :src="item.img" alt="">
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                         <div class="tp-program-3-content">
                             <h4 class="tp-program-3-title">
-                                <nuxt-link href="/university-program">{{ item.title }}</nuxt-link>
+                                <NuxtLink to="/university-program">{{ item.title }}</NuxtLink>
                             </h4>
                             <p v-html="item.description"></p>
                             <div class="tp-program-3-schedule d-flex align-items-center">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="tp-program-3-btn">
-                                <nuxt-link :href="`/course-details-2/${item.id}`">Preview this Course</nuxt-link>
+                                <NuxtLink :to="`/course-details-2/${item.id}`">Preview this Course</NuxtLink>
                             </div>
                         </div>
                     </div>

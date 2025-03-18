@@ -7,7 +7,7 @@
                         <div class="tp-hero-2-content">
                             <span class="tp-hero-2-subtitle wow fadeInUp" data-wow-delay=".3s">Keep Learning</span>
                             <h2 class="tp-hero-2-title wow fadeInUp" data-wow-delay=".5s">Best digital
-                                <span>Online 
+                                <span>Online
                                     <img class="wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="/images/unlerline/hero-2-svg-1.svg" alt="">
                                 </span>
                                 Courses
@@ -15,11 +15,11 @@
                             <p class=" wow fadeInUp" data-wow-delay=".7s">Acquire global knowledge and build your <br>
                                 professional skills</p>
                             <div class="tp-hero-2-btn wow fadeInUp" data-wow-delay=".9s">
-                                <nuxt-link class="tp-btn-border" href="/course-with-filter">Find Courses
+                                <NuxtLink class="tp-btn-border" href="/course-with-filter">Find Courses
                                     <span>
                                         <svg-arrow-right-four/>
                                     </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

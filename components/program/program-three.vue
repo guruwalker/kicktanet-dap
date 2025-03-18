@@ -42,15 +42,15 @@
                      </div>
                      <div class="tp-program-4-content">
                         <h3 class="tp-program-4-title">
-                            <nuxt-link href="/university-course-details">{{ item.title }}</nuxt-link>
+                            <NuxtLink to="/university-course-details">{{ item.title }}</NuxtLink>
                         </h3>
                         <span>{{ item.description }}</span>
                         <div class="tp-program-4-btn">
-                           <nuxt-link href="/university-course-details">
+                           <NuxtLink to="/university-course-details">
                               <span>
                                  <svg-arrow-right-five/>
                               </span>
-                           </nuxt-link>
+                           </NuxtLink>
                         </div>
                      </div>
                   </swiper-slide>

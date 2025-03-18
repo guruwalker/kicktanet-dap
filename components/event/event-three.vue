@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="tp-event-4-all-btn text-lg-end mb-70">
-                        <nuxt-link class="tp-btn-3" href="/event">See More Events</nuxt-link>
+                        <NuxtLink class="tp-btn-3" href="/event">See More Events</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                         <div class="tp-event-4-box">
                             <div class="tp-event-4-content">
                                 <p>{{ event.date.day }} {{ event.date.month }}, {{ event.date.year }}</p>
-                                <h4 class="tp-event-4-title"><nuxt-link :href="`/event-details/${event.id}`">{{ event.title }}</nuxt-link></h4>
+                                <h4 class="tp-event-4-title"><NuxtLink :to="`/event-details/${event.id}`">{{ event.title }}</NuxtLink></h4>
                                 <span><img src="/images/icon/location.svg" alt=""> {{ event.location }}</span>
                             </div>
                             <div class="tp-event-4-info d-flex align-items-center justify-content-between">
@@ -39,7 +39,7 @@
                                     <img src="/images/event/event-4-shape-1.png" alt="">
                                 </div>
                                 <div class="tp-event-4-btn">
-                                    <nuxt-link :href="`/event-details/${event.id}`">Get Ticket</nuxt-link>
+                                    <NuxtLink :to="`/event-details/${event.id}`">Get Ticket</NuxtLink>
                                 </div>
                             </div>
                         </div>

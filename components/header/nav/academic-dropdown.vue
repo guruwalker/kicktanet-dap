@@ -5,9 +5,9 @@
                 <div v-for="dp in academic_dropdown" :key="dp.id" class="col-xl-3 col-12">
                     <div class="tp-megamenu-academics-list">
                         <h4 class="tp-megamenu-academics-title">{{ dp.title }}</h4>
-                            <nuxt-link v-for="dm in dp.dropdown_menus" :key="dm.id" :href="dm.link">
+                            <NuxtLink v-for="dm in dp.dropdown_menus" :key="dm.id" :href="dm.link">
                                 {{ dm.title }}
-                            </nuxt-link>
+                            </NuxtLink>
                     </div>
                 </div>
 
@@ -39,11 +39,11 @@
         <div class="row">
             <div class="col-lg-12 d-none d-xl-block">
                 <div class="tp-megamenu-academics-btns text-center">
-                    <nuxt-link href="/university-request-info">Request Info</nuxt-link>
-                    <nuxt-link class="active" href="/university-application-form">
+                    <NuxtLink to="/university-request-info">Request Info</NuxtLink>
+                    <NuxtLink class="active" href="/university-application-form">
                         Apply Now
-                    </nuxt-link>
-                    <nuxt-link href="/university-schedule">Visit University</nuxt-link>
+                    </NuxtLink>
+                    <NuxtLink to="/university-schedule">Visit University</NuxtLink>
                 </div>
             </div>
         </div>

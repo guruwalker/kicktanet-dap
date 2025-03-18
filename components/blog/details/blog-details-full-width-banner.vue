@@ -11,12 +11,12 @@
                         <div class="tp-blog-full-width-box d-flex justify-content-between">
 
                             <div class="tp-blog-full-width-back">
-                                <nuxt-link href="/blog-stories"><span><svg-arrow-prev-one /></span>Back to main blog</nuxt-link>
+                                <NuxtLink to="/blog-stories"><span><svg-arrow-prev-one /></span>Back to main blog</NuxtLink>
                             </div>
 
                             <div class="tp-blog-details-user order-3 order-lg-2">
                                 <span>
-                                    <img src="/images/blog/blog-stories/blog-stories-user-2.jpg" alt=""> 
+                                    <img src="/images/blog/blog-stories/blog-stories-user-2.jpg" alt="">
                                     Eleanor Pena
                                  </span>
                                 <span>August 24, 2023</span>

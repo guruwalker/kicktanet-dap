@@ -1,7 +1,7 @@
 <template>
     <div class="tp-breadcrumb__content">
         <div class="tp-breadcrumb__list inner-after">
-            <span class="white"><nuxt-link href="/"><svg-home /></nuxt-link></span>
+            <span class="white"><NuxtLink to="/"><svg-home /></NuxtLink></span>
             <span class="white">Course Grid</span>
         </div>
         <div class="tp-course-details-2-header">

@@ -27,8 +27,8 @@
                 </div>
             </div>
             <div class="tp-course-details-2-widget-btn">
-                <nuxt-link href="/cart">Add to Cart</nuxt-link>
-                <nuxt-link class="active" href="/course-with-filter">Buy Course</nuxt-link>
+                <NuxtLink to="/cart">Add to Cart</NuxtLink>
+                <NuxtLink class="active" href="/course-with-filter">Buy Course</NuxtLink>
                 <p>Limited offer, cancel anytime.</p>
             </div>
             <div class="tp-course-details-2-instructor-social text-center">

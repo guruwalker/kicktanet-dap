@@ -12,12 +12,12 @@
                         </h2>
                         <div class="tp-hero-4-info d-flex align-items-center flex-wrap wow fadeInUp" data-wow-delay=".7s">
                             <div class="tp-hero-4-btn">
-                                <nuxt-link class="tp-btn-circle" href="/university-program">
+                                <NuxtLink class="tp-btn-circle" href="/university-program">
                                     <span>
                                         <svg-up-arrow />
                                     </span>
                                     Enroll Now
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                             <div class="tp-hero-4-info-list">
                                 <ul>

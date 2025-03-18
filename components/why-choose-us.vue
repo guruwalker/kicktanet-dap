@@ -1,7 +1,7 @@
 <template>
     <section class="school-area grey-bg fix pb-120">
         <div class="container">
-            <div class="tp-school-4-bg wow fadeInUp" data-wow-delay=".3s" 
+            <div class="tp-school-4-bg wow fadeInUp" data-wow-delay=".3s"
               style="background-image: url(/images/bg/school-4-bg-1.jpg);">
                 <div class="tp-school-4-bg-2 grey-bg">
                     <div class="tp-school-4-shape">
@@ -26,12 +26,12 @@
                                     </ul>
                                 </div>
                                 <div class="tp-school-4-btn">
-                                    <nuxt-link href="/university-about">Learn More
+                                    <NuxtLink to="/university-about">Learn More
                                         <span>
                                             <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.0034 1L15.0034 6L10.0034 11" stroke="#AB0C2F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" /> <path d="M1 6H14.8633" stroke="#AB0C2F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
-                                    </nuxt-link>
+                                    </NuxtLink>
                                 </div>
                             </div>
                         </div>

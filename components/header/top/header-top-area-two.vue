@@ -18,13 +18,13 @@
                     <div class="tp-header-4-top d-flex align-items-center justify-content-md-end">
                         <div class="tp-header-4-top-item">
                             <div class="tp-header-4-link">
-                                <nuxt-link href="/event">Events</nuxt-link>
-                                <nuxt-link href="/contact">Contact</nuxt-link>
+                                <NuxtLink to="/event">Events</NuxtLink>
+                                <NuxtLink to="/contact">Contact</NuxtLink>
                             </div>
                         </div>
                         <div class="tp-header-4-top-item">
                             <div class="tp-header-4-btn-top">
-                                <nuxt-link href="/login">
+                                <NuxtLink to="/login">
                                     <span>
                                         <svg-user-three/>
                                     </span>
@@ -34,7 +34,7 @@
                                             <path d="M1 1L4.5 4.5L8 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </i>
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                         <div class="tp-header-4-top-item">

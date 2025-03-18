@@ -21,11 +21,11 @@
                         <span class="span">Our Stories</span>
                         <p>When you design products and <br> services in close partnership with <br> clients, you are
                             creating a solution <br> that is tailored to their specific <br> needs.</p>
-                            <nuxt-link href="/instructor">Meet the Team
+                            <NuxtLink to="/instructor">Meet the Team
                                 <span>
                                     <svg-arrow-right-two clr="currentColor" />
                                 </span>
-                            </nuxt-link>
+                            </NuxtLink>
                         <div class="tp-about-banner-content-year">
                             <span>8</span>
                             <p>Years of Experience</p>

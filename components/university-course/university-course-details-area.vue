@@ -95,17 +95,17 @@
                     <div class="tp-course-requrement-widget-box">
                         <div class="tp-course-requrement-widget mb-30">
                             <div class="tp-course-requrement-widget-content">
-                                <nuxt-link href="/university-requirements">Degree Requirements</nuxt-link>
-                                <nuxt-link href="/university-apply">How to Apply</nuxt-link>
-                                <nuxt-link href="/university-leadership">Faculty & Staff</nuxt-link>
-                                <nuxt-link href="/university-financial">Financial Add</nuxt-link>
+                                <NuxtLink to="/university-requirements">Degree Requirements</NuxtLink>
+                                <NuxtLink to="/university-apply">How to Apply</NuxtLink>
+                                <NuxtLink to="/university-leadership">Faculty & Staff</NuxtLink>
+                                <NuxtLink to="/university-financial">Financial Add</NuxtLink>
                             </div>
                         </div>
                         <div class="tp-course-requrement-widget-btn mb-30">
-                            <nuxt-link class="tp-btn btn-1 w-100 text-center" href="/university-request-info">
+                            <NuxtLink class="tp-btn btn-1 w-100 text-center" href="/university-request-info">
                                 Request information
-                            </nuxt-link>
-                            <nuxt-link class="tp-btn btn-2 w-100 text-center" href="/university-apply">Apply Now</nuxt-link>
+                            </NuxtLink>
+                            <NuxtLink class="tp-btn btn-2 w-100 text-center" href="/university-apply">Apply Now</NuxtLink>
                         </div>
                         <div class="tp-course-requrement-widget-contact mb-30">
                             <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="tp-course-requrement-widget-faq">
                             <h4 class="tp-course-requrement-widget-faq-title">Do you have <br> more questions?</h4>
-                            <p>Read our <nuxt-link href="/faq">FAQ</nuxt-link></p>
+                            <p>Read our <NuxtLink to="/faq">FAQ</NuxtLink></p>
                             <div class="tp-course-requrement-widget-faq-thumb">
                                 <img src="/images/history/undergraduate/course-contact-bg.png" alt="">
                             </div>

@@ -4,16 +4,16 @@
             <div class="row tp-gx-50">
                 <div class="col-xl-6">
                     <div class="tp-megamenu-list">
-                        <nuxt-link v-for="dm in dropdown_menus.slice(0, 4)" :key="dm.id" :href="dm.link">
+                        <NuxtLink v-for="dm in dropdown_menus.slice(0, 4)" :key="dm.id" :href="dm.link">
                             {{ dm.title }}
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="tp-megamenu-list">
-                        <nuxt-link v-for="dm in dropdown_menus.slice(4)" :key="dm.id" :href="dm.link">
+                        <NuxtLink v-for="dm in dropdown_menus.slice(4)" :key="dm.id" :href="dm.link">
                             {{ dm.title }}
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
@@ -29,9 +29,9 @@
                             All signature programs
                         </h4>
                         <div class="tp-megamenu-small-cta-btn">
-                            <nuxt-link class="tp-btn" href="/university-application-form">
+                            <NuxtLink class="tp-btn" href="/university-application-form">
                                 Apply now
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

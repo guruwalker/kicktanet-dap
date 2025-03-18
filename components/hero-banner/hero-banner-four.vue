@@ -17,7 +17,7 @@
                                         {{ item.title.text_3 }}
                                     </h2>
                                     <div class="tp-slider-5-btn">
-                                        <nuxt-link class="tp-btn-white" href="/contact">JOIN OUR GYM</nuxt-link>
+                                        <NuxtLink class="tp-btn-white" href="/contact">JOIN OUR GYM</NuxtLink>
                                     </div>
                                 </div>
                             </div>

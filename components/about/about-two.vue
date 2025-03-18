@@ -9,7 +9,7 @@
                             she becomes a well-rounded tomorrow individual.
                         </h2>
                         <div class="tp-about-4-btn wow fadeInUp" data-wow-delay=".5s">
-                            <nuxt-link class="tp-btn-3" href="/university-about">Why Choose Acadia</nuxt-link>
+                            <NuxtLink class="tp-btn-3" href="/university-about">Why Choose Acadia</NuxtLink>
                             <div class="tp-about-4-video">
                                 <a @click.prevent="playVideo('_RpLvsA1SNM')" class="popup-video" href="#">
                                     <span>

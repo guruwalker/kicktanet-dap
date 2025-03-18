@@ -36,9 +36,9 @@
                                     and families making between <span>$85,000-$150,000 pay 0-10% of their
                                         incomes.</span></p>
                                 <div class="tp-admission-overview-btn mt-50">
-                                    <nuxt-link class="tp-btn" href="/university-financial">Learn more <br>
+                                    <NuxtLink class="tp-btn" href="/university-financial">Learn more <br>
                                         About financial aid <span><svg-arrow-next-two /></span>
-                                    </nuxt-link>
+                                    </NuxtLink>
                                 </div>
                             </div>
                         </div>
@@ -58,9 +58,9 @@
                                     <p>How affordable is Harvard? See for yourself with our <br>
                                         Net Price Calculator.</p>
                                     <div class="tp-admission-cta-btn">
-                                        <nuxt-link class="tp-btn" href="/university-tuition-fees">Net Price Calculator
+                                        <NuxtLink class="tp-btn" href="/university-tuition-fees">Net Price Calculator
                                             <span> <svg-arrow-next-two /></span>
-                                        </nuxt-link>
+                                        </NuxtLink>
                                     </div>
                                 </div>
                             </div>
@@ -91,9 +91,9 @@
                                     or Coalition Application, Powered by Scoir, and answer <br>
                                     any questions you have along the way.</p>
                                 <div class="tp-admission-apply-btn">
-                                    <nuxt-link class="tp-btn" href="/university-apply">How To Apply
+                                    <NuxtLink class="tp-btn" href="/university-apply">How To Apply
                                         <span><svg-arrow-next-two /></span>
-                                    </nuxt-link>
+                                    </NuxtLink>
                                 </div>
                             </div>
                         </div>

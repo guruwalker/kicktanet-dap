@@ -7,9 +7,9 @@
             <div class="col-xl-4 col-lg-3 col-sm-6">
               <div :class="`tp-footer-widget ${style_2 ? 'tp-footer-5-col-1' : 'tp-footer-col-1'} mb-30`">
                 <div class="tp-footer-widget-logo mb-20 tp-header-logo">
-                  <nuxt-link to="/">
+                  <NuxtLink to="/">
                     <img :src="style_2 ? '/images/logo/logo-black-2.png' : '/images/logo/logo-red.png'" alt="logo" />
-                  </nuxt-link>
+                  </NuxtLink>
                 </div>
                 <div class="tp-footer-widget-content">
                   <p>
@@ -30,7 +30,7 @@
                 </div>
               </div>
             </div>
-  
+
             <!-- About Links Section -->
             <div class="col-xl-2 col-lg-3 col-sm-6">
               <div :class="`tp-footer-widget ${style_2 ? 'tp-footer-5-col-2' : 'tp-footer-col-2'} mb-30`">
@@ -38,13 +38,13 @@
                 <div class="tp-footer-widget-link">
                   <ul>
                     <li v-for="link in footerLinks.link_one" :key="link.id">
-                      <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                      <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-  
+
             <!-- Quick Links Section -->
             <div class="col-xl-2 col-lg-2 col-sm-4">
               <div :class="`tp-footer-widget ${style_2 ? 'tp-footer-5-col-3' : 'tp-footer-col-3'} mb-30`">
@@ -52,13 +52,13 @@
                 <div class="tp-footer-widget-link">
                   <ul>
                     <li v-for="link in footerLinks.link_two" :key="link.id">
-                      <nuxt-link :to="link.link">{{ link.title }}</nuxt-link>
+                      <NuxtLink :to="link.link">{{ link.title }}</NuxtLink>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-  
+
             <!-- Newsletter Section -->
             <div class="col-xl-4 col-lg-4 col-sm-8">
               <div :class="`tp-footer-widget ${style_2 ? 'tp-footer-5-col-4' : 'tp-footer-col-4'} mb-30`">
@@ -86,7 +86,7 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Footer Bottom Section -->
       <div :class="`${style_2 ? 'tp-footer-5-bottom' : 'tp-footer-bottom'}`">
         <div class="container">
@@ -103,12 +103,11 @@
       </div>
     </footer>
   </template>
-  
+
   <script setup lang="ts">
   import { footerLinks } from "@/data/footer-links";
-  
+
   const props = defineProps<{style_2?: boolean;}>();
-  
+
   const style_2 = props.style_2 ?? false;
   </script>
-  

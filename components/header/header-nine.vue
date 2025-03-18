@@ -6,9 +6,9 @@
                     <div class="col-2">
                         <div class="tp-header-2-right d-flex align-items-center">
                             <div class="logo tp-header-logo">
-                                <nuxt-link href="/">
+                                <NuxtLink to="/">
                                     <img src="/images/logo/logo-black.png" alt="logo">
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                                 <a class="pulish" href="#">Publish</a>
                             </div>
                             <span>
-                                <nuxt-link href="/dashboard/instructor-dashboard"><svg-close-three/></nuxt-link>
+                                <NuxtLink to="/dashboard/instructor-dashboard"><svg-close-three/></NuxtLink>
                             </span>
                         </div>
                     </div>

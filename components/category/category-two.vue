@@ -18,11 +18,11 @@
                         </div>
                         <div class="tp-category-5-content">
                             <h4 class="tp-category-5-title">
-                                <nuxt-link href="/course-with-filter">{{ item.title }}
+                                <NuxtLink to="/course-with-filter">{{ item.title }}
                                     <span>
                                         <svg-arrow-right-one clr="currentColor" />
                                     </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </h4>
                         </div>
                     </div>

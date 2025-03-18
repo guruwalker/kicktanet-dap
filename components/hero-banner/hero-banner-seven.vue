@@ -5,11 +5,11 @@
                 <div class="row align-items-end">
                     <div class="col-xxl-7 col-xl-6 col-lg-7 col-md-12">
                         <div class="tp-hero-6-content">
-                            <span class="tp-hero-6-subtitle wow fadeInUp" data-wow-delay=".3s"><svg-pen-one /> 
+                            <span class="tp-hero-6-subtitle wow fadeInUp" data-wow-delay=".3s"><svg-pen-one />
                                 World Class Education
                             </span>
-                            <h2 class="tp-hero-6-title wow fadeInUp" data-wow-delay=".5s">Get <span>2500+ 
-                                <img class="wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="/images/hero/home-6/title-vector.png" alt=""></span> 
+                            <h2 class="tp-hero-6-title wow fadeInUp" data-wow-delay=".5s">Get <span>2500+
+                                <img class="wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="/images/hero/home-6/title-vector.png" alt=""></span>
                                 <br>Best Online Courses <br> From Acadia
                             </h2>
                             <p class="wow fadeInUp" data-wow-delay=".7s">
@@ -17,11 +17,11 @@
                             </p>
                             <div class="tp-hero-6-btn-box d-flex align-items-center wow fadeInUp" data-wow-delay=".9s">
                                 <div class="tp-hero-6-btn">
-                                    <nuxt-link class="tp-btn-inner" href="/course-with-filter">Find Courses
+                                    <NuxtLink class="tp-btn-inner" href="/course-with-filter">Find Courses
                                         <span>
                                             <svg-arrow-right-four />
                                         </span>
-                                    </nuxt-link>
+                                    </NuxtLink>
                                 </div>
                                 <div class="tp-hero-6-video">
                                     <a @click.prevent="playVideo('_RpLvsA1SNM')" class="video-border-animation popup-video" href="#">

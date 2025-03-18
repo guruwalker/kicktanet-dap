@@ -22,13 +22,13 @@
                 >
                     <div class="tp-category-6-item mb-30 wow fadeInUp" :data-wow-delay="category.delay">
                         <div class="tp-category-6-item-thumb">
-                            <nuxt-link href="/course-categories">
+                            <NuxtLink to="/course-categories">
                                 <img :src="category.image" :alt="category.title">
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                         <div class="tp-category-6-item-content text-center">
                             <h4 class="tp-category-6-item-title">
-                                <nuxt-link href="/course-categories">{{ category.title }}</nuxt-link>
+                                <NuxtLink to="/course-categories">{{ category.title }}</NuxtLink>
                             </h4>
                             <span>{{ category.courses }} Courses</span>
                         </div>
@@ -39,11 +39,11 @@
                 <div class="col-lg-12">
                     <div class="tp-category-6-btn text-center pt-40">
                         <div class="tp-hero-6-btn">
-                            <nuxt-link class="tp-btn-inner" href="/course-with-filter">View all Categories
+                            <NuxtLink class="tp-btn-inner" href="/course-with-filter">View all Categories
                                 <span>
                                     <svg-arrow-right-four/>
                                 </span>
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

@@ -41,13 +41,13 @@
                                                 <h4 class="tp-faq-sidebar-title">Related Topics</h4>
                                                 <ul>
                                                     <li v-for="topic in tab.topics" :key="topic.id">
-                                                        <nuxt-link :to="topic.href">{{ topic.text }}</nuxt-link>
+                                                        <NuxtLink :to="topic.href">{{ topic.text }}</NuxtLink>
                                                     </li>
                                                 </ul>
                                                 <div class="tp-faq-sidebar-btn">
-                                                    <nuxt-link class="tp-btn-inner w-100 text-center" to="/contact">
+                                                    <NuxtLink class="tp-btn-inner w-100 text-center" to="/contact">
                                                         Contact Us
-                                                    </nuxt-link>
+                                                    </NuxtLink>
                                                 </div>
                                             </div>
                                         </div>

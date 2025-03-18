@@ -28,9 +28,9 @@
                                 </div>
                             </div>
                             <div class="tp-instructor-course-btn">
-                                <nuxt-link class="tp-btn-add-course" to="/create-new-course">
+                                <NuxtLink class="tp-btn-add-course" to="/create-new-course">
                                     <i class="fa-regular fa-plus"></i> Create a New Course
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

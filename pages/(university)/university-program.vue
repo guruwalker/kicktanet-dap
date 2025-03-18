@@ -32,12 +32,12 @@
                                             <div class="tp-undergraduate-program-list">
                                                 <ul>
                                                     <li v-for="program in programGroup.programs" :key="program">
-                                                        <nuxt-link to="/university-about">
+                                                        <NuxtLink to="/university-about">
                                                             {{ program }}
                                                             <span>
                                                                 <svg-arrow-next-two />
                                                             </span>
-                                                        </nuxt-link>
+                                                        </NuxtLink>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -66,12 +66,12 @@
                                             <div class="tp-undergraduate-program-list">
                                                 <ul>
                                                     <li v-for="program in programGroup.programs" :key="program">
-                                                        <nuxt-link to="/university-about">
+                                                        <NuxtLink to="/university-about">
                                                             {{ program }}
                                                             <span>
                                                                 <svg-arrow-next-two />
                                                             </span>
-                                                        </nuxt-link>
+                                                        </NuxtLink>
                                                     </li>
                                                 </ul>
                                             </div>

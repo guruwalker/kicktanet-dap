@@ -5,9 +5,9 @@
                 <div v-for="cm in courseDropdown" :key="cm.id" class="col-xl-6">
                     <div class="tp-megamenu-courses-list">
                         <h4 class="tp-megamenu-courses-title">{{ cm.title }}</h4>
-                        <nuxt-link v-for="dm in cm.dropdown_menus" :key="dm.id" :to="dm.link">
+                        <NuxtLink v-for="dm in cm.dropdown_menus" :key="dm.id" :to="dm.link">
                             {{ dm.title }}
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>

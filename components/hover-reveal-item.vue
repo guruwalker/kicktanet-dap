@@ -1,9 +1,9 @@
 <template>
-    <nuxt-link class="tp-img-reveal tp-img-reveal-item" to="/event" :data-img="img" data-fx="1"
+    <NuxtLink class="tp-img-reveal tp-img-reveal-item" to="/event" :data-img="img" data-fx="1"
         @mousemove="handleMouseMove">
         {{ title }}
         <div class="tp-hover-reveal-bg" :style="{ backgroundImage: `url(${img})` }"></div>
-    </nuxt-link>
+    </NuxtLink>
 </template>
 
 <script setup lang="ts">

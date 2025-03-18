@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="tp-category-banner-btn">
-                            <nuxt-link class="tp-btn-2" href="/contact">Get Started</nuxt-link>
+                            <NuxtLink class="tp-btn-2" href="/contact">Get Started</NuxtLink>
                         </div>
                     </div>
                 </div>

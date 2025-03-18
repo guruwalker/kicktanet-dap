@@ -1,9 +1,9 @@
 <template>
     <div class="tp-shop-product-item text-center mb-50">
         <div class="tp-shop-product-thumb p-relative">
-            <nuxt-link :href="`/shop-details/${item.id}`">
+            <NuxtLink :to="`/shop-details/${item.id}`">
                 <img :src="item.image" :alt="item.title"/>
-            </nuxt-link>
+            </NuxtLink>
             <div class="tp-shop-product-thumb-tag">
                 <span :class="getTagClass(item.tag)">{{ item.tag }}</span>
             </div>
@@ -17,9 +17,9 @@
                 <span>{{ item.category }}</span>
             </div>
             <h4 class="tp-shop-product-title">
-                <nuxt-link :href="`/shop-details/${item.id}`">
+                <NuxtLink :to="`/shop-details/${item.id}`">
                     {{ item.title }}
-                </nuxt-link>
+                </NuxtLink>
             </h4>
             <div class="tp-shop-product-price">
                 <span>{{ formatPrice(item.price, true) }}</span>
@@ -45,7 +45,7 @@ function addToCart(item: IBookDT) {
     cartStore.addCartProduct(item);
 }
 
-function isAlreadyInCart(id: number): boolean {                                     
+function isAlreadyInCart(id: number): boolean {
     return cartStore.cart_products.some((cartItem) => cartItem.id === id);
 }
 </script>

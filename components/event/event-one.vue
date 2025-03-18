@@ -15,11 +15,11 @@
                 </div>
                 <div class="col-xl-7 col-md-4">
                     <div class="tp-event-btn text-md-end mb-70">
-                        <nuxt-link class="tp-btn" href="/event">See More Events
+                        <NuxtLink class="tp-btn" href="/event">See More Events
                             <span>
                                 <svg-arrow-right-one />
                             </span>
-                        </nuxt-link>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
@@ -46,11 +46,11 @@
                         </div>
                         <div class="col-md-1">
                             <div class="tp-event-arrow text-lg-end">
-                                <nuxt-link href="/event-details/1">
+                                <NuxtLink to="/event-details/1">
                                     <span>
                                         <svg-arrow-right-three />
                                     </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

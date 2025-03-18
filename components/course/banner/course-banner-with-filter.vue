@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <div class="tp-breadcrumb__content-filter mb-50">
                         <div class="tp-breadcrumb__list">
-                            <span><nuxt-link href="/"><svg-home /></nuxt-link></span>
+                            <span><NuxtLink to="/"><svg-home /></NuxtLink></span>
                             <span class="color">All Courses</span>
                         </div>
                         <h3 class="tp-breadcrumb__title">All Courses</h3>

@@ -16,11 +16,11 @@
                 <div class="col-lg-6">
                     <div class="tp-course-6-btn text-lg-end mb-60">
                         <div class="tp-hero-6-btn">
-                            <nuxt-link class="tp-btn-inner" href="/course-with-filter">View all Courses
+                            <NuxtLink class="tp-btn-inner" href="/course-with-filter">View all Courses
                                 <span>
                                     <svg-arrow-right-four />
                                 </span>
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="tp-category-banner-btn">
-                            <nuxt-link class="tp-btn-2" href="/contact">Get Started</nuxt-link>
+                            <NuxtLink class="tp-btn-2" href="/contact">Get Started</NuxtLink>
                         </div>
                     </div>
                 </div>

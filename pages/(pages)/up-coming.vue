@@ -5,9 +5,9 @@
                 <div class="col-lg-12">
                     <div class="tp-upcoming-box text-center">
                         <div class="tp-upcoming-logo tp-header-logo">
-                            <nuxt-link href="/">
+                            <NuxtLink to="/">
                                 <img src="/images/logo/logo-white.png" alt="logo" />
-                            </nuxt-link>
+                            </NuxtLink>
                         </div>
                         <div class="tp-upcoming-heading">
                             <h2 class="tp-upcoming-title">The site is currently <br /> down for maintenance</h2>

@@ -1,9 +1,9 @@
 <template>
     <div class="tp-course-grid-item d-flex mb-30">
         <div class="tp-course-grid-thumb">
-            <nuxt-link :to="`/course-details/${course.id}`">
+            <NuxtLink :to="`/course-details/${course.id}`">
                 <img :src="course.thumbnail" :alt="removeTagInText(course.title)" />
-            </nuxt-link>
+            </NuxtLink>
         </div>
         <div class="tp-course-grid-content">
             <div class="tp-course-filter-tag mb-10">
@@ -23,9 +23,9 @@
                 </span>
             </div>
             <h4 class="tp-course-grid-title">
-                <nuxt-link :to="`/course-details/${course.id}`">
+                <NuxtLink :to="`/course-details/${course.id}`">
                     {{ removeTagInText(course.title) }}
-                </nuxt-link>
+                </NuxtLink>
             </h4>
             <div class="tp-course-teacher tp-course-grid-teacher">
                 <span>
