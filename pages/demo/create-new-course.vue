@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nuxt-layout name="layout-twelve">
+        <nuxt-layout name="create-course-layout">
 
             <!-- course-create-area area start -->
             <course-create-area />

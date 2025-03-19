@@ -28,24 +28,6 @@ import { studentDashboardMenuData } from "@/data/dashboard-menu-data";
           </ul>
         </nav>
       </div>
-      <div class="tp-user-banner d-flex align-items-center">
-        <div class="tp-user-banner-text">
-          <h4 class="tp-user-banner-title">Online Education</h4>
-          <div class="tp-user-banner-btn">
-            <NuxtLink
-              class="tp-btn-course"
-              href="/dashboard/instructor-my-course"
-              >View Course</NuxtLink
-            >
-          </div>
-        </div>
-        <div class="tp-user-banner-shape">
-          <img
-            src="/images/dashboard/icon/menu/menu-shape.png"
-            alt="user-banner"
-          />
-        </div>
-      </div>
     </div>
   </div>
 </template>

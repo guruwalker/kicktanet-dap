@@ -24,24 +24,10 @@
                     alt="profile"
                   />
                 </div>
-                <div class="tp-instructor-content">
-                  <h4 class="tp-instructor-title">Indigo Violet</h4>
-                  <div class="tp-instructor-rate d-flex align-items-center">
-                    <div class="tp-instructor-rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span>4.61</span>
-                    <span>(18 Ratings)</span>
-                  </div>
-                </div>
               </div>
               <div class="tp-instructor-course-btn">
                 <NuxtLink class="tp-btn-add-course" to="/create-new-course">
-                  <i class="fa-regular fa-plus"></i> Create a New Course
+                  <i class="fa-regular fa-plus"></i> New Upload
                 </NuxtLink>
               </div>
             </div>

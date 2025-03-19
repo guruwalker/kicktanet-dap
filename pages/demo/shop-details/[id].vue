@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nuxt-layout name="layout-ten">
+        <nuxt-layout name="shop-layout">
 
             <!-- shop details area start -->
             <shop-details-area v-if="bookItem" :product="bookItem" />

@@ -25,7 +25,7 @@ const profileData = [
 <template>
   <div>
     <!-- banner area start -->
-    <dashboard-banner :student-banner="true" class="pt-80" />
+    <dashboard-banner :student-banner="true"/>
     <!-- banner area end -->
 
     <dashboard-content-wrapper :student-sidebar="true">

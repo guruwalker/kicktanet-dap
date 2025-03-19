@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- header area start -->
-    <header-dashboard :inner="true" />
+    <!-- <header-dashboard :inner="true" /> -->
     <!-- header area end -->
 
     <main :class="dashboardLayout ? 'tp-dashboard-body-bg' : ''">
@@ -9,8 +9,8 @@
     </main>
 
     <!-- footer area start -->
-    <main-nav-footer :dashboard-footer="dashboardLayout" />
-
+    <!-- <main-nav-footer :dashboard-footer="dashboardLayout" /> -->
+    <main-nav-footer />
     <!-- footer area end -->
 
     <!-- back to top area start -->

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nuxt-layout name="layout-ten">
+        <nuxt-layout name="shop-layout">
 
             <!-- my account area start -->
              <my-account-area/>

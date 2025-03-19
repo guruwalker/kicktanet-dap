@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nuxt-layout name="layout-ten">
+        <nuxt-layout name="shop-layout">
 
             <!-- banner area start -->
              <cart-area/>
