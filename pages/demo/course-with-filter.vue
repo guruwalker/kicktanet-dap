@@ -23,5 +23,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Course With Filter - Acadia" });
+useSeoMeta({ title: "Course With Filter  | KICTANet" });
 </script>

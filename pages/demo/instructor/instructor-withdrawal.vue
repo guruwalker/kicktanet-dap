@@ -65,5 +65,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Withdrawal - Acadia" });
+useSeoMeta({ title: "Instructor Withdrawal  | KICTANet" });
 </script>

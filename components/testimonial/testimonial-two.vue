@@ -11,7 +11,7 @@
                                     <img class="tp-underline-shape-8 wow bounceIn" data-wow-duration="1.5s"
                                         data-wow-delay=".4s" src="/images/unlerline/testimonial-2-svg-1.svg" alt="">
                                 </span>
-                                About Acadia
+                                About KICTANet
                             </h3>
                         </div>
                     </div>

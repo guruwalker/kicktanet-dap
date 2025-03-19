@@ -50,5 +50,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Home Gym Coaching - Acadia" });
+useSeoMeta({ title: "Home Gym Coaching  | KICTANet" });
 </script>

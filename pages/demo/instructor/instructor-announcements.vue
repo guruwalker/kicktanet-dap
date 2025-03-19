@@ -26,7 +26,7 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Announcements - Acadia" });
+useSeoMeta({ title: "Instructor Announcements  | KICTANet" });
 
 const modalId  = ref("add-announcement");
 </script>

@@ -6,7 +6,7 @@
                     <div class="tp-course-details-wrapper">
                         <div class="tp-course-details-heading">
                             <h3 class="tp-course-details-title">Computer Science</h3>
-                            <p>Earn a bachelor's in computer science degree from Acadia University and develop the
+                            <p>Earn a bachelor's in computer science degree from KICTANet University and develop the
                                 software engineering, project management and programming skills to impact how technology
                                 will change and transform our world.</p>
                             <div class="tp-course-details-thumb">
@@ -110,7 +110,7 @@
                         <div class="tp-course-requrement-widget-contact mb-30">
                             <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>
                             <p>1810 Campus Way NEBothell,<br> WA 98011-8246</p>
-                            <a href="mailto:acadia@gmail.com"><span><svg-email-five /></span> acadia@gmail.com</a>
+                            <a href="mailto:info@kictanet.or.ke"><span><svg-email-five /></span> info@kictanet.or.ke</a>
                             <a href="tel:90762"><span><svg-phone /></span> +670 413 90 762</a>
                         </div>
                         <div class="tp-course-requrement-widget-faq">

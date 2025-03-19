@@ -97,7 +97,7 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Program - Acadia" });
+useSeoMeta({ title: "University Program  | KICTANet" });
 
 const undergraduatePrograms = [
     {

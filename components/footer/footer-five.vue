@@ -16,11 +16,11 @@
                                 <a href="tel:012345678">+670 413 90 762</a>
                             </div>
                             <div class="tp-footer-contact-mail shop">
-                                <a href="mailto:acadia@gmail.com">
+                                <a href="mailto:info@kictanet.or.ke">
                                     <span>
                                         <svg-email-one />
                                     </span>
-                                    acadia@gmail.com
+                                    info@kictanet.or.ke
                                 </a>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="tp-footer-copyright ">
-                            <span>© {{ new Date().getFullYear() }} <a href="#">Acadia</a>. All rights reserved.</span>
+                            <span>© {{ new Date().getFullYear() }} <a href="#">KICTANet</a>. All rights reserved.</span>
                         </div>
                     </div>
                     <div class="col-md-6">

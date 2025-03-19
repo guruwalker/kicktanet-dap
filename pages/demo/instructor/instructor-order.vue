@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Order - Acadia" });
+useSeoMeta({ title: "Instructor Order  | KICTANet" });
 </script>

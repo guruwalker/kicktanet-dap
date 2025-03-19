@@ -14,5 +14,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Shop Grid - Acadia" });
+useSeoMeta({ title: "Shop Grid  | KICTANet" });
 </script>

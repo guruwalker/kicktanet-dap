@@ -30,5 +30,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Dashboard - Acadia" });
+useSeoMeta({ title: "Instructor Dashboard  | KICTANet" });
 </script>

@@ -18,5 +18,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Blog Stories - Acadia" });
+useSeoMeta({ title: "Blog Stories  | KICTANet" });
 </script>

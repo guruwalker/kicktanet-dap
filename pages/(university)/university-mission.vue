@@ -22,7 +22,7 @@
                         <div class="col-lg-6">
                             <div class="tp-mission-warp pr-75">
                                 <div class="tp-mission-heading">
-                                    <h3 class="tp-mission-title">The Acadia <br> Mission</h3>
+                                    <h3 class="tp-mission-title">The KICTANet <br> Mission</h3>
                                 </div>
                                 <div class="tp-mission-improve-box">
                                     <span class="tp-mission-improve-dec">Improves retention</span>
@@ -34,7 +34,7 @@
                         <div class="col-lg-6">
                             <div class="tp-mission-wrapper">
                                 <div class="tp-mission-desc">
-                                    <p>Acadia University is a distinguished public university, values learning in the
+                                    <p>KICTANet University is a distinguished public university, values learning in the
                                         liberal arts and sciences as a cornerstone of individual development and a vital
                                         foundation.We will ensure that our students develop both the skills that a sound
                                         education provides and the competencies essential for success and leadership in
@@ -70,5 +70,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Mission - Acadia" });
+useSeoMeta({ title: "University Mission  | KICTANet" });
 </script>

@@ -28,7 +28,7 @@ import { leadership_data } from '@/data/team-data';
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor - Acadia" });
+useSeoMeta({ title: "Instructor  | KICTANet" });
 
 const getAnimationDelay = (index: number) => {
     return index > 9 ? '0.1s' : `.${(index + 1) * 0.1}s`;

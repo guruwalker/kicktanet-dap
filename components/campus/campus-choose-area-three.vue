@@ -57,7 +57,7 @@ const chooseData: ChooseData[] = [
         id: 2,
         title: "Mission",
         description:
-            "Acadia University transforms lives through <br> accessible, student-centered, quality <br> higher education.",
+            "KICTANet University transforms lives through <br> accessible, student-centered, quality <br> higher education.",
         imgSrc: "/images/our-mission/mission/mission-thumb-2.jpg",
         class: "main pt-100 mb-30 pl-125",
     },

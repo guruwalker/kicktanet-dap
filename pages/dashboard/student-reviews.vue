@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Student Reviews - Acadia" });
+useSeoMeta({ title: "Student Reviews  | KICTANet" });
 </script>

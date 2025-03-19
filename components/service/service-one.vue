@@ -53,7 +53,7 @@ const service_data = [
     {
         id: 1,
         icon: '/images/icon/service/service-icon-1.svg',
-        title: "Why study at <br/> Acadia?",
+        title: "Why study at <br/> KICTANet?",
         text: "We have students coming from different backgrounds,cultures, & nationalities as well.",
     },
     {

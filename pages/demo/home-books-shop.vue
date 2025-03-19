@@ -34,5 +34,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Home Books Shop - Acadia" });
+useSeoMeta({ title: "Home Books Shop  | KICTANet" });
 </script>

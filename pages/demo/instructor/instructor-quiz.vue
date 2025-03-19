@@ -26,5 +26,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Quiz - Acadia" });
+useSeoMeta({ title: "Instructor Quiz  | KICTANet" });
 </script>

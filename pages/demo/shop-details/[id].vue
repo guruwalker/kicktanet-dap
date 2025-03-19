@@ -25,7 +25,7 @@ import bookData from '@/data/book-shop-data';
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Shop Details - Acadia" });
+useSeoMeta({ title: "Shop Details  | KICTANet" });
 
 const route = useRoute();
 const id = route.params.id

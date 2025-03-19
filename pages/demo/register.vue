@@ -29,5 +29,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Register - Acadia" });
+useSeoMeta({ title: "Register  | KICTANet" });
 </script>

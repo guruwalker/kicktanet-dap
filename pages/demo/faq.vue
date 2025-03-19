@@ -18,5 +18,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "FAQ - Acadia" });
+useSeoMeta({ title: "FAQ  | KICTANet" });
 </script>

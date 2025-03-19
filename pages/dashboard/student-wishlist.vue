@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Student Wishlist - Acadia" });
+useSeoMeta({ title: "Student Wishlist  | KICTANet" });
 </script>

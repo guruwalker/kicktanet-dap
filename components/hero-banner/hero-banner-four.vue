@@ -8,7 +8,7 @@
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="tp-slider-5-content text-start">
-                                    <span>Welcome to Acadia</span>
+                                    <span>Welcome to KICTANet</span>
                                     <h2 class="tp-slider-5-title"> <i class="me-2" v-html="item.title.text_1"></i>
                                         <span>
                                           {{ item.title.text_2 }}
@@ -103,7 +103,7 @@ const slider_data = [
       title: {
          text_1: 'Build Education Website',
          text_2: 'Using',
-         text_3: 'Acadia'
+         text_3: 'KICTANet'
       }
    },
    {

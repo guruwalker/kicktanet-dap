@@ -84,7 +84,7 @@
 definePageMeta({
    layout: false,
 });
-useSeoMeta({ title: "University Tuition & Fees - Acadia" });
+useSeoMeta({ title: "University Tuition & Fees  | KICTANet" });
 
 
 

@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Course With Tab List - Acadia" });
+useSeoMeta({ title: "Course With Tab List  | KICTANet" });
 </script>

@@ -52,7 +52,7 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Profile - Acadia" });
+useSeoMeta({ title: "Instructor Profile  | KICTANet" });
 
 
 const profileData = [

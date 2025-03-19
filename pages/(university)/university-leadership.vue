@@ -34,5 +34,5 @@ import { leadership_data } from '@/data/team-data';
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Leadership - Acadia" });
+useSeoMeta({ title: "University Leadership  | KICTANet" });
 </script>

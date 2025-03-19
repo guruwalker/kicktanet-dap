@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor My Bundle - Acadia" });
+useSeoMeta({ title: "Instructor My Bundle  | KICTANet" });
 </script>

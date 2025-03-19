@@ -11,7 +11,7 @@
             <div class="tp-campus-student-heading text-center">
               <h3 class="tp-campus-student-title">Student Life</h3>
               <p>
-                Life at Acadia University is enriching, exciting, and energizing
+                Life at KICTANet University is enriching, exciting, and energizing
               </p>
             </div>
 

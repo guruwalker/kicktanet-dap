@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "Acadia - University & Online Course vue nuxt Template",
+      title: "KICTANet - University & Online Course vue nuxt Template",
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       script: [

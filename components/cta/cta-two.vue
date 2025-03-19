@@ -5,7 +5,7 @@
                 <div class="col-xxl-8 col-lg-10">
                     <div class="tp-cta-2-wrapper text-center">
                         <h2 class="tp-cta-2-title">Get Started With
-                            <span>Acadia
+                            <span>KICTANet
                                 <img class="tp-underline-shape-12 wow bounceIn" data-wow-duration="1.5s"
                                     data-wow-delay=".4s" src="/images/unlerline/cta-2-svg-1.svg" alt="">
                             </span>

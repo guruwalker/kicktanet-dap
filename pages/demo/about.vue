@@ -34,5 +34,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "About - Acadia" });
+useSeoMeta({ title: "About  | KICTANet" });
 </script>

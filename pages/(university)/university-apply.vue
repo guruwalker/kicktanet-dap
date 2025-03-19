@@ -40,5 +40,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Apply - Acadia" });
+useSeoMeta({ title: "University Apply  | KICTANet" });
 </script>

@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Student My Quiz - Acadia" });
+useSeoMeta({ title: "Student My Quiz  | KICTANet" });
 </script>

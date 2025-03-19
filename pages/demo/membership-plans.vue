@@ -55,7 +55,7 @@
 definePageMeta({
    layout: false,
 });
-useSeoMeta({ title: "Membership Plans - Acadia" });
+useSeoMeta({ title: "Membership Plans  | KICTANet" });
 
 
 const membershipData = [

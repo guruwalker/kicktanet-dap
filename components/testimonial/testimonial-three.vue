@@ -7,7 +7,7 @@
                         <div class="tp-team-6-heading">
                             <h5 class="tp-section-3-subtitle color-9">Testimonials</h5>
                             <h3 class="tp-section-3-title color-9">People Say About
-                                <span>Acadia
+                                <span>KICTANet
                                     <svg-shape-line-four/>
                                 </span>
                             </h3>
@@ -43,7 +43,7 @@
                                     </div>
                                 </swiper-slide>
                             </swiper>
-                            
+
                     </div>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export const testimonial_two_data = [
     position: "Lecturer, Oxford University",
     rating: 5,
     testimonial:
-      "I need to get a certification for English proficiency and Acadia is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
+      "I need to get a certification for English proficiency and KICTANet is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const testimonial_two_data = [
     position: "Lecturer, Oxford University",
     rating: 5,
     testimonial:
-      "I need to get a certification for English proficiency and Acadia is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
+      "I need to get a certification for English proficiency and KICTANet is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const testimonial_two_data = [
     position: "Lecturer, Oxford University",
     rating: 5,
     testimonial:
-      "I need to get a certification for English proficiency and Acadia is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
+      "I need to get a certification for English proficiency and KICTANet is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const testimonial_two_data = [
     position: "Lecturer, Oxford University",
     rating: 5,
     testimonial:
-      "I need to get a certification for English proficiency and Acadia is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
+      "I need to get a certification for English proficiency and KICTANet is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ export const testimonial_two_data = [
     position: "Lecturer, Oxford University",
     rating: 5,
     testimonial:
-      "I need to get a certification for English proficiency and Acadia is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
+      "I need to get a certification for English proficiency and KICTANet is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ export const testimonial_two_data = [
     position: "Lecturer, Oxford University",
     rating: 5,
     testimonial:
-      "I need to get a certification for English proficiency and Acadia is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
+      "I need to get a certification for English proficiency and KICTANet is my best choice. Their tutors are smart and professional when dealing with students. I wanted to place a review since! Thanks and 5 stars!",
   },
 ];
 

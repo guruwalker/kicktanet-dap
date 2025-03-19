@@ -19,7 +19,7 @@ import { all_events } from '@/data/event-data';
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Event Details - Acadia" });
+useSeoMeta({ title: "Event Details  | KICTANet" });
 
 const route = useRoute();
 const id = route.params.id

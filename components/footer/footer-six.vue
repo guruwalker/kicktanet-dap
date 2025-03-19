@@ -27,7 +27,7 @@
                                     <span>
                                         <svg-email-one />
                                     </span>
-                                    acadia@gmail.com
+                                    info@kictanet.or.ke
                                 </a>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                         <div class="tp-footer-copyright text-center">
                             <span>
                                 © {{ new Date().getFullYear() }}
-                                <a href="#">Acadia</a>. All rights reserved.
+                                <a href="#">KICTANet</a>. All rights reserved.
                             </span>
                         </div>
                     </div>

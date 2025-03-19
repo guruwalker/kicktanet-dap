@@ -21,16 +21,16 @@
                         <div class="col-lg-6">
                             <div class="tp-admission-overview-heading wow fadeInUp" data-wow-delay=".3s">
                                 <h3 class="tp-admission-overview-title">
-                                    Afford Acadia
+                                    Afford KICTANet
                                 </h3>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="tp-admission-overview-wrapper wow fadeInUp" data-wow-delay=".5s">
-                                <p>At Acadia University, we prepare you to launch your career by providing a supportive,
+                                <p>At KICTANet University, we prepare you to launch your career by providing a supportive,
                                     creative, and professional environment from which to learn practical skills, build a
                                     network of industry contacts.</p>
-                                <p>Acadia is affordable for all admitted students. Financial aid covers all demonstrated
+                                <p>KICTANet is affordable for all admitted students. Financial aid covers all demonstrated
                                     need for all students, regardless of citizenship or citizenship status. Families
                                     making under <span>$85,000</span> a year pay nothing for their student's education,
                                     and families making between <span>$85,000-$150,000 pay 0-10% of their
@@ -110,5 +110,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Admission Overview - Acadia" });
+useSeoMeta({ title: "University Admission Overview  | KICTANet" });
 </script>

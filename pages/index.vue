@@ -4,7 +4,7 @@ definePageMeta({
     layout: 'web'
 })
 
-useSeoMeta({ title: "Acadia - University & Online Course vue nuxt Template" });
+useSeoMeta({ title: "KICTANet - University & Online Course vue nuxt Template" });
 </script>
 
 <template>

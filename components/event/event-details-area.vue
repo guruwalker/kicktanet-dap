@@ -6,7 +6,7 @@
                     <div class="tp-event-details-wrapper">
                         <div class="tp-event-details-about">
                             <h3 class="tp-event-details-title">About the event</h3>
-                            <p>The Creating Futures Through Technology Conference – Acadia Tech Center is sponsored
+                            <p>The Creating Futures Through Technology Conference – KICTANet Tech Center is sponsored
                                 jointly by the Mississippi Community College Board and the Mississippi Universities
                                 Board with a goal of promoting collaboration as well as transforming teaching and
                                 learning on college campuses.

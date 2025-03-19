@@ -13,7 +13,7 @@
                         <div class="col-lg-12">
                             <div class="tp-campus-choose-wrapper text-center">
                                 <div class="tp-campus-choose-btn">
-                                    <p>History Acadia</p>
+                                    <p>History KICTANet</p>
                                     <a href="#down">
                                         <span><svg-arrow-down-five /></span>
                                     </a>
@@ -82,7 +82,7 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University History - Acadia" });
+useSeoMeta({ title: "University History  | KICTANet" });
 
 
 // history data

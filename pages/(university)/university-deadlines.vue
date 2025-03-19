@@ -18,5 +18,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Deadlines - Acadia" });
+useSeoMeta({ title: "University Deadlines  | KICTANet" });
 </script>

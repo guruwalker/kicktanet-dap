@@ -15,7 +15,7 @@
                         <div class="tp-campus-choose-content mb-10 wow fadeInUp" data-wow-delay=".5s">
                             <h2 class="tp-campus-choose-title">Our goal is to develop and meet the needs <br> of each
                                 child so that he or she becomes a <br> well-rounded tomorrow individual.</h2>
-                            <NuxtLink class="tp-btn" href="/university-about">Why Choose Acadia </NuxtLink>
+                            <NuxtLink class="tp-btn" href="/university-about">Why Choose KICTANet </NuxtLink>
                         </div>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ import { footerLinks } from "@/data/footer-links";
                 </div>
                 <div class="tp-footer-widget-content">
                   <p>
-                    Acadia education theme, built specifically for the education
+                    KICTANet education theme, built specifically for the education
                     centers which is teaching and involve learners.
                   </p>
                 </div>
@@ -65,11 +65,11 @@ import { footerLinks } from "@/data/footer-links";
                   <a href="tel:012345678">+670 413 90 762</a>
                 </div>
                 <div class="tp-footer-contact-mail mb-20">
-                  <a href="mailto:acadia@gmail.com">
+                  <a href="mailto:info@kictanet.or.ke">
                     <span>
                       <svg-email-one />
                     </span>
-                    acadia@gmail.com</a
+                    info@kictanet.or.ke</a
                   >
                 </div>
                 <div class="tp-footer-app">
@@ -98,7 +98,7 @@ import { footerLinks } from "@/data/footer-links";
             <div class="col-lg-6 col-md-5">
               <div class="tp-footer-copyright text-start text-md-center">
                 <span
-                  >© {{ new Date().getFullYear() }} <a href="#">Acadia</a>. All
+                  >© {{ new Date().getFullYear() }} <a href="#">KICTANet</a>. All
                   rights reserved.</span
                 >
               </div>

@@ -50,5 +50,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Home Online Academy - Acadia" });
+useSeoMeta({ title: "Home Online Academy  | KICTANet" });
 </script>

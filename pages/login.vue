@@ -1,3 +1,10 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: false,
+});
+useSeoMeta({ title: "Login  | KICTANet" });
+</script>
+
 <template>
   <div>
     <!-- login area start -->
@@ -12,10 +19,6 @@
           <div class="tp-login-from-box">
             <div class="tp-login-from-heading text-center">
               <h4 class="tp-login-from-title">Sign in</h4>
-              <p>
-                Dont have an account?
-                <NuxtLink to="/register">Create Now</NuxtLink>
-              </p>
             </div>
             <!-- form start -->
             <form-login />
@@ -27,10 +30,3 @@
     <!-- login area end -->
   </div>
 </template>
-
-<script setup lang="ts">
-definePageMeta({
-  layout: false,
-});
-useSeoMeta({ title: "Login - Acadia" });
-</script>

@@ -14,5 +14,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "My Account - Acadia" });
+useSeoMeta({ title: "My Account  | KICTANet" });
 </script>

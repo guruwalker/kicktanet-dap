@@ -15,7 +15,7 @@
                             <div class="tp-privacy-box">
                                 <div class="tp-privacy-content">
                                     <h4 class="tp-privacy-content-title">Introduction</h4>
-                                    <p>At Acadia, we value your privacy and are committed to protecting your personal
+                                    <p>At KICTANet, we value your privacy and are committed to protecting your personal
                                         information. This Privacy Policy is designed to help you understand how we
                                         collect, use, disclose, and safeguard your data. By using our website or
                                         services, you consent to the practices described in this policy.</p>
@@ -76,7 +76,7 @@
                                 <div class="tp-privacy-content">
                                     <h4 class="tp-privacy-content-title">Contact Us</h4>
                                     <p>If you have any questions or concerns regarding this Privacy Policy, please
-                                        contact us at support@acadia.net</p>
+                                        contact us at info@kictanet.or.ke</p>
                                 </div>
                                 <div class="tp-privacy-content-bottom mt-30">
                                     <p>Last updated on October 15, 2023. ThemePure reserves the right to change or
@@ -97,5 +97,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Privacy Policy - Acadia" });
+useSeoMeta({ title: "Privacy Policy  | KICTANet" });
 </script>

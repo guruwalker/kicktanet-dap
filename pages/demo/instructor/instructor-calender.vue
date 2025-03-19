@@ -24,5 +24,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Calender - Acadia" });
+useSeoMeta({ title: "Instructor Calender  | KICTANet" });
 </script>

@@ -12,5 +12,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Course Lesson - Acadia" });
+useSeoMeta({ title: "Course Lesson  | KICTANet" });
 </script>

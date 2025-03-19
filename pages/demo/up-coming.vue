@@ -26,5 +26,5 @@
 </template>
 
 <script setup lang="ts">
-useSeoMeta({ title: "Up Coming - Acadia" });
+useSeoMeta({ title: "Up Coming  | KICTANet" });
 </script>

@@ -96,5 +96,5 @@ import { online_courses_data } from "@/data/course-data";
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "My Profile - Acadia" });
+useSeoMeta({ title: "My Profile  | KICTANet" });
 </script>

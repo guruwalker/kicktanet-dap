@@ -18,5 +18,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Event - Acadia" });
+useSeoMeta({ title: "Event  | KICTANet" });
 </script>

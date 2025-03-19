@@ -36,5 +36,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Schedule - Acadia" });
+useSeoMeta({ title: "University Schedule  | KICTANet" });
 </script>

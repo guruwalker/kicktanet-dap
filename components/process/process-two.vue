@@ -31,7 +31,7 @@ const applicationProcess = ref([
     {
         step: 1,
         title: "Complete Application Form",
-        description: `The University of Acadia uses Apply web for the processing of graduate applications. <br> Proceed to the link below to create an Apply web account, submit an application review a <br> submitted application, and access post-submission functionality.`,
+        description: `The University of KICTANet uses Apply web for the processing of graduate applications. <br> Proceed to the link below to create an Apply web account, submit an application review a <br> submitted application, and access post-submission functionality.`,
         linkText: "Application Form",
         linkHref: "/university-application-form",
     },
@@ -43,7 +43,7 @@ const applicationProcess = ref([
     {
         step: 3,
         title: "Application Review",
-        description: `QRC will review your application to confirm you meet our requirements. If so, you will 
+        description: `QRC will review your application to confirm you meet our requirements. If so, you will
       then be asked to complete an interview as part of the review process.`,
     },
     {
@@ -56,7 +56,7 @@ const applicationProcess = ref([
     {
         step: 5,
         title: "Payment of Fees",
-        description: `At the end of the application, you will be required to pay the registration fee and the 
+        description: `At the end of the application, you will be required to pay the registration fee and the
       testing fee before continuing to the next step.`,
     },
 ]);

@@ -29,5 +29,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Request Info - Acadia" });
+useSeoMeta({ title: "University Request Info  | KICTANet" });
 </script>

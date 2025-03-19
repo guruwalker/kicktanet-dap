@@ -15,7 +15,7 @@
                         <div class="tp-about-campus-heading">
                             <h4 class="tp-about-campus-title">Campuses</h4>
                             <p>
-                                Acadia University has five campuses, which are located in the
+                                KICTANet University has five campuses, which are located in the
                                 most exclusive areas of Moscow, Saint Petersburg and Tashkent.
                             </p>
                         </div>

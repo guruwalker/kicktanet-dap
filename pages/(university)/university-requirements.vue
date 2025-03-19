@@ -21,7 +21,7 @@
                               to the student's individual needs. Students are responsible for reading course
                               descriptions when choosing classes for their self-designed major. If they choose a class
                               that requires permissionbecause of prerequisites and/or is a course at another college
-                              within Acadia University</p>
+                              within KICTANet University</p>
                            <p>any of the graduate programs, they must seek permission using the proper procedures.
                               Requesting permission is not a guarantee of being granted permission</p>
                         </div>
@@ -78,7 +78,7 @@
                         <div class="tp-course-requrement-widget-contact mb-30">
                            <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>
                            <p>1810 Campus Way NEBothell,<br> WA 98011-8246</p>
-                           <a href="mailto:acadia@gmail.com"><span><svg-email-one /></span> acadia@gmail.com</a>
+                           <a href="mailto:info@kictanet.or.ke"><span><svg-email-one /></span> info@kictanet.or.ke</a>
                            <a href="tel:90762"><span><svg-phone /></span> +670 413 90 762</a>
                         </div>
                         <div class="tp-course-requrement-widget-faq">
@@ -103,5 +103,5 @@
 definePageMeta({
    layout: false,
 });
-useSeoMeta({ title: "University Requirements - Acadia" });
+useSeoMeta({ title: "University Requirements  | KICTANet" });
 </script>

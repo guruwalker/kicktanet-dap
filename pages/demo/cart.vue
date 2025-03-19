@@ -14,5 +14,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Cart - Acadia" });
+useSeoMeta({ title: "Cart  | KICTANet" });
 </script>

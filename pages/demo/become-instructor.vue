@@ -101,7 +101,7 @@
 definePageMeta({
    layout: false,
 });
-useSeoMeta({ title: "Become Instructor - Acadia" });
+useSeoMeta({ title: "Become Instructor  | KICTANet" });
 
 const tabItems = [
    {

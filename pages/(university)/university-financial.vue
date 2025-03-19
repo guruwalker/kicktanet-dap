@@ -52,7 +52,7 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "University Financial Aid - Acadia" });
+useSeoMeta({ title: "University Financial Aid  | KICTANet" });
 
 
 // Financial Aid Data
@@ -62,14 +62,14 @@ const financialAidData = [
         imgSrc: "/images/course/details/financial-thumb-1.jpg",
         title: "Scholarships",
         description:
-            "Acadia’s commitment to student success, important scholarship, and creative activity sets it apart from other colleges.",
+            "KICTANet’s commitment to student success, important scholarship, and creative activity sets it apart from other colleges.",
     },
     {
         id: 2,
         imgSrc: "/images/course/details/financial-thumb-2.jpg",
         title: "Grants",
         description:
-            "Your FAFSA will determine what grants you qualify for—both from The Acadia University & from federal and state government.",
+            "Your FAFSA will determine what grants you qualify for—both from The KICTANet University & from federal and state government.",
     },
     {
         id: 3,

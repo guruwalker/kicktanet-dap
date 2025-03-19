@@ -50,5 +50,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Home High School - Acadia" });
+useSeoMeta({ title: "Home High School  | KICTANet" });
 </script>

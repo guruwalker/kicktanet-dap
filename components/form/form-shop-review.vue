@@ -29,7 +29,7 @@
             </div>
             <div class="tp-product-details-review-input-box">
                 <div class="tp-product-details-review-input">
-                    <input name="email" id="email" type="email" placeholder="acadia@mail.com" />
+                    <input name="email" id="email" type="email" placeholder="info@kictanet.or.ke" />
                 </div>
                 <div class="tp-product-details-review-input-title">
                     <label for="email">Your Email</label>

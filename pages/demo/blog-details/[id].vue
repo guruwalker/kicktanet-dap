@@ -28,7 +28,7 @@ import all_blogs from '@/data/blog-data';
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Blog Details - Acadia" });
+useSeoMeta({ title: "Blog Details  | KICTANet" });
 
 const route = useRoute();
 const id = route.params.id

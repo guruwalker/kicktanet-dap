@@ -40,7 +40,7 @@
                         <h3 class="offcanvas-title sm">Information</h3>
                         <ul>
                             <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
-                            <li><a href="mailto:hello@acadia.com">hello@acadia.com</a></li>
+                            <li><a href="mailto:info@kictanet.or.ke">info@kictanet.or.ke</a></li>
                             <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
                         </ul>
                     </div>

@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Student Setting Profile - Acadia" });
+useSeoMeta({ title: "Student Setting Profile  | KICTANet" });
 </script>

@@ -27,7 +27,7 @@ import { all_courses } from '@/data/course-data';
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Course Details 2 - Acadia" });
+useSeoMeta({ title: "Course Details 2  | KICTANet" });
 
 const route = useRoute();
 const id = route.params.id;

@@ -32,5 +32,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Not Found - Acadia" });
+useSeoMeta({ title: "Not Found  | KICTANet" });
 </script>

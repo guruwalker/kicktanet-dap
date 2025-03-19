@@ -5,7 +5,7 @@
                 <div class="col-lg-9">
                     <div class="tp-hero-4-wrapper">
                         <span class="tp-hero-subtitle wow fadeInUp" data-wow-delay=".3s">
-                            Welcome to Acadia School!
+                            Welcome to KICTANet School!
                         </span>
                         <h2 class="tp-hero-4-title p-relative wow fadeInUp" data-wow-delay=".5s">
                             School of endless possibilities.

@@ -42,5 +42,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Home Kids Education - Acadia" });
+useSeoMeta({ title: "Home Kids Education  | KICTANet" });
 </script>

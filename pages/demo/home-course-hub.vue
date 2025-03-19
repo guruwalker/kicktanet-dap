@@ -42,5 +42,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Home Course Hub - Acadia" });
+useSeoMeta({ title: "Home Course Hub  | KICTANet" });
 </script>

@@ -26,5 +26,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Assignment - Acadia" });
+useSeoMeta({ title: "Instructor Assignment  | KICTANet" });
 </script>

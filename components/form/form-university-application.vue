@@ -166,7 +166,7 @@
                 <div class="col-xl-12">
                     <div class="tp-contact-input-remeber schedule">
                         <input id="remeber" type="checkbox">
-                        <label for="remeber">By submitting this form, you agree to the Acadia University privacy notice.</label>
+                        <label for="remeber">By submitting this form, you agree to the KICTANet University privacy notice.</label>
                     </div>
                 </div>
                 <div class="tp-schedule-btn">

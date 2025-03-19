@@ -18,5 +18,5 @@
 definePageMeta({
   layout: false,
 });
-useSeoMeta({ title: "Student Dashboard - Acadia" });
+useSeoMeta({ title: "Student Dashboard  | KICTANet" });
 </script>

@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Instructor Analytics Overview - Acadia" });
+useSeoMeta({ title: "Instructor Analytics Overview  | KICTANet" });
 </script>

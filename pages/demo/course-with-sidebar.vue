@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Course With Sidebar - Acadia" });
+useSeoMeta({ title: "Course With Sidebar  | KICTANet" });
 </script>

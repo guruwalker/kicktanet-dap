@@ -22,5 +22,5 @@
 definePageMeta({
     layout: false,
 });
-useSeoMeta({ title: "Student Enroll Course - Acadia" });
+useSeoMeta({ title: "Student Enroll Course  | KICTANet" });
 </script>

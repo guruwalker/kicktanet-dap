@@ -10,7 +10,7 @@
                             </span>
                             <h2 class="tp-hero-6-title wow fadeInUp" data-wow-delay=".5s">Get <span>2500+
                                 <img class="wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="/images/hero/home-6/title-vector.png" alt=""></span>
-                                <br>Best Online Courses <br> From Acadia
+                                <br>Best Online Courses <br> From KICTANet
                             </h2>
                             <p class="wow fadeInUp" data-wow-delay=".7s">
                                 Acquire global knowledge and build your professional skills
