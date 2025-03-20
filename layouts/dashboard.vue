@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const isSidebarOpen = ref(false); // false by default on mobile
+const isSidebarOpen = ref(true); // false by default on mobile
 const isSearchOpen = ref(false);
 const isMobile = ref(window.innerWidth < 768);
 

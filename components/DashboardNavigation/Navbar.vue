@@ -30,12 +30,12 @@ const toggleTheme = () => {
     class="bg-background border-b dark:border-stone-800 px-6 py-4 flex flex-nowrap items-center justify-between w-full box-border overflow-x-hidden relative"
   >
     <!-- Toggle button always visible -->
-    <UButton
+    <!-- <UButton
       class="z-50"
       variant="ghost"
       icon="i-lucide-menu"
       @click="emit('toggleSidebar')"
-    />
+    /> -->
 
     <!-- Filler element if needed -->
     <div class="flex-1"></div>
