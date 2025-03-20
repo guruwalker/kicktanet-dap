@@ -8,6 +8,7 @@ useHead({
 
 <template>
   <div>
+    <!-- Title -->
     <SectionsAboutSection1 />
     <SectionsAboutSection2 />
     <SectionsAboutSection3 />

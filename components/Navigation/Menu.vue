@@ -55,35 +55,45 @@ const isActive = (path: string) => {
       <nav class="wsmenu clearfix">
         <ul class="wsmenu-list nav-theme">
           <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/" class="h-link" :class="isActive('/')">
-              Home
-            </NuxtLink>
-          </li>
-          <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/" class="h-link" :class="isActive('/')">
+            <NuxtLink to="/about" class="h-link" :class="isActive('/')">
               About
             </NuxtLink>
           </li>
           <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/" class="h-link" :class="isActive('/')">
+            <NuxtLink to="/counties" class="h-link" :class="isActive('/')">
               Counties
             </NuxtLink>
           </li>
           <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/" class="h-link" :class="isActive('/')">
+            <NuxtLink to="/news-and-press" class="h-link" :class="isActive('/')">
               News & Press
             </NuxtLink>
           </li>
           <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/" class="h-link" :class="isActive('/')">
+            <NuxtLink to="/visits" class="h-link" :class="isActive('/')">
               Visits
+            </NuxtLink>
+          </li>
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/team" class="h-link" :class="isActive('/')">
+              Team
+            </NuxtLink>
+          </li>
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/testimonials" class="h-link" :class="isActive('/')">
+              Testimonials
+            </NuxtLink>
+          </li>
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/partners" class="h-link" :class="isActive('/')">
+              Partners
             </NuxtLink>
           </li>
 
           <!-- SIGN UP BUTTON -->
           <li class="nl-simple" aria-haspopup="true">
             <NuxtLink
-              to="/signup-2"
+              to="/login"
               class="btn r-04 btn--theme hover--tra-white last-link"
               >Sign in</NuxtLink
             >

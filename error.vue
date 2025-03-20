@@ -6,10 +6,10 @@
         <div class="col-md-9 col-lg-8">
           <div class="page-404-txt text-center">
             <!-- Image -->
-            <div class="rel page-404-img">
+            <div class="rel page-404-img d-flex justify-center">
               <img
                 class="img-fluid"
-                src="/assets/images/error-404.png"
+                src="/assets/images/kicktanet-logo.png"
                 alt="error-404-img"
               />
             </div>

@@ -28,14 +28,17 @@
             <!-- Links -->
             <ul class="foo-links clearfix">
               <li>
-                <p><NuxtLink to="/">About the Project</NuxtLink></p>
+                <p><NuxtLink to="/about">About the Project</NuxtLink></p>
               </li>
               <li>
-                <p><NuxtLink to="/">About KICKTANet</NuxtLink></p>
+                <p>
+                  <NuxtLink href="https://www.kictanet.or.ke/" target="_blank"
+                    >About KICKTANet</NuxtLink
+                  >
+                </p>
               </li>
-
               <li>
-                <p><NuxtLink to="/">Contact us</NuxtLink></p>
+                <p><NuxtLink to="/contact-us">Contact us</NuxtLink></p>
               </li>
             </ul>
           </div>
@@ -81,6 +84,12 @@
               <li>
                 <p><NuxtLink to="/privacy">Downloads</NuxtLink></p>
               </li>
+              <li>
+                <p><NuxtLink to="/team">Team</NuxtLink></p>
+              </li>
+              <li>
+                <p><NuxtLink to="/testimonials">Testimonials</NuxtLink></p>
+              </li>
             </ul>
           </div>
         </div>
@@ -100,22 +109,24 @@
             <!-- Social Links -->
             <ul class="footer-socials ico-25 text-center clearfix">
               <li>
-                <a target="_blank" href="#"
+                <a target="_blank" href="https://www.facebook.com/KICTANet/"
                   ><span class="flaticon-facebook"></span
                 ></a>
               </li>
               <li>
-                <a target="_blank" href="#"
+                <a target="_blank" href="https://twitter.com/kictanet"
                   ><span class="flaticon-twitter"></span
                 ></a>
               </li>
               <li>
-                <a target="_blank" href="#"
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/kictanet/"
                   ><span class="flaticon-linkedin-logo"></span
                 ></a>
               </li>
               <li>
-                <a target="_blank" href="#"
+                <a target="_blank" href="https://www.instagram.com/kictanet/"
                   ><span class="flaticon-instagram"></span
                 ></a>
               </li>
