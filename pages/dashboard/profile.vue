@@ -6,6 +6,10 @@ useSeoMeta({
   ogDescription: "Manage your account details and preferences.",
 });
 
+definePageMeta({
+  layout: "dashboard",
+});
+
 const { profileFormState, updateUser, getProfile } = useProfile();
 
 const response = await getProfile();

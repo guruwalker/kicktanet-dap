@@ -20,12 +20,12 @@ const sidebarItems = [
       { label: "Documents", icon: "i-lucide-file", to: "/dashboard/documents" },
     ],
   },
-  {
-    section: "You",
-    items: [
-      { label: "Your Profile", icon: "i-lucide-user-circle", to: "/profile" },
-    ],
-  },
+  // {
+  //   section: "You",
+  //   items: [
+  //     { label: "Your Profile", icon: "i-lucide-user-circle", to: "/dashboard/profile" },
+  //   ],
+  // },
 ];
 </script>
 
@@ -78,3 +78,43 @@ const sidebarItems = [
     </div>
   </aside>
 </template>
+
+
+<style scoped>
+
+.layout-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Main wrapper for navbar and page content */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Page content styles */
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Mobile Sidebar Overlay styles */
+.mobile-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  height: 100vh;
+  z-index: 300;
+  /* background-color: rgba(31, 41, 55, 0.9); */
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+</style>

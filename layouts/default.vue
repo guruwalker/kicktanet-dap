@@ -11,17 +11,17 @@
   </div>
 </template>
 <style scoped>
-/* Make the page a flex container */
 .page {
   display: flex;
-  height: 100vh; /* Full height */
+  min-height: 100vh; /* Use min-height instead of height */
+  overflow-x: hidden; /* Prevents horizontal scroll issues */
 }
 
-/* Main content expands fully when sidebar is collapsed */
+/* Ensures the main content can expand */
 .main-content {
   flex-grow: 1;
-  transition: margin-left 0.3s ease-in-out;
+  min-height: 100vh; /* Allows content to determine height */
+  overflow-y: auto; /* Enables scrolling inside main content */
 }
-.sidebar.collapsed + .main-content {
-}
+
 </style>

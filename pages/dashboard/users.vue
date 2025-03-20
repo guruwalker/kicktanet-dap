@@ -30,7 +30,7 @@ const useListView = ref(true);
 
 // Define table columns
 const columns = ref([
-  { key: "id", label: "User ID" },
+  // { key: "id", label: "User ID" },
   { key: "full_name", label: "Name" },
   { key: "username", label: "Username" },
   { key: "email", label: "Email" },
