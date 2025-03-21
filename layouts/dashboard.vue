@@ -47,6 +47,7 @@ const mainWrapperStyle = computed(() => {
   <div class="layout-wrapper">
     <!-- Desktop Sidebar -->
     <DashboardNavigationSidebar
+      style="z-index: 500"
       v-if="!isMobile"
       :isOpen="isSidebarOpen"
       @toggle="toggleSidebar"
@@ -54,7 +55,11 @@ const mainWrapperStyle = computed(() => {
 
     <!-- Mobile Sidebar Overlay -->
     <div v-if="isMobile && isSidebarOpen" class="mobile-sidebar-overlay">
-      <DashboardNavigationSidebar :isOpen="true" @toggle="toggleSidebar" />
+      <DashboardNavigationSidebar
+        :isOpen="true"
+        @toggle="toggleSidebar"
+        style="z-index: 500"
+      />
     </div>
 
     <div class="main-wrapper" :style="mainWrapperStyle">
@@ -72,7 +77,6 @@ const mainWrapperStyle = computed(() => {
 </template>
 
 <style scoped>
-
 .layout-wrapper {
   display: flex;
   width: 100%;

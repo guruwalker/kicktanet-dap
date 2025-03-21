@@ -7,8 +7,9 @@ export function useStorage() {
   const config = useRuntimeConfig();
 
   // Get the Supabase URL and ANON key from the public runtime config
-  const supabaseUrl = config.public.supabaseUrl;
-  const supabaseAnonKey = config.public.supabaseServiceRoleKey;
+  const supabaseUrl = "https://uujbxewichsqfnwasuxe.supabase.co";
+  const supabaseAnonKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY";
 
   if (!supabaseUrl || !supabaseAnonKey) {
     throw new Error("Supabase URL or ANON key is missing from runtime config");
@@ -72,7 +73,9 @@ export function useStorage() {
 
   const deleteFile = async (fileName: string) => {
     try {
-      const { error } = await supabase.storage.from(bucketName).remove([fileName]);
+      const { error } = await supabase.storage
+        .from(bucketName)
+        .remove([fileName]);
       if (error) throw error;
 
       toast.add({

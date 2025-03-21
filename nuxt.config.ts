@@ -1,6 +1,5 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
-
   ssr: false,
 
   alias: {
@@ -63,21 +62,21 @@ export default defineNuxtConfig({
 
   supabase: {
     redirect: false,
-    url: process.env.NUXT_SUPABASE_URL,
-    key: process.env.NUXT_SUPABASE_ANON_KEY,
-    serviceKey: process.env.NUXT_SUPABASE_SERVICE_ROLE_KEY,
+    url: "https://uujbxewichsqfnwasuxe.supabase.co",
+    key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY",
+    serviceKey:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjQ5MTgwOCwiZXhwIjoyMDU4MDY3ODA4fQ.gaeKsVZN_qiMdfaVjBPJHBryzGhoZ9MzpAv3hQ22m9Y",
   },
 
   runtimeConfig: {
     public: {
       APP_URL: process.env.APP_URL,
-      supabaseUrl: process.env.NUXT_SUPABASE_URL,
-      supabaseAnonKey: process.env.NUXT_SUPABASE_ANON_KEY,
-      supabaseServiceRoleKey: process.env.NUXT_SUPABASE_SERVICE_ROLE_KEY,
-      authBaseURL: process.env.NUXT_AUTH_BASE_URL,
-      prodServer: process.env.NUXT_PROD_SERVER_URL,
-      apiBaseURL: process.env.NUXT_API_BASE_URL,
-      port: process.env.NUXT_PORT,
+      supabaseUrl: "https://uujbxewichsqfnwasuxe.supabase.co",
+      supabaseAnonKey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY",
+      supabaseServiceRoleKey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjQ5MTgwOCwiZXhwIjoyMDU4MDY3ODA4fQ.gaeKsVZN_qiMdfaVjBPJHBryzGhoZ9MzpAv3hQ22m9Y",
+      port: 4000,
     },
   },
 
@@ -88,3 +87,5 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2024-03-08",
 });
+
+

@@ -76,44 +76,14 @@ const handleDelete = async () => {
   <div>
     <div class="flex justify-between items-center mb-4">
       <h1 class="text-xl font-semibold">Users</h1>
-      <UButton color="primary" @click="isDrawerOpen = true"> Add User </UButton>
     </div>
 
     <!-- View Toggle -->
-    <div class="flex justify-end mb-4 space-x-2">
-      <UButton
-        :color="useListView ? 'gray' : 'primary'"
-        @click="useListView = false"
-      >
-        <Icon name="lucide-grid" class="w-5 h-5 mr-2" /> Grid
-      </UButton>
 
-      <UButton
-        :color="useListView ? 'primary' : 'gray'"
-        @click="useListView = true"
-      >
-        <Icon name="lucide-list" class="w-5 h-5 mr-2" /> List
-      </UButton>
-    </div>
 
     <!-- List View -->
     <UCard v-if="useListView">
       <SharedDatagrid :columns="columns" :rows="users">
-        <template #actions="{ row }">
-          <div class="flex space-x-2">
-            <UButton
-              icon="i-heroicons-pencil"
-              size="xs"
-              @click="openEditDrawer(row.id)"
-            />
-            <UButton
-              icon="i-heroicons-trash"
-              color="red"
-              size="xs"
-              @click="confirmDelete(row.id)"
-            />
-          </div>
-        </template>
       </SharedDatagrid>
     </UCard>
 
