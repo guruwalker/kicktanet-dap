@@ -2,6 +2,9 @@ import { useToast } from "#imports";
 
 export function useAuthentication() {
   const toast = useToast();
+
+  const router = useRouter()
+
   const isLoading = useState<boolean>("is-loading", () => false);
   const user = useState("user", () => null); // Store authenticated user
 
@@ -137,7 +140,7 @@ export function useAuthentication() {
         color: "green",
       });
 
-      navigateTo("/dashboard");
+      router.push('dashboard')
     } catch (error) {
       toast.add({
         title: "Error",
@@ -179,7 +182,7 @@ export function useAuthentication() {
         color: "green",
       });
 
-      navigateTo("/dashboard");
+      router.push('dashboard')
     } catch (error) {
       toast.add({
         title: "Error",
@@ -233,7 +236,7 @@ export function useAuthentication() {
         await resetRegisterFormState();
       }
 
-      navigateTo("/dashboard");
+      router.push('dashboard')
     } catch (error) {
       console.error("Error in register:", error);
       toast.add({
