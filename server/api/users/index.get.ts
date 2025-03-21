@@ -6,8 +6,8 @@ export default defineEventHandler(async (event) => {
 
   // Define Supabase Client with the Service Role Key
   const supabase = createClient(
-    process.env.NUXT_SUPABASE_URL!,
-    process.env.NUXT_SUPABASE_SERVICE_ROLE_KEY! // Service Role Key
+    "https://uujbxewichsqfnwasuxe.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY" // Service Role Key
   );
 
   if (!supabase) {

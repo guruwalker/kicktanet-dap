@@ -3,7 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 export default defineEventHandler(async (event) => {
   // Initialize Supabase Client using Service Role Key
   const supabase = createClient(
-    process.env.NUXT_SUPABASE_URL!,
+    "https://uujbxewichsqfnwasuxe.supabase.co",
     process.env.NUXT_SUPABASE_ANON_KEY! // Service Role Key (Sensitive)
   );
 
