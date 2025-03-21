@@ -3,12 +3,8 @@ import { ref, computed } from "vue";
 import TestimonialsData from "~~/components/Data/Testimonials";
 
 useSeoMeta({
-  title: "What Our Members Say | MitteRx Testimonials",
-  ogTitle: "What Our Members Say | MitteRx Testimonials",
-  description:
-    "Discover how MitteRx has transformed organization experiences for owners, trainers, and members alike.",
-  ogDescription:
-    "Discover how MitteRx has transformed organization experiences for owners, trainers, and members alike.",
+  title: "Testimonials | KICKTANET DIP",
+  ogTitle: "Testimonials | KICKTANET DIP",
 });
 
 useHead({
@@ -18,31 +14,34 @@ useHead({
 });
 
 const testimonials = ref(TestimonialsData);
-const filters = ["All", "Partner", "People"];
+const filters = ["All", "Project Partner", "County Resident"];
 const selectedFilter = ref("All");
 
 const filteredTestimonials = computed(() => {
   if (selectedFilter.value === "All") {
     return testimonials.value;
   }
-  return testimonials.value.filter((t) =>
-    selectedFilter.value === "Partner"
-      ? t.role.toLowerCase().includes("pharmacy") || t.role.toLowerCase().includes("hospital") || t.role.toLowerCase().includes("clinic")
-      : !t.role.toLowerCase().includes("pharmacy") && !t.role.toLowerCase().includes("hospital") && !t.role.toLowerCase().includes("clinic")
+  return testimonials.value.filter(
+    (t) => t.testimonial_type === selectedFilter.value
   );
 });
 </script>
 
 <template>
   <div>
-    <section id="reviews-2" class="gr--whitesmoke inner-page-hero reviews-section">
+    <section
+      id="reviews-2"
+      class="gr--whitesmoke inner-page-hero reviews-section"
+    >
       <div class="container">
         <!-- SECTION TITLE -->
         <div class="row justify-content-center">
           <div class="col">
             <div class="inner-page-title text-center">
               <h2 class="s-52 w-700">What People Say</h2>
-              <p class="p-lg">Hear from those impacted by our work in digital inclusion.</p>
+              <p class="p-lg">
+                Hear from those impacted by our work in digital inclusion.
+              </p>
             </div>
           </div>
         </div>
@@ -62,7 +61,10 @@ const filteredTestimonials = computed(() => {
 
         <!-- TESTIMONIALS WRAPPER -->
         <div class="reviews-2-wrapper rel mt-4">
-          <div v-if="filteredTestimonials.length" class="row align-items-center row-cols-1 row-cols-md-2">
+          <div
+            v-if="filteredTestimonials.length"
+            class="row align-items-center row-cols-1 row-cols-md-2"
+          >
             <div
               v-for="testimonial in filteredTestimonials"
               :key="testimonial.id"
@@ -80,7 +82,7 @@ const filteredTestimonials = computed(() => {
                     </div>
                     <div class="review-author">
                       <h6 class="s-18 w-700">{{ testimonial.author }}</h6>
-                      <p class="p-sm">{{ testimonial.role }}</p>
+                      <p class="p-sm">{{ testimonial.testimonial_type }}</p>
                     </div>
                   </div>
                 </div>
@@ -90,7 +92,9 @@ const filteredTestimonials = computed(() => {
 
           <!-- NO TESTIMONIALS FOUND -->
           <div v-else class="text-center mt-5">
-            <p class="p-lg text-muted">No testimonials found for the selected filter.</p>
+            <p class="p-lg text-muted">
+              No testimonials found for the selected filter.
+            </p>
           </div>
         </div>
       </div>

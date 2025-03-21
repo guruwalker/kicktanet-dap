@@ -6,7 +6,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Digital Inclusion in Mandera & Busia | USIU-DIP",
+  title: "Digital Inclusion in Mandera & Busia | KICKTANET- Digital Inclusion Project",
   description:
     "Discover how the USIU Digital Inclusion Project is bridging the digital divide in Mandera and Busia by providing digital skills, services, and infrastructure.",
 });

@@ -79,7 +79,7 @@
             <!-- Links -->
             <ul class="foo-links clearfix">
               <li>
-                <p><NuxtLink to="/terms">News & Press</NuxtLink></p>
+                <p><NuxtLink to="/news-and-press">News & Press</NuxtLink></p>
               </li>
               <li>
                 <p><NuxtLink to="/privacy">Downloads</NuxtLink></p>

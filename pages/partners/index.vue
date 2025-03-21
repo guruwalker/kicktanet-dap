@@ -6,9 +6,9 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Our Partners | USIU-DIP",
+  title: "Our Partners | KICKTANET- Digital Inclusion Project",
   description:
-    "Discover the organizations partnering with USIU-DIP to drive digital inclusion.",
+    "Discover the organizations partnering with KICKTANET- Digital Inclusion Project to drive digital inclusion.",
 });
 
 const partners = [

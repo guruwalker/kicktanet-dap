@@ -8,7 +8,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Field Visits in Mandera & Busia | USIU-DIP",
+  title: "Field Visits in Mandera & Busia | KICKTANET- Digital Inclusion Project",
   description:
     "Explore our field visits in Mandera and Busia as part of the USIU Digital Inclusion Project, bridging the digital divide with real impact.",
 });

@@ -2,17 +2,17 @@ export default [
   // Partner Testimonials
   {
     id: 1,
-    text: "USIU-DIP has been instrumental in bringing digital skills training to underserved communities. Our collaboration has empowered thousands with access to online opportunities.",
+    text: "KICKTANET- Digital Inclusion Project has been instrumental in bringing digital skills training to underserved communities. Our collaboration has empowered thousands with access to online opportunities.",
     author: "Jane Mwangi",
-    role: "Program Director, KICTANet",
-    avatar: "/assets/images/partners/kictanet.jpg",
+    testimonial_type: "Project Partner",
+    avatar: "/assets/images/team-13.jpg",
   },
   {
     id: 2,
-    text: "Working with USIU-DIP has enabled us to expand digital services to rural areas. Together, we're bridging the digital divide and promoting economic empowerment.",
+    text: "Working with KICKTANET- Digital Inclusion Project has enabled us to expand digital services to rural areas. Together, we're bridging the digital divide and promoting economic empowerment.",
     author: "Michael Omondi",
-    role: "ICT Director, Busia County Government",
-    avatar: "/assets/images/partners/busia-county.jpg",
+    testimonial_type: "Project Partner",
+    avatar: "/assets/images/team-13.jpg",
   },
 
   // Resident Testimonials
@@ -20,14 +20,14 @@ export default [
     id: 3,
     text: "Before this program, I had never used a computer. Now, I can apply for government services online, and my small business has grown thanks to digital marketing skills.",
     author: "Amina Hassan",
-    role: "Resident, Mandera County",
-    avatar: "/assets/images/residents/amina-hassan.jpg",
+    testimonial_type: "County Resident",
+    avatar: "/assets/images/team-13.jpg",
   },
   {
     id: 4,
-    text: "With USIU-DIP’s training, I have learned how to navigate the internet safely and even access online learning platforms. My children are also benefiting from this knowledge.",
+    text: "With KICKTANET- Digital Inclusion Project’s training, I have learned how to navigate the internet safely and even access online learning platforms. My children are also benefiting from this knowledge.",
     author: "Josephat Otieno",
-    role: "Resident, Busia County",
-    avatar: "/assets/images/residents/josephat-otieno.jpg",
+    testimonial_type: "County Resident",
+    avatar: "/assets/images/team-13.jpg",
   },
 ];
