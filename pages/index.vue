@@ -8,12 +8,46 @@ useHead({
 });
 
 const testimonials = ref(TestimonialsData);
+
+const items = ref([
+  {
+    title:
+      "Unlocking Digital Potential: Equipping Youth with Tech Skills for the Future.",
+    description: "",
+    image: "/assets/images/carousel/hero1.jpeg",
+  },
+  {
+    title: "Education for Inclusion",
+    description: "Teaching Digital Literacy in Underserved Communities.",
+    image: "/assets/images/carousel/hero2.jpeg",
+  },
+  {
+    title: "From Learners to Innovators",
+    description: "Hands-on Training in Digital Tools & Coding.",
+    image: "/assets/images/carousel/hero3.jpeg",
+  },
+  {
+    title: "Creating Opportunities",
+    description: "Digital Access for Work, Learning, and Growth.",
+    image: "/assets/images/carousel/hero4.jpeg",
+  },
+  {
+    title: "Collaboration for Change",
+    description: "Stakeholders Uniting for Digital Inclusion.",
+    image: "/assets/images/carousel/hero5.jpeg",
+  },
+  {
+    description: "Bridging the Digital Gender Divide.",
+    title: "Empowering Women in Tech",
+    image: "/assets/images/carousel/hero6.jpeg",
+  },
+]);
 </script>
 
 <template>
   <div class="container">
     <!-- Hero -->
-    <section id="hero-27" class="gr--whitesmoke hero-section">
+    <!-- <section id="hero-27" class="gr--whitesmoke hero-section">
       <div class="hero-overlay bg--fixed">
         <div class="container text-center">
           <div class="row justify-content-center">
@@ -23,19 +57,58 @@ const testimonials = ref(TestimonialsData);
                   Strengthening Digital Communities in Kenya
                 </h2>
                 <p class="s-20">
-                  Empowering marginalized groups in Mandera and Busia with
-                  digital skills, connectivity, and inclusive innovation to
-                  bridge the digital divide.
+                 Narrowing the Digital Divide by Promoting Digital Inclusion, Enhancing Digital Skills and Empowering Individuals
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section
+      id="features-12"
+      class="shape--bg shape--white-400 pt-100 features-section division"
+    >
+      <div class="container">
+        <UCarousel
+          v-slot="{ item }"
+          fade
+          arrows
+          dots
+          :items="items"
+          class="w-full mx-auto relative"
+        >
+          <div class="relative w-full h-[50vh] md:h-[60vh] px-6">
+            <!-- Image -->
+            <img
+              :src="item.image"
+              class="w-full h-full object-cover rounded-lg"
+            />
+
+            <!-- Overlay Text -->
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 text-white rounded-lg"
+            >
+              <h2 class="text-xl md:text-2xl font-bold text-white">{{ item.title }}</h2>
+              <p class="text-sm md:text-base">{{ item.description }}</p>
+            </div>
+          </div>
+        </UCarousel>
+      </div>
     </section>
 
     <!-- Stats -->
     <SectionsDemo27Section13 />
+
+    <v-img
+      src="/assets/images/carousel/hero1.jpeg"
+      height="100%"
+      cover
+      class="position-absolute"
+    />
+
+    <v-btn primary>Wahome</v-btn>
 
     <!-- Partners -->
     <!-- <SectionsDemo27Section8 /> -->
@@ -159,3 +232,16 @@ const testimonials = ref(TestimonialsData);
     </div>
   </div>
 </template>
+
+<style scoped>
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255); /* Dark overlay */
+}
+.text-content {
+  position: absolute;
+  z-index: 2;
+}
+</style>
