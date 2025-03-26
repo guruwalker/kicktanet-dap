@@ -14,7 +14,7 @@
                       <span class="count-element d-flex"
                         ><ElementsCounterUp
                           :start="0"
-                          :end="5"
+                          :end="10"
                           :duration="2000" /></span
                       >+
                     </h2>

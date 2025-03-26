@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const isSidebarOpen = ref(true); // true: expanded; false: collapsed
+const isSidebarOpen = ref(false); // true: expanded; false: collapsed
 const openSection = ref(null);
 
 const menuItems = [
