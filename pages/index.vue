@@ -12,7 +12,7 @@ const testimonials = ref(TestimonialsData);
 const items = ref([
   {
     title:
-      "Unlocking Digital Potential: Equipping Youth with Tech Skills for the Future.",
+      "Unlocking Digital Potential",
     description: "",
     image: "/assets/images/carousel/hero1.jpeg",
   },
