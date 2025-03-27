@@ -11,8 +11,7 @@ const testimonials = ref(TestimonialsData);
 
 const items = ref([
   {
-    title:
-      "Unlocking Digital Potential",
+    title: "Unlocking Digital Potential",
     description: "",
     image: "/assets/images/carousel/hero1.jpeg",
   },
@@ -74,8 +73,10 @@ const items = ref([
         <UCarousel
           v-slot="{ item }"
           fade
-          arrows
           dots
+          auto-scroll
+          loop
+          wheel-gestures
           :items="items"
           class="w-full mx-auto relative"
         >
@@ -90,7 +91,9 @@ const items = ref([
             <div
               class="absolute inset-0 flex flex-col justify-end p-6 text-white rounded-lg"
             >
-              <h2 class="text-xl md:text-2xl font-bold text-white">{{ item.title }}</h2>
+              <h2 class="text-xl md:text-2xl font-bold text-white">
+                {{ item.title }}
+              </h2>
               <p class="text-sm md:text-base">{{ item.description }}</p>
             </div>
           </div>
