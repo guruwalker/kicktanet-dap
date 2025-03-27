@@ -100,16 +100,6 @@ const items = ref([
 
     <!-- Stats -->
     <SectionsDemo27Section13 />
-
-    <v-img
-      src="/assets/images/carousel/hero1.jpeg"
-      height="100%"
-      cover
-      class="position-absolute"
-    />
-
-    <v-btn primary>Wahome</v-btn>
-
     <!-- Partners -->
     <!-- <SectionsDemo27Section8 /> -->
 

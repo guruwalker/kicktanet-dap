@@ -19,10 +19,25 @@ const teamMembers = ref(Team);
       <div class="container">
         <div class="row justify-content-center">
           <div class="col">
-            <div class="inner-page-title text-center">
+            <div class="inner-page-title">
               <h2 class="s-52 w-700">Component 1 - Partners</h2>
-              <p class="p-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-</p>
+              <p class="p-lg">
+                Training partners Supporting PWDs in Mandera and Busia
+              </p>
+
+              <ol class="simple-list pt-20">
+                <li class="list-item">
+                  <p>
+                    1. Kenya Society for the Blind - Benson Kiptum -
+                    benson.kiptum@ksblind.org
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="mb-0">
+                    2. Signs Media - Deaf - Luke Muleka - mulekaluke@yahoo.com
+                  </p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>

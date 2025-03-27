@@ -1,9 +1,24 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { defineProps, defineEmits, ref } from "vue";
 
-const isSidebarOpen = ref(false); // true: expanded; false: collapsed
+const props = defineProps({
+  isSidebarOpen: Boolean,
+});
+
+const emit = defineEmits(["toggle"]);
+
+// Track which menu section is open
 const openSection = ref(null);
 
+// Function to toggle submenus
+const toggleSection = (sectionId: any) => {
+  openSection.value = openSection.value === sectionId ? null : sectionId;
+};
+
+// Function to toggle sidebar
+const toggleSidebar = () => {
+  emit("toggle");
+};
 const menuItems = [
   {
     id: 1,
@@ -231,111 +246,106 @@ const menuItems = [
   },
 ];
 
-const toggleSection = (id: number) => {
-  openSection.value = openSection.value === id ? null : id;
-};
+// const toggleSection = (id: number) => {
+//   openSection.value = openSection.value === id ? null : id;
+// };
 
-const toggleSidebar = () => {
-  isSidebarOpen.value = !isSidebarOpen.value;
-};
+// const toggleSidebar = () => {
+//   isSidebarOpen.value = !isSidebarOpen.value;
+// };
 </script>
 
 <template>
-  <!-- Sidebar always present but collapsible -->
   <div
-    class="sidebar"
-    :class="{ collapsed: !isSidebarOpen }"
-    :style="{ width: isSidebarOpen ? '220px' : '50px' }"
+    class="fixed top-0 left-0 h-screen bg-white shadow-lg transition-all duration-300 overflow-y-auto"
+    :class="{
+      'w-[220px]': isSidebarOpen,
+      'w-[50px]': !isSidebarOpen,
+      collapsed: !isSidebarOpen,
+    }"
   >
-    <ul style="list-style: none; padding: 0">
-      <li v-for="item in menuItems" :key="item.id" style="margin-bottom: 10px" class="px-2">
-        <div
-          @click="toggleSection(item.id)"
-          style="
-            cursor: pointer;
-            font-weight: 600;
-            padding: 8px;
-            background: #f8f8f8;
-            border-radius: 5px;
-            transition: background 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-          "
-        >
-          <span :class="item.icon" style="font-size: 16px"></span>
+
+    <ul style="list-style: none; padding: 0; margin-top: 150px;">
+      <li v-for="item in menuItems" :key="item.id" class="px-2">
+        <div @click="toggleSection(item.id)" class="menu-item">
+          <span :class="item.icon"></span>
           <span v-if="isSidebarOpen">{{ item.label }}</span>
         </div>
-        <ul
-          v-if="openSection === item.id && isSidebarOpen"
-          style="list-style: none; padding-left: 15px; margin-top: 5px"
-        >
-          <li
-            v-for="sub in item.subcomponents"
-            :key="sub.label"
-            style="margin-bottom: 5px"
-            class="px-3"
-          >
-            <NuxtLink
-              :to="sub.link"
-              style="
-                text-decoration: none;
-                color: #007bff;
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-              "
-            >
-              <span style="font-size: 14px"></span>
+        <ul v-if="openSection === item.id && isSidebarOpen" class="submenu">
+          <li v-for="sub in item.subcomponents" :key="sub.label" class="px-3">
+            <NuxtLink :to="sub.link" class="submenu-link">
               {{ sub.label }}
             </NuxtLink>
           </li>
         </ul>
       </li>
     </ul>
-    <!-- Toggle button for mobile view as an icon -->
+
     <div style="margin-top: 20px; text-align: center">
-      <button
-        @click="toggleSidebar"
-        style="
-          background: transparent;
-          border: none;
-          cursor: pointer;
-          font-size: 20px;
-          color: #007bff;
-        "
-      >
+      <button @click="toggleSidebar" class="toggle-btn">
         <span v-if="isSidebarOpen" class="flaticon-left-arrow"></span>
         <span v-else class="flaticon-right-arrow"></span>
       </button>
     </div>
+
   </div>
 </template>
 
 <style scoped>
+/* Sidebar default styles */
 .sidebar {
   height: 100vh;
+  width: 220px;
   background: white;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   transition: width 0.3s ease-in-out;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Center content vertically */
-
-  width: 200px; /* Default expanded width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
+/* Collapsed sidebar */
 .sidebar.collapsed {
-  width: 50px; /* Collapsed width */
+  width: 50px;
 }
 
+/* Button styling */
 .toggle-btn {
-  margin: 10px;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Sidebar menu items */
+.menu-item {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Submenu styling */
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.submenu-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>
