@@ -6,9 +6,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Digital Inclusion in Mandera & Busia | KICKTANET- Digital Inclusion Project",
-  description:
-    "Discover how the KICKTANet Digital Inclusion Project is bridging the digital divide in Mandera and Busia by providing digital skills, services, and infrastructure.",
+  title: "Counties | Digital Access Programme",
 });
 
 const counties = [
@@ -17,18 +15,18 @@ const counties = [
     image: "/assets/images/logos/mandera-logo.jpeg",
     title: "Mandera",
     link: "/counties/mandera",
-    visitLink: '/visits',
+    visitLink: "/visits",
     description:
-      "Mandera faces high digital exclusion due to its arid conditions and limited connectivity. This project focuses on providing digital skills, government e-services, and affordable internet to enhance economic opportunities.",
+      "Mandera County, located in northeastern Kenya, confronts significant socioeconomic challenges...",
   },
   {
     id: 2,
     image: "/assets/images/logos/busia-logo.png",
     title: "Busia",
     link: "/counties/busia",
-    visitLink: '/visits',
+    visitLink: "/visits",
     description:
-      "Busia, a food-insecure region, struggles with digital access. The initiative supports women, youth, and small-scale traders in adopting digital technologies for economic empowerment.",
+      "Busia County, located in western Kenya, faces a complex interplay of socioeconomic challenges...",
   },
 ];
 </script>
@@ -40,7 +38,9 @@ const counties = [
         <div class="row justify-content-center">
           <div class="col">
             <div class="inner-page-title text-center">
-              <h2 class="s-52 w-700">Digital Inclusion in Mandera & Busia</h2>
+              <h2 class="s-42 w-700">
+                Digital Access Programme in Mandera & Busia
+              </h2>
               <p class="p-lg">
                 Empowering communities through digital skills, infrastructure,
                 and access to government e-services.
@@ -75,8 +75,8 @@ const counties = [
               </div>
             </div>
             <div class="txt-block-tra-link mt-25">
-              <NuxtLink :to="county.visitLink" class="tra-link ico-20 color--theme">
-                Activity in this county... <span class="flaticon-next"></span>
+              <NuxtLink :to="county.link" class="tra-link ico-20 color--theme">
+                More about this county... <span class="flaticon-next"></span>
               </NuxtLink>
             </div>
           </div>

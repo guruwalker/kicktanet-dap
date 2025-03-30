@@ -1,5 +1,5 @@
-<script setup>
-import Team from "~~/components/Data/Team";
+<script setup lang="ts">
+import { ref } from "vue";
 
 useHead({
   bodyAttrs: {
@@ -7,85 +7,71 @@ useHead({
   },
 });
 
-const teamMembers = ref(Team);
+const partners = ref([
+  {
+    id: 1,
+    name: "SoteHub",
+    logo: "/assets/images/partners/sotehub-logo.png",
+    contactPerson: "David Ogiga",
+    emails: ["david@sotehub.com"],
+  },
+  {
+    id: 2,
+    name: "EldoHub",
+    logo: "/assets/images/partners/eldohub-logo.png",
+    contactPerson: "Magdalene Chepkemoi",
+    emails: ["magdalene@eldohub.co.ke"],
+  },
+  {
+    id: 3,
+    name: "Plusfarm",
+    logo: "/assets/images/partners/plusfarm-logo.jpeg",
+    contactPerson: "Stephen Moses",
+    emails: ["smoses@plusfarmkenya.co.ke"],
+  },
+  {
+    id: 4,
+    name: "Kilimo Hakika",
+    logo: "/assets/images/partners/kilimo-hakika-logo.jpeg",
+    contactPerson: "Unknown",
+    emails: [],
+  },
+]);
 </script>
 
 <template>
-  <section
-    id="team-2"
-    class="gr--whitesmoke pb-40 inner-page-hero team-section"
-  >
+  <section id="partners-page" class="gr--whitesmoke inner-page-hero division">
     <div class="container">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col">
-            <div class="inner-page-title text-center">
-              <h2 class="s-52 w-700">Component 2 - Partners</h2>
-              <p class="p-lg">
-                Partners - Intermediate and advanced skills and opportunities to
-                the communities
-              </p>
+      <div class="text-left">
+        <p class="s-28 w-700">
+          COMPONENT #2- Identifying and equipping high-potential young women and
+          youthful participants, including CDCs
+        </p>
+        <h4 class="s-22">Implementing partners</h4>
+      </div>
 
-              <ol class="simple-list pt-20">
-                <li class="list-item">
-                  <p>
-                    1. SoteHub - David Ogiga - david@sotehub.com,
-                    alvin@sotehub.com
-                  </p>
-                </li>
-                <li class="list-item">
-                  <p class="mb-0">
-                    2. EldoHub - Magdalene Chepkemoi - magdalene
-                    mchepkemoi@eldohub.co.ke
-                  </p>
-                </li>
+      <div class="grid-wrapper">
+        <div v-for="partner in partners" :key="partner.id" class="partner-card">
+          <div class="partner-img">
+            <img v-if="partner.logo" :src="partner.logo" :alt="partner.name" />
+          </div>
 
-                <li class="list-item">
-                  <p class="mb-0">
-                    3. Plusfarm - Stepehen Moses - smoses@plusfarmkenya.co.ke
-                  </p>
-                </li>
-              </ol>
+          <div class="partner-info">
+            <h6 class="s-20 w-700">{{ partner.name }}</h6>
+            <div class="contact-info">
+              <div v-if="partner.contactPerson" class="contact-item">
+                <vue-feather type="user" />
+                <span>{{ partner.contactPerson }}</span>
+              </div>
 
-              <p class="p-lg">
-                Cascading partners training communities in Mandera and Busia;
-              </p>
-
-              <ol class="simple-list pt-20">
-                <li class="list-item">
-                  <p>
-                    1. Gencad - Mandera County - ABDIRASHID ALI -
-                    abdirashid@gencad.org
-                  </p>
-                </li>
-                <li class="list-item">
-                  <p class="mb-0">
-                    2. African Centre For Women, Information and Communications
-                    Technology (ACWICT) - Busia County, Budalangi - Funyula -
-                    Marachi - Constantine O Obuya - cobuya_1@acwict.org
-                  </p>
-                </li>
-
-                <li class="list-item">
-                  <p class="mb-0">
-                    3. Akukuranut Development Trust (ADT) - Busia County, Teso
-                    South, Teso Central - Judith Atyang - adtbusia24@gmail.com
-                  </p>
-                </li>
-                <li class="list-item">
-                  <p class="mb-0">
-                    4. Technology For Growth - Busia County, Nambale, Teso North
-                    - Josephine Kavindu - kavindu@technology4growth.org
-                  </p>
-                </li>
-
-                <li class="list-item">
-                  <p class="mb-0">
-                    5. KICTANet - Busia County, Matayos - Thomas Wanzala -
-                    wanzallah@gmail.com
-                  </p>
-                </li>
-              </ol>
+              <div
+                v-for="email in partner.emails"
+                :key="email"
+                class="contact-item"
+              >
+                <vue-feather type="mail" />
+                <span>{{ email }}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -93,3 +79,67 @@ const teamMembers = ref(Team);
     </div>
   </section>
 </template>
+
+<style scoped>
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.partner-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.partner-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  height: 160px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.partner-img img {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.partner-info h6 {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-top: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #007bff;
+}
+</style>
