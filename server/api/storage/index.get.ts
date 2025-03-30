@@ -1,36 +1,41 @@
-import { createClient } from "@supabase/supabase-js";
+import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
 
 export default defineEventHandler(async (event) => {
-  // Initialize Supabase Client using Service Role Key
-  const supabase = createClient(
-    "https://uujbxewichsqfnwasuxe.supabase.co",
-    process.env.NUXT_SUPABASE_ANON_KEY! // Service Role Key (Sensitive)
-  );
+  const spacesEndpoint = process.env.DO_SPACES_ENDPOINT;
+  const accessKeyId = process.env.DO_SPACES_KEY;
+  const secretAccessKey = process.env.DO_SPACES_SECRET;
+  const bucketName = process.env.DO_SPACES_BUCKET;
+  const region = process.env.DO_SPACES_REGION || "us-east-1";
 
-  if (!supabase) {
+  if (!spacesEndpoint || !accessKeyId || !secretAccessKey || !bucketName) {
     throw createError({
       statusCode: 500,
-      message: "Failed to initialize Supabase client.",
+      message: "Missing DigitalOcean Spaces configuration.",
     });
   }
 
+  const s3Client = new S3Client({
+    endpoint: `https://${spacesEndpoint}`,
+    region,
+    credentials: {
+      accessKeyId,
+      secretAccessKey,
+    },
+  });
+
   try {
-    // Replace "familyguy" with your actual bucket name
-    const bucketName = "familyguy";
-
-    // Get list of files from the bucket
-    const { data, error } = await supabase.storage.from(bucketName).list();
-
-    if (error) throw createError({ statusCode: 500, message: error.message });
-
-    // Construct full public URLs
-    const files = data.map((file) => ({
-      name: file.name,
-      url: `${process.env.NUXT_SUPABASE_URL}/storage/v1/object/public/${bucketName}/${file.name}`,
+    const command = new ListObjectsV2Command({
+      Bucket: bucketName,
+      Prefix: "", // Adjust if you want to list only a folder
+    });
+    const response = await s3Client.send(command);
+    const files = (response.Contents || []).map(file => ({
+      name: file.Key,
+      url: `https://${bucketName}.${spacesEndpoint}/${file.Key}`,
     }));
 
     return { success: true, files };
-  } catch (err) {
+  } catch (err: any) {
     console.error("Error fetching storage files:", err);
     return { success: false, message: "Internal Server Error" };
   }

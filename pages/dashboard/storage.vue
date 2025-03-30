@@ -2,16 +2,11 @@
 useSeoMeta({
   title: "Images Storage",
   ogTitle: "Images Storage",
-  description: "Upload and manage your image storage.",
-  ogDescription: "Easily store and organize images for your system.",
 });
 
-import { ref, reactive, onMounted } from "vue";
-import type { FileObject } from "@supabase/storage-js";
-
-useSeoMeta({
-  title: "Storage - Nuxt Supabase Starter",
-});
+definePageMeta({
+  layout: 'dashboard'
+})
 
 const toast = useToast();
 const { storageFiles, getAllFiles, uploadFile, deleteFile } = useStorage();
@@ -20,7 +15,7 @@ const isDeleteModalOpen = ref(false);
 
 const selectedImageName = ref<any>(null);
 
-const fileList = ref<FileObject[]>([]);
+const fileList = ref<any>([]);
 const loadingState = reactive({
   get: false,
   upload: false,

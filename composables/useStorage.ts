@@ -1,37 +1,49 @@
-import { useRuntimeConfig } from "#imports";
-import { createClient } from "@supabase/supabase-js";
-import { useToast } from "#imports";
+import { ref } from 'vue';
+import { useRuntimeConfig, useToast } from '#imports';
+import { S3Client, ListObjectsV2Command, PutObjectCommand, DeleteObjectCommand } from '@aws-sdk/client-s3';
 
 export function useStorage() {
   const toast = useToast();
   const config = useRuntimeConfig();
 
-  // Get the Supabase URL and ANON key from the public runtime config
-  const supabaseUrl = "https://uujbxewichsqfnwasuxe.supabase.co";
-  const supabaseAnonKey =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY";
+  // Read the DigitalOcean Spaces config from runtime config (or your .env file)
+  const spacesEndpoint = config.public.DO_SPACES_ENDPOINT; // e.g. "nyc3.digitaloceanspaces.com"
+  const accessKeyId = config.public.DO_SPACES_KEY;
+  const secretAccessKey = config.public.DO_SPACES_SECRET;
+  const bucketName = config.public.DO_SPACES_BUCKET;
+  const region = config.public.DO_SPACES_REGION || "us-east-1";
 
-  if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error("Supabase URL or ANON key is missing from runtime config");
+  if (!spacesEndpoint || !accessKeyId || !secretAccessKey || !bucketName) {
+    throw new Error("Missing DigitalOcean Spaces configuration in runtime config");
   }
 
-  const supabase = createClient(supabaseUrl, supabaseAnonKey);
-  const bucketName = "familyguy";
+  // Create an S3 client pointing to your DigitalOcean Space
+  const s3Client = new S3Client({
+    endpoint: `https://${spacesEndpoint}`,
+    region,
+    credentials: {
+      accessKeyId,
+      secretAccessKey,
+    },
+  });
 
-  const storageFiles = ref<any>([]);
+  const storageFiles = ref([]);
 
-  const getAllFiles = async () => {
+  // List all files (objects) in your bucket (or within a given prefix)
+  const getAllFiles = async (prefix = "") => {
     try {
-      const { data, error } = await supabase.storage.from(bucketName).list();
-      if (error) throw error;
-
-      storageFiles.value = data.map((file) => ({
-        name: file.name,
-        url: `${supabaseUrl}/storage/v1/object/public/${bucketName}/`,
-        metadata: file.metadata,
-        updated_at: file.updated_at,
+      const command = new ListObjectsV2Command({
+        Bucket: bucketName,
+        Prefix: prefix, // e.g. "images/" or leave empty to list all
+      });
+      const response = await s3Client.send(command);
+      storageFiles.value = (response.Contents || []).map(file => ({
+        name: file.Key,
+        // Construct a public URL. (Assuming your Space is public.)
+        url: `https://${bucketName}.${spacesEndpoint}/${file.Key}`,
+        lastModified: file.LastModified,
+        size: file.Size,
       }));
-
       return storageFiles.value;
     } catch (error) {
       console.error("Error in getAllFiles:", error);
@@ -43,22 +55,29 @@ export function useStorage() {
     }
   };
 
+  // Upload a file to your Space
   const uploadFile = async (file: File) => {
     try {
+      // Create a unique file name by prepending a timestamp
       const filePath = `${Date.now()}-${file.name}`;
-      const { data, error } = await supabase.storage
-        .from(bucketName)
-        .upload(filePath, file, { upsert: true });
+      // Convert the File to an ArrayBuffer (or you could use a stream)
+      const fileContent = await file.arrayBuffer();
 
-      if (error) throw error;
+      const command = new PutObjectCommand({
+        Bucket: bucketName,
+        Key: filePath,
+        Body: fileContent,
+        ACL: 'public-read', // Ensure the file is publicly readable
+        ContentType: file.type,
+      });
+      await s3Client.send(command);
 
-      const fileUrl = `${supabaseUrl}/storage/v1/object/public/${bucketName}/${filePath}`;
+      const fileUrl = `https://${bucketName}.${spacesEndpoint}/${filePath}`;
       toast.add({
         title: "Success",
         description: "File uploaded successfully!",
         color: "green",
       });
-
       return { name: filePath, url: fileUrl };
     } catch (error) {
       console.error("Error in uploadFile:", error);
@@ -71,18 +90,20 @@ export function useStorage() {
     }
   };
 
+  // Delete a file from your Space
   const deleteFile = async (fileName: string) => {
     try {
-      const { error } = await supabase.storage
-        .from(bucketName)
-        .remove([fileName]);
-      if (error) throw error;
-
+      const command = new DeleteObjectCommand({
+        Bucket: bucketName,
+        Key: fileName,
+      });
+      await s3Client.send(command);
       toast.add({
         title: "Success",
         description: "File deleted successfully!",
         color: "green",
       });
+      // Refresh the list after deletion
       await getAllFiles();
     } catch (error) {
       console.error("Error in deleteFile:", error);
