@@ -9,31 +9,31 @@ export default defineEventHandler(async (event) => {
   );
 
 
-  // const { id } = getQuery(event);
-  // if (!id) {
-  //   throw createError({ statusCode: 400, message: "Missing users ID" });
-  // }
+  const { id } = getQuery(event);
+  if (!id) {
+    throw createError({ statusCode: 400, message: "Missing media_files ID" });
+  }
 
   const updateData = await readBody(event);
   if (!updateData) {
-    throw createError({ statusCode: 400, message: "Missing users data" });
+    throw createError({ statusCode: 400, message: "Missing media_files data" });
   }
 
   try {
     const { data, error } = await supabase
-      .from("users")
+      .from("media_files")
       .update(updateData)
-      .eq("id", updateData.id)
+      .eq("id", id)
       .select()
       .single();
 
     if (error) {
-      console.error(`Error updating users with id ${updateData.id}:`, error.message);
+      console.error(`Error updating media_files with id ${id}:`, error.message);
       return { success: false, data: error.message };
     }
     return { success: true, data };
   } catch (err) {
-    console.error(`Error updating users with id ${updateData.id}:`, err);
+    console.error(`Error updating media_files with id ${id}:`, err);
     return { success: false, data: "Internal Server Error" };
   }
 });

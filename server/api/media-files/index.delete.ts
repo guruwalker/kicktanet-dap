@@ -11,12 +11,12 @@ export default defineEventHandler(async (event) => {
 
   const { id } = getQuery(event);
   if (!id) {
-    throw createError({ statusCode: 400, message: "Missing users ID" });
+    throw createError({ statusCode: 400, message: "Missing media_files ID" });
   }
 
   try {
     const { data, error } = await supabase
-      .from("users")
+      .from("media_files")
       .delete()
       .eq("id", id);
 
@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
     }
     return { success: true, data };
   } catch (err) {
-    console.error(`Error deleting users with id ${id}:`, err);
+    console.error(`Error deleting media_files with id ${id}:`, err);
     return { success: false, message: "Internal Server Error" };
   }
 });

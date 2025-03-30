@@ -13,20 +13,39 @@ const useSupabaseImages = () => {
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-  const uploadImages = async (files: File[]) => {
-    const uploadPromises = files.map(async (file) => {
-      const { data, error } = await supabase.storage
+  const uploadImages = async (files: File[], component: string) => {
+    const uploadedImages = [];
+
+    for (const file of files) {
+      const filePath = `${component}/${Date.now()}-${file.name}`;
+      const { data, error } = await supabase
+        .storage
         .from('images')
-        .upload(file.name, file, { // No "images/" prefix here
-          cacheControl: '3600',
-          upsert: false,
+        .upload(filePath, file);
+
+      if (error) {
+        console.error("Upload error:", error.message);
+        continue; // Skip this file and move to the next
+      }
+
+      // Generate the URL for the uploaded file
+      const { data: publicUrlData } = supabase
+        .storage
+        .from('images')
+        .getPublicUrl(filePath);
+
+      if (publicUrlData?.publicUrl) {
+        uploadedImages.push({
+          name: file.name,
+          url: publicUrlData.publicUrl,
         });
+      } else {
+        console.error("Failed to retrieve public URL for:", filePath);
+      }
+    }
 
-      if (error) throw error;
-      return data;
-    });
-
-    await Promise.all(uploadPromises);
+    console.log("Uploaded Images:", uploadedImages); // Check what's being returned
+    return uploadedImages;
   };
 
 

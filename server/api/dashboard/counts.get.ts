@@ -2,11 +2,12 @@ import { createClient } from "@supabase/supabase-js";
 
 export default defineEventHandler(async (event) => {
   // Define Supabase Client with the Service Role Key
-  const supabase = createClient(
-    "https://uujbxewichsqfnwasuxe.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY" // Service Role Key
-  );
+  const runtimeConfig = useRuntimeConfig()
 
+  const supabase = createClient(
+    runtimeConfig.public.supabaseUrl,
+    runtimeConfig.public.supabaseServiceRoleKey
+  );
   if (!supabase) {
     throw createError({
       statusCode: 500,

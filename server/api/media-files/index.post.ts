@@ -9,23 +9,25 @@ export default defineEventHandler(async (event) => {
   );
 
 
-  const { id } = getQuery(event);
-  if (!id) {
-    throw createError({ statusCode: 400, message: "Missing users ID" });
+  const mediaFilesData = await readBody(event);
+  if (!mediaFilesData) {
+    throw createError({ statusCode: 400, message: "Missing media_files data" });
   }
 
   try {
     const { data, error } = await supabase
-      .from("users")
-      .delete()
-      .eq("id", id);
+      .from("media_files")
+      .insert(mediaFilesData)
+      .select()
+      .single();
 
     if (error) {
       throw createError({ statusCode: 500, message: error.message });
     }
+
     return { success: true, data };
   } catch (err) {
-    console.error(`Error deleting users with id ${id}:`, err);
+    console.error("Error creating media_files:", err);
     return { success: false, message: "Internal Server Error" };
   }
 });

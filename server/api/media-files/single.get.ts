@@ -11,21 +11,22 @@ export default defineEventHandler(async (event) => {
 
   const { id } = getQuery(event);
   if (!id) {
-    throw createError({ statusCode: 400, message: "Missing users ID" });
+    throw createError({ statusCode: 400, message: "Missing media_files ID" });
   }
 
   try {
     const { data, error } = await supabase
-      .from("users")
-      .delete()
-      .eq("id", id);
+      .from("media_files")
+      .select("*")
+      .eq("id", id)
+      .single();
 
     if (error) {
       throw createError({ statusCode: 500, message: error.message });
     }
     return { success: true, data };
   } catch (err) {
-    console.error(`Error deleting users with id ${id}:`, err);
+    console.error(`Error fetching media_files with id ${id}:`, err);
     return { success: false, message: "Internal Server Error" };
   }
 });

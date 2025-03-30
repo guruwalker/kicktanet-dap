@@ -20,14 +20,14 @@ export default defineEventHandler(async (event) => {
 
   try {
     const { data, error } = await supabase
-      .from("users")
+      .from("media_files")
       .select("*")
 
     if (error) throw createError({ statusCode: 500, message: error.message });
 
     return { success: true, data };
   } catch (err) {
-    console.error("Error fetching users:", err);
+    console.error("Error fetching media_files:", err);
     return { success: false, message: "Internal Server Error" };
   }
 });
