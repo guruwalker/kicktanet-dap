@@ -2,15 +2,14 @@
 import { createClient } from "@supabase/supabase-js";
 
 export default defineEventHandler(async (event) => {
-  // const supabase = await serverSupabaseClient(event);
-
   // Define Supabase Client with the Service Role Key
-  const runtimeConfig = useRuntimeConfig()
+  const runtimeConfig = useRuntimeConfig();
 
   const supabase = createClient(
     runtimeConfig.public.supabaseUrl,
     runtimeConfig.public.supabaseServiceRoleKey
   );
+
   if (!supabase) {
     throw createError({
       statusCode: 500,
@@ -18,10 +17,22 @@ export default defineEventHandler(async (event) => {
     });
   }
 
+  const query = getQuery(event); // Get query parameters from the URL
+  const component = query.c || null; // Extract component from query
+
+  if (!component) {
+    throw createError({
+      statusCode: 400,
+      message: "Component parameter is required.",
+    });
+  }
+
   try {
     const { data, error } = await supabase
       .from("media_files")
       .select("*")
+      .eq("bucket", "images")
+      .eq("component", component); // Filter by component
 
     if (error) throw createError({ statusCode: 500, message: error.message });
 
