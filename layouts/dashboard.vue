@@ -28,7 +28,7 @@ onMounted(() => {
 });
 
 // For desktop: compute sidebar width based on state
-const sidebarWidth = computed(() => (isSidebarOpen.value ? "16rem" : "5rem"));
+const sidebarWidth = computed(() => (isSidebarOpen.value ? "16rem" : "0rem"));
 
 // For desktop: adjust main wrapper so that there is no horizontal scroll
 const mainWrapperStyle = computed(() => {
@@ -47,7 +47,6 @@ const mainWrapperStyle = computed(() => {
   <div class="layout-wrapper">
     <!-- Desktop Sidebar -->
     <DashboardNavigationSidebar
-      style="z-index: 500"
       v-if="!isMobile"
       :isOpen="isSidebarOpen"
       @toggle="toggleSidebar"
@@ -55,11 +54,7 @@ const mainWrapperStyle = computed(() => {
 
     <!-- Mobile Sidebar Overlay -->
     <div v-if="isMobile && isSidebarOpen" class="mobile-sidebar-overlay">
-      <DashboardNavigationSidebar
-        :isOpen="true"
-        @toggle="toggleSidebar"
-        style="z-index: 500"
-      />
+      <DashboardNavigationSidebar :isOpen="true" @toggle="toggleSidebar" />
     </div>
 
     <div class="main-wrapper" :style="mainWrapperStyle">
@@ -112,6 +107,4 @@ const mainWrapperStyle = computed(() => {
   overflow-y: auto;
   transition: transform 0.3s ease-in-out;
 }
-
-
 </style>

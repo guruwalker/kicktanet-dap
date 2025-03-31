@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-defineProps<{ isOpen: boolean }>();
+const props = defineProps<{ isOpen: boolean }>();
 
 const emit = defineEmits(["toggle"]);
 
@@ -226,18 +226,29 @@ const sidebarItems = [
 
 <template>
   <aside
-  class="fixed inset-y-0 left-0 h-screen border-r p-4 transition-all duration-300 ease-in-out overflow-y-auto"
+    v-if="isOpen"
+    class="fixed inset-y-0 left-0 h-screen border-r p-4 transition-all duration-300 ease-in-out overflow-y-auto"
     :class="[
-      isOpen ? 'w-64' : 'w-20',
+      isOpen ? 'w-64' : 'w-0',
       'bg-background dark:bg-stone-800', // Background color for both modes
       'border-r dark:border-stone-700', // Border color for dark mode
     ]"
     style="z-index: 200"
   >
     <!-- Logo & Title -->
+    <!-- <NuxtLink to="/dashboard" class="flex items-center gap-2 mb-6">
+      <img src="/assets/images/kicktanet-logo.png" class="h-12" />
+    </NuxtLink> -->
     <NuxtLink to="/dashboard" class="flex items-center gap-2 mb-6">
       <img src="/assets/images/kicktanet-logo.png" class="h-12" />
     </NuxtLink>
+
+    <div style="margin-top: 20px; text-align: center">
+      <button @click="emit('toggle')" class="toggle-btn">
+        <span v-if="props.isOpen" class="flaticon-left-arrow"></span>
+        <span v-else class="flaticon-right-arrow"></span>
+      </button>
+    </div>
 
     <!-- Navigation Items -->
     <div class="flex-1 overflow-y-auto mb-6">
