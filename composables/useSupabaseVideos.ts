@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-export default function useSupabaseVideos() {
+const useSupabaseVideos = () => {
   const config = useRuntimeConfig();
 
   // Get the Supabase URL and ANON key from the public runtime config
@@ -12,6 +12,41 @@ export default function useSupabaseVideos() {
   }
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+  const uploadVideos = async (files: File[], component: string) => {
+    const uploadedVideos = [];
+
+    for (const file of files) {
+      const filePath = `${component}/${Date.now()}-${file.name}`;
+      const { data, error } = await supabase
+        .storage
+        .from('videos') // Make sure you have a bucket named 'videos'
+        .upload(filePath, file);
+
+      if (error) {
+        console.error("Upload error:", error.message);
+        continue; // Skip this file and move to the next
+      }
+
+      // Generate the URL for the uploaded file
+      const { data: publicUrlData } = supabase
+        .storage
+        .from('videos')
+        .getPublicUrl(filePath);
+
+      if (publicUrlData?.publicUrl) {
+        uploadedVideos.push({
+          name: file.name,
+          url: publicUrlData.publicUrl,
+        });
+      } else {
+        console.error("Failed to retrieve public URL for:", filePath);
+      }
+    }
+
+    console.log("Uploaded Videos:", uploadedVideos); // Check what's being returned
+    return uploadedVideos;
+  };
 
   const listVideos = async () => {
     const { data, error } = await supabase.storage.from('videos').list('', {
@@ -27,18 +62,7 @@ export default function useSupabaseVideos() {
     }));
   };
 
-  const uploadVideos = async (files: File[]) => {
-    const uploadPromises = files.map(async (file) => {
-      const { data, error } = await supabase.storage
-        .from('videos')
-        .upload(file.name, file, { cacheControl: '3600', upsert: false });
+  return { uploadVideos, listVideos };
+};
 
-      if (error) throw error;
-      return data;
-    });
-
-    await Promise.all(uploadPromises);
-  };
-
-  return { listVideos, uploadVideos };
-}
+export default useSupabaseVideos;

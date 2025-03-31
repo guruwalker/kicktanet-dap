@@ -167,27 +167,8 @@ fetchImages();
         Next
       </UButton>
     </div>
-
-    <!-- Image Upload Drawer -->
-    <!-- <div
-      v-if="isDrawerOpen"
-      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
-    >
-      <DashboardImageUploadForm
-        @onClose="() => (isDrawerOpen = false)"
-        @onUploadComplete="handleUploadComplete"
-      />
-    </div> -->
   </div>
 
-  <!-- <div>
-    <UModal v-if="isDrawerOpen">
-      <DashboardImageUploadForm
-        @onClose="() => (isDrawerOpen = false)"
-        @onUploadComplete="handleUploadComplete"
-      />
-    </UModal>
-  </div> -->
   <DashboardImageUploadForm
     :show="isDrawerOpen"
     @close="hasClosedModal"
