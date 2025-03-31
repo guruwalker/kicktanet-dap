@@ -2,7 +2,6 @@
 import { createClient } from "@supabase/supabase-js";
 
 export default defineEventHandler(async (event) => {
-  // Define Supabase Client with the Service Role Key
   const runtimeConfig = useRuntimeConfig();
 
   const supabase = createClient(
@@ -17,8 +16,10 @@ export default defineEventHandler(async (event) => {
     });
   }
 
-  const query = getQuery(event); // Get query parameters from the URL
-  const component = query.c || null; // Extract component from query
+  const query = getQuery(event);
+  const component = query.c || null;
+  const limit = parseInt(query.limit) || 10;
+  const offset = parseInt(query.offset) || 0;
 
   if (!component) {
     throw createError({
@@ -32,7 +33,8 @@ export default defineEventHandler(async (event) => {
       .from("media_files")
       .select("*")
       .eq("bucket", "images")
-      .eq("component", component); // Filter by component
+      .eq("component", component)
+      .range(offset, offset + limit - 1);
 
     if (error) throw createError({ statusCode: 500, message: error.message });
 
