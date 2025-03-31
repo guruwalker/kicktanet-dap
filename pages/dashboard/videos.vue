@@ -163,7 +163,6 @@ fetchVideos();
     </div>
   </div>
 
-  {{isDrawerOpen}}
   <DashboardVideoUploadForm
     :show="isDrawerOpen"
     @close="hasClosedModal"
