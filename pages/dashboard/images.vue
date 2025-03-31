@@ -21,17 +21,17 @@ const totalPages = computed(() =>
 const isDrawerOpen = ref(false);
 
 const route = useRoute();
-const component = route.query.c || null;
+const component = ref<string>(route.query.c || null);
 
 const fetchImages = async () => {
-  if (!component) {
+  if (!component.value) {
     console.error("Component is not specified in the URL.");
     return;
   }
 
   try {
     const response = await $fetch(`/api/media-files/images`, {
-      params: { c: component },
+      params: { c: component.value },
       method: "GET",
     });
 
@@ -82,6 +82,15 @@ const confirmDelete = async (id: string) => {
     console.error("Error deleting image:", error);
   }
 };
+
+// Watch for changes in the `c` query parameter and refetch images
+watch(() => route.query.c, (newComponent) => {
+  component.value = newComponent;
+  fetchImages();
+});
+
+// Initial fetch
+fetchImages();
 </script>
 
 <template>

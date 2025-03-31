@@ -198,7 +198,7 @@ const isImage = (item: { name: string; metadata: Record<string, any> }) => {
       class="relative flex justify-center items-center h-[300px]"
     >
       <div class="flex flex-col justify-center items-center gap-2">
-        <UIcon name="i-lucide-layout-template" class="h-12 w-12"></UIcon>
+        <Icon name="mdi:view-dashboard" class="h-12 w-12"></Icon>
         <h2 class="text-2xl font-bold">
           Storage is empty,
           <span class="underline cursor-pointer" @click="selectFile">add</span>

@@ -69,25 +69,25 @@ const fetchStats = async () => {
       {
         label: "Users",
         count: usersResponse.count || 0,
-        icon: "lucide-users",
+        icon: "mdi:account-group",
         color: "bg-blue-100 text-blue-600",
       },
       {
         label: "Images",
         count: imagesResponse.count || 0,
-        icon: "lucide-image",
+        icon: "mdi:image",
         color: "bg-green-100 text-green-600",
       },
       {
         label: "Documents",
         count: documentsResponse.count || 0,
-        icon: "lucide-file-text",
+        icon: "mdi:document",
         color: "bg-yellow-100 text-yellow-600",
       },
       {
         label: "Videos",
         count: videosResponse.count || 0,
-        icon: "lucide-video",
+        icon: "mdi:video",
         color: "bg-red-100 text-red-600",
       },
     ];
@@ -114,7 +114,7 @@ onMounted(fetchStats);
       >
         <p class="text-lg font-bold mb-2">{{ stat.label }}</p>
         <div :class="['p-3 rounded-full', stat.color]">
-          <UIcon :name="stat.icon" class="text-3xl" />
+          <Icon :name="stat.icon" class="text-3xl" />
         </div>
         <p class="text-2xl font-semibold mt-2">{{ stat.count }}</p>
       </UCard>

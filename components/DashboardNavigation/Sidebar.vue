@@ -38,37 +38,187 @@ const sidebarItems = [
   {
     section: "General",
     items: [
-      { label: "Dashboard", icon: "i-lucide-home", to: "/dashboard" },
-      { label: "Users", icon: "i-lucide-users", to: "/dashboard/users" },
+      { label: "Dashboard", icon: "mdi:home", to: "/dashboard" },
+      { label: "Users", icon: "mdi:account-group", to: "/dashboard/users" },
     ],
   },
   {
     section: "Components",
-    items: componentNames.map((component) => ({
-      name: component,
-      items: [
-        {
-          label: "Images",
-          icon: "i-lucide-image",
-          to: `/dashboard/images?c=${component.toLowerCase()}`,
-        },
-        {
-          label: "Videos",
-          icon: "i-lucide-video",
-          to: `/dashboard/videos?c=${component.toLowerCase()}`,
-        },
-        {
-          label: "Documents",
-          icon: "i-lucide-file",
-          to: `/dashboard/documents?c=${component.toLowerCase()}`,
-        },
-      ],
-    })),
+    items: [
+      {
+        name: "Component1",
+        icon: "mdi:view-dashboard", // Example icon, you can choose any MDI icon you prefer
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component1",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component1",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component1",
+          },
+        ],
+      },
+      {
+        name: "Component2",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component2",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component2",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component2",
+          },
+        ],
+      },
+      {
+        name: "Component3",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component3",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component3",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component3",
+          },
+        ],
+      },
+      {
+        name: "Component4",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component4",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component4",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component4",
+          },
+        ],
+      },
+      {
+        name: "Component5",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component5",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component5",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component5",
+          },
+        ],
+      },
+      {
+        name: "Component6",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component6",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component6",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component6",
+          },
+        ],
+      },
+      {
+        name: "Component7",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component7",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component7",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component7",
+          },
+        ],
+      },
+      {
+        name: "Component8",
+        icon: "mdi:view-dashboard",
+        items: [
+          {
+            label: "Images",
+            icon: "mdi:image",
+            to: "/dashboard/images?c=component8",
+          },
+          {
+            label: "Videos",
+            icon: "mdi:video",
+            to: "/dashboard/videos?c=component8",
+          },
+          {
+            label: "Documents",
+            icon: "mdi:file-document",
+            to: "/dashboard/documents?c=component8",
+          },
+        ],
+      },
+    ],
   },
   {
     section: "Profile",
     items: [
-      { label: "Profile", icon: "i-lucide-user", to: "/dashboard/profile" },
+      { label: "Profile", icon: "mdi:account", to: "/dashboard/profile" },
     ],
   },
 ];
@@ -76,11 +226,11 @@ const sidebarItems = [
 
 <template>
   <aside
-    class="fixed inset-y-0 left-0 h-screen border-r p-4 transition-all duration-300 ease-in-out overflow-y-auto"
+  class="fixed inset-y-0 left-0 h-screen border-r p-4 transition-all duration-300 ease-in-out overflow-y-auto"
     :class="[
       isOpen ? 'w-64' : 'w-20',
-      'bg-background dark:bg-stone-800',
-      'border-r dark:border-stone-700',
+      'bg-background dark:bg-stone-800', // Background color for both modes
+      'border-r dark:border-stone-700', // Border color for dark mode
     ]"
     style="z-index: 200"
   >
@@ -128,9 +278,13 @@ const sidebarItems = [
               class="flex items-center justify-between cursor-pointer px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-stone-700"
               @click="toggleComponent(component.name)"
             >
-              <span class="text-gray-700 dark:text-gray-300">
-                {{ component.name }}
-              </span>
+              <div
+                class="flex items-center space-x-2 text-gray-700 dark:text-gray-300"
+              >
+                <UIcon :name="component.icon" class="w-5 h-5" />
+                <span>{{ component.name }}</span>
+              </div>
+
               <UIcon
                 :name="
                   componentState[component.name]
@@ -147,10 +301,11 @@ const sidebarItems = [
                 v-for="item in component.items"
                 :key="item.to"
                 :to="item.to"
-                class="block px-4 py-1 rounded-lg hover:bg-primary/10 dark:hover:bg-stone-700"
+                class="flex items-center space-x-2 px-4 py-1 rounded-lg hover:bg-primary/10 dark:hover:bg-stone-700"
                 @click="closeSidebar"
               >
-                {{ item.label }}
+                <UIcon :name="item.icon" class="w-5 h-5" />
+                <span>{{ item.label }}</span>
               </NuxtLink>
             </div>
           </div>

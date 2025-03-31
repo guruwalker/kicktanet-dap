@@ -6,8 +6,8 @@ const navLinks = [
 
 // Theme options
 const themes = [
-  { value: "light", label: "Light", icon: "i-lucide-sun" },
-  { value: "dark", label: "Dark", icon: "i-lucide-moon" },
+  { value: "light", label: "Light", icon: "mdi:white-balance-sunny" },
+  { value: "dark", label: "Dark", icon: "mdi:weather-night" },
 ];
 
 const colorMode = useColorMode();
@@ -61,7 +61,7 @@ const toggleTheme = () => {
             class="flex items-center gap-2 p-2 rounded-lg transition hover:bg-primary/10"
             @click="toggleTheme"
           >
-            <UIcon :name="currentTheme?.icon" class="w-5 h-5" />
+            <Icon :name="currentTheme?.icon" class="w-5 h-5" />
             <span>{{ currentTheme?.label }}</span>
           </button>
         </div>

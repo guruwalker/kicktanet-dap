@@ -100,25 +100,18 @@ const mainWrapperStyle = computed(() => {
   overflow-x: hidden;
 }
 
+/* Mobile Sidebar Overlay styles */
 .mobile-sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 16rem;
   height: 100vh;
-  z-index: 9999; /* Ensure it's on top */
-  background-color: #fff; /* or any color to make it stand out */
+  z-index: 3000 !important;
+  background-color: #ffffff !important;
   overflow-y: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Then style the actual sidebar inside it, so it appears on the right or left */
-.mobile-sidebar-overlay > .dashboard-navigation-sidebar {
-  position: absolute;
-  left: 0; /* or right: 0; */
-  width: 16rem;
-  height: 100vh;
-  background-color: #fff;
-  z-index: 10000; /* just to be safe */
-}
+
 </style>
