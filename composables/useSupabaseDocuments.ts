@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-export default function useSupabaseDocuments() {
+const useSupabaseDocuments = () => {
   const config = useRuntimeConfig();
 
   // Get the Supabase URL and ANON key from the public runtime config
@@ -12,6 +12,41 @@ export default function useSupabaseDocuments() {
   }
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+  const uploadDocuments = async (files: File[], component: string) => {
+    const uploadedDocuments = [];
+
+    for (const file of files) {
+      const filePath = `${component}/${Date.now()}-${file.name}`;
+      const { data, error } = await supabase
+        .storage
+        .from('documents') // Make sure you have a bucket named 'documents'
+        .upload(filePath, file);
+
+      if (error) {
+        console.error("Upload error:", error.message);
+        continue; // Skip this file and move to the next
+      }
+
+      // Generate the URL for the uploaded file
+      const { data: publicUrlData } = supabase
+        .storage
+        .from('documents')
+        .getPublicUrl(filePath);
+
+      if (publicUrlData?.publicUrl) {
+        uploadedDocuments.push({
+          name: file.name,
+          url: publicUrlData.publicUrl,
+        });
+      } else {
+        console.error("Failed to retrieve public URL for:", filePath);
+      }
+    }
+
+    console.log("Uploaded Documents:", uploadedDocuments); // Check what's being returned
+    return uploadedDocuments;
+  };
 
   const listDocuments = async () => {
     const { data, error } = await supabase.storage.from('documents').list('', {
@@ -27,18 +62,7 @@ export default function useSupabaseDocuments() {
     }));
   };
 
-  const uploadDocuments = async (files: File[]) => {
-    const uploadPromises = files.map(async (file) => {
-      const { data, error } = await supabase.storage
-        .from('documents')
-        .upload(file.name, file, { cacheControl: '3600', upsert: false });
+  return { uploadDocuments, listDocuments };
+};
 
-      if (error) throw error;
-      return data;
-    });
-
-    await Promise.all(uploadPromises);
-  };
-
-  return { listDocuments, uploadDocuments };
-}
+export default useSupabaseDocuments;
