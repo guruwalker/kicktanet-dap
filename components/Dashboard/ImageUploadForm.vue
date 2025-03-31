@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const { uploadImages } = useSupabaseImages();
 
-const { createMediaFile } = useMediaFiles()
+const toast = useToast();
+
+const emit = defineEmits(["close"]);
+
+const { createMediaFile } = useMediaFiles();
 
 const selectedFiles = ref<File[]>([]);
 const uploadError = ref<string | null>(null);
@@ -11,14 +15,14 @@ const selectedComponent = ref<string | null>(null);
 const isUploading = ref(false);
 
 const availableComponents = [
-  { label: 'Component 1', value: 'component1' },
-  { label: 'Component 2', value: 'component2' },
-  { label: 'Component 3', value: 'component3' },
-  { label: 'Component 4', value: 'component4' },
-  { label: 'Component 5', value: 'component5' },
-  { label: 'Component 6', value: 'component6' },
-  { label: 'Component 7', value: 'component7' },
-  { label: 'Component 8', value: 'component8' },
+  { label: "Component 1", value: "component1" },
+  { label: "Component 2", value: "component2" },
+  { label: "Component 3", value: "component3" },
+  { label: "Component 4", value: "component4" },
+  { label: "Component 5", value: "component5" },
+  { label: "Component 6", value: "component6" },
+  { label: "Component 7", value: "component7" },
+  { label: "Component 8", value: "component8" },
 ];
 
 const handleFileChange = (event: Event) => {
@@ -26,7 +30,8 @@ const handleFileChange = (event: Event) => {
 
   if (files && files.length > 0) {
     if (files.length > 10) {
-      uploadError.value = 'You can only upload a maximum of 10 images at a time.';
+      uploadError.value =
+        "You can only upload a maximum of 10 images at a time.";
       return;
     }
 
@@ -37,12 +42,12 @@ const handleFileChange = (event: Event) => {
 
 const handleUpload = async () => {
   if (selectedFiles.value.length === 0) {
-    uploadError.value = 'No files selected for upload.';
+    uploadError.value = "No files selected for upload.";
     return;
   }
 
   if (!selectedComponent.value) {
-    uploadError.value = 'Please select a component.';
+    uploadError.value = "Please select a component.";
     return;
   }
 
@@ -50,10 +55,13 @@ const handleUpload = async () => {
 
   try {
     // Upload images to Supabase and get their URLs
-    const uploadedImages = await uploadImages(selectedFiles.value, selectedComponent.value);
+    const uploadedImages = await uploadImages(
+      selectedFiles.value,
+      selectedComponent.value
+    );
 
     if (!Array.isArray(uploadedImages) || uploadedImages.length === 0) {
-      uploadError.value = 'No images were uploaded. Please try again.';
+      uploadError.value = "No images were uploaded. Please try again.";
       return;
     }
 
@@ -62,19 +70,32 @@ const handleUpload = async () => {
       try {
         const response = await createMediaFile({
           file_name: image.name,
-          bucket: 'images',
+          bucket: "images",
           public_url: image.url,
           component: selectedComponent.value,
           uploaded_by: null,
         });
 
         if (!response?.success) {
-          console.error("Failed to save image to media_files table:", response?.message);
+          console.error(
+            "Failed to save image to media_files table:",
+            response?.message
+          );
           toast.add({
             title: "Warning",
-            description: `Failed to save ${image.name} to the media_files table.`,
+            description: `Failed to save the image to the media_files table.`,
             color: "yellow",
+            id: "media-warning",
           });
+        } else {
+          toast.add({
+            title: "Success",
+            description: "Images uploaded and saved successfully!",
+            color: "green",
+            id: "media-success",
+          });
+
+          emit("close");
         }
       } catch (error) {
         console.error("Error creating media file entry:", error);
@@ -84,52 +105,88 @@ const handleUpload = async () => {
     selectedFiles.value = [];
     selectedComponent.value = null;
 
+    emit("close");
+
     toast.add({
       title: "Success",
       description: "Images uploaded and saved successfully!",
       color: "green",
+      id: "media-success",
     });
   } catch (error) {
     console.error("Error during upload process:", error);
-    uploadError.value = 'Failed to upload images. Please try again.';
+    uploadError.value = "Failed to upload images. Please try again.";
   } finally {
     isUploading.value = false;
   }
 };
 
-
-defineProps<{
+const props = defineProps<{
+  show: boolean; // Controls modal visibility
   onClose: () => void;
   onUploadComplete: () => void;
 }>();
 </script>
 
 <template>
-  <div class="bg-white p-6 rounded shadow-lg w-96">
-    <h2 class="text-lg font-semibold mb-4">Upload Images</h2>
+  <UModal v-model="props.show">
+    <UCard>
+      <!-- Card Header -->
+      <template #header>
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-semibold">Upload Images</h2>
+          <button
+            @click="emit('close')"
+            class="text-gray-500 hover:text-gray-700"
+          >
+            <!-- <span class="mdi mdi-close text-2xl"></span> -->
+            <Icon name="mdi:close" class="h-8 w-8"></Icon>
+          </button>
+        </div>
+      </template>
 
-    <label class="block mb-2">Select Component:</label>
-    <select v-model="selectedComponent" class="mb-4 p-2 border rounded w-full">
-      <option v-for="component in availableComponents" :key="component.value" :value="component.value">
-        {{ component.label }}
-      </option>
-    </select>
+      <!-- Card Content -->
+      <div class="p-6 space-y-4">
+        <!-- Select Component Dropdown -->
+        <div>
+          <label class="block text-sm font-medium mb-1"
+            >Select Component:</label
+          >
+          <USelect
+            v-model="selectedComponent"
+            :options="availableComponents"
+            placeholder="Choose a component"
+            class="w-full"
+          />
+        </div>
 
-    <input
-      type="file"
-      accept="image/*"
-      multiple
-      @change="handleFileChange"
-      class="mb-4"
-    />
+        <div>
+          <label class="block text-sm font-medium mb-1">Upload Files:</label>
+          <input
+            type="file"
+            accept="image/*"
+            multiple
+            @change="handleFileChange"
+            class="w-full p-2 border rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded-l-lg file:border-0 file:text-sm file:font-semibold file:bg-primary-500 file:text-white hover:file:bg-primary-600"
+          />
+        </div>
 
-    <p v-if="uploadError" class="text-red-500 mt-2">{{ uploadError }}</p>
+        <p v-if="uploadError" class="text-red-500 text-sm">{{ uploadError }}</p>
+      </div>
 
-    <div class="flex justify-end mt-4 gap-2">
-      <UButton @click="handleUpload" color="primary" :disabled="isUploading">
-        {{ isUploading ? 'Uploading...' : 'Upload' }}
-      </UButton>
-      <UButton @click="$props.onClose">Cancel</UButton>
-    </div>
-  </div>
+      <!-- Card Footer -->
+      <template #footer>
+        <div class="flex justify-end gap-6">
+          <UButton
+            @click="handleUpload"
+            color="primary"
+            :disabled="isUploading"
+          >
+            {{ isUploading ? "Uploading..." : "Upload" }}
+          </UButton>
+          <UButton @click="emit('close')" color="gray">Cancel</UButton>
+        </div>
+      </template>
+    </UCard>
+  </UModal>
 </template>

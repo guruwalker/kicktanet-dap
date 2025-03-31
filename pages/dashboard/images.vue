@@ -83,11 +83,20 @@ const confirmDelete = async (id: string) => {
   }
 };
 
+const hasClosedModal = async () => {
+  isDrawerOpen.value = false;
+
+  await fetchImages();
+};
+
 // Watch for changes in the `c` query parameter and refetch images
-watch(() => route.query.c, (newComponent) => {
-  component.value = newComponent;
-  fetchImages();
-});
+watch(
+  () => route.query.c,
+  (newComponent) => {
+    component.value = newComponent;
+    fetchImages();
+  }
+);
 
 // Initial fetch
 fetchImages();
@@ -135,7 +144,7 @@ fetchImages();
             <UButton
               icon="lucide-download"
               size="xs"
-              @click="downloadImage(image.public_url)"
+              @click="downloadImage(image.public_url, image.file_name)"
             />
             <UButton
               icon="lucide-trash"
@@ -160,7 +169,7 @@ fetchImages();
     </div>
 
     <!-- Image Upload Drawer -->
-    <div
+    <!-- <div
       v-if="isDrawerOpen"
       class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
     >
@@ -168,6 +177,20 @@ fetchImages();
         @onClose="() => (isDrawerOpen = false)"
         @onUploadComplete="handleUploadComplete"
       />
-    </div>
+    </div> -->
   </div>
+
+  <!-- <div>
+    <UModal v-if="isDrawerOpen">
+      <DashboardImageUploadForm
+        @onClose="() => (isDrawerOpen = false)"
+        @onUploadComplete="handleUploadComplete"
+      />
+    </UModal>
+  </div> -->
+  <DashboardImageUploadForm
+    :show="isDrawerOpen"
+    @close="hasClosedModal"
+    @onUploadComplete="handleUploadComplete"
+  />
 </template>
