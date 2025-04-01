@@ -18,7 +18,7 @@ useSeoMeta({
           COMPONENT #2- Identifying and equipping high-potential young women and
           youthful participants, including CDCs KPIs
         </p>
-        <h4 class="s-28">Narrative</h4>
+        <h4 class="s-28">Purpose</h4>
       </div>
 
       <!-- Narrative -->

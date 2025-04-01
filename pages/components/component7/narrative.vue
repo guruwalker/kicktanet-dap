@@ -19,11 +19,15 @@ useSeoMeta({
           emerging technology ecosystem in Kenya (Policy, safety and security
           Standards, guidelines and regulatory framework
         </p>
-        <h4 class="s-28">Narrative</h4>
+        <h4 class="s-28">Purpose</h4>
       </div>
 
       <!-- Narrative -->
-      <p class="mt-20"></p>
+      <p class="mt-20">
+        Systemic: Contribute to the enhancement of the Artificial Intelligence
+        and emerging technology ecosystem in Kenya (Policy, safety and security
+        Standards, guidelines and regulatory framework)
+      </p>
     </div>
   </section>
 </template>

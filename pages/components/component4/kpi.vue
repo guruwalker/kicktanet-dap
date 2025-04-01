@@ -8,6 +8,44 @@ useHead({
 useSeoMeta({
   title: "Component 4 - KPIs | KICKTANet DAP",
 });
+
+const data = ref([
+  {
+    name: "KPI 1",
+    description:
+      "Percentage increase in households with reliable internet by leveraging local digital hubs, community networks, and ICTA government free Wi-Fi hotspots.",
+  },
+  {
+    name: "KPI 2",
+    description:
+      "Reduction in the average cost of internet access in target areas.",
+  },
+  {
+    name: "KPI 3",
+    description:
+      "Improvement in internet speed and reliability (measured through network assessments).",
+  },
+  {
+    name: "KPI 4",
+    description:
+      "Number of community members accessing and utilizing online services.",
+  },
+  {
+    name: "KPI 5",
+    description:
+      "Network coverage - Increased geographical reach of broadband and mobile networks.",
+  },
+  {
+    name: "KPI 6",
+    description:
+      "Internet usage measured by the increased frequency and types of online activities among community members.",
+  },
+  {
+    name: "KPI 7",
+    description:
+      "Digital inclusion measured by increased access to and usage of technology and the internet by marginalized groups.",
+  },
+]);
 </script>
 
 <template>
@@ -20,6 +58,27 @@ useSeoMeta({
         </p>
         <h4 class="s-28">KPIs</h4>
       </div>
+    </div>
+
+    <div class="container overflow-x-auto mt-30">
+      <table
+        class="table-auto w-full border-collapse border border-gray-300 mt-4"
+      >
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border border-gray-300 p-2 text-left">Name</th>
+            <th class="border border-gray-300 p-2 text-left">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="kpi in data" :key="kpi.name">
+            <td class="border border-gray-300 p-2">{{ kpi.name }}</td>
+            <td class="border border-gray-300 p-2 whitespace-pre-line">
+              {{ kpi.description }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 </template>

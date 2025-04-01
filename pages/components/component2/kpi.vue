@@ -79,7 +79,7 @@ const data = ref([
         <h4 class="s-28">KPI Metrics</h4>
       </div>
 
-      <div class="overflow-x-auto mt-30">
+      <div class="container overflow-x-auto mt-30">
         <table
           class="table-auto w-full border-collapse border border-gray-300 mt-4"
         >
