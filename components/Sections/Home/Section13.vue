@@ -10,14 +10,14 @@ interface Statistic {
 
 const statistics = ref<Statistic[]>([
   // { label: "Counties", end: 2, duration: 4000, suffix: "" },
-  { label: "Citizens Impacted", end: 450, duration: 4000, suffix: "K+" },
+  { label: "Citizens Impacted", end: 450, duration: 2000, suffix: "K+" },
   {
     label: "Community Champions Engaged",
-    end: 8000,
-    duration: 4000,
-    suffix: "+",
+    end: 8,
+    duration: 2000,
+    suffix: "K+",
   },
-  { label: "Implementing Partners", end: 10, duration: 4000, suffix: "+" },
+  { label: "Implementing Partners", end: 10, duration: 2000, suffix: "+" },
 ]);
 </script>
 <template>
@@ -35,9 +35,9 @@ const statistics = ref<Statistic[]>([
             <div class="statistic-block">
               <!-- Digit -->
               <div class="statistic-block-digit text-center">
-                <h2 class="s-46 statistic-number">
+                <h2 class="s-36 statistic-number">
                   <span class="count-element d-flex">
-                    <ElementsCounterUp
+                  <ElementsCounterUp
                       :start="0"
                       :end="stat.end"
                       :duration="stat.duration"

@@ -48,7 +48,7 @@ useSeoMeta({
                 </p>
                 <!-- Text -->
                 <p>
-                  Increased digital inclusion in the programme countries will
+                  Increased Digital Access in the programme countries will
                   form the basis for more thriving digital ecosystems that
                   generate high-skilled jobs, opportunities for local digital
                   entrepreneurship focused on country-specific development
@@ -57,7 +57,7 @@ useSeoMeta({
                 </p>
                 <p>
                   The Digital Access programme will also focus on learning about
-                  sustainable models and enablers for digital inclusion. The
+                  sustainable models and enablers for Digital Access. The
                   learnings will be shared with key stakeholders and other
                   partner countries, thereby amplifying the impact of the
                   programme.

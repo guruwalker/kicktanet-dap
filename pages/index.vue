@@ -1,6 +1,4 @@
 <script setup>
-import TestimonialsData from "~~/components/Data/Testimonials";
-
 useSeoMeta({
   title: "KICKTANET | FCDO - Digital Access Program",
   ogTitle: "KICKTANET | FCDO - Digital Access Program",
@@ -11,8 +9,6 @@ useHead({
     class: "navbar-light",
   },
 });
-
-const testimonials = ref(TestimonialsData);
 </script>
 
 <template>
@@ -22,15 +18,17 @@ const testimonials = ref(TestimonialsData);
 
     <!-- Project Description -->
 
-
     <!-- Stats -->
     <SectionsHomeSection13 />
 
     <!-- Project Objectives -->
-    <SectionsHomeSection5 />
+    <SectionsHomeObjectives />
 
     <!-- Random Photos -->
     <SectionsHomePress />
+
+    <!-- Expected Outcomes -->
+    <SectionsHomeOutcomes />
 
     <!-- Benefits for people -->
     <SectionsHomeSection10 />

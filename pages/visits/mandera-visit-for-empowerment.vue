@@ -113,7 +113,7 @@ useHead({
                 </div>
 
                 <p>
-                  The visit underscored the significance of digital inclusion in
+                  The visit underscored the significance of Digital Access in
                   fostering socio-economic development. As part of the
                   initiative, DIP is working closely with local stakeholders,
                   including community leaders and government representatives, to

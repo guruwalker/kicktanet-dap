@@ -40,7 +40,7 @@ const filteredTestimonials = computed(() => {
             <div class="inner-page-title text-center">
               <h2 class="s-52 w-700">What People Say</h2>
               <p class="p-lg">
-                Hear from those impacted by our work in digital inclusion.
+                Hear from those impacted by our work in Digital Access.
               </p>
             </div>
           </div>

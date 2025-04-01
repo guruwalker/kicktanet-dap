@@ -8,7 +8,7 @@ useHead({
 useSeoMeta({
   title: "Our Partners | KICKTANET DAP",
   description:
-    "Discover the organizations partnering with KICKTANET- Digital Access Project to drive digital inclusion.",
+    "Discover the organizations partnering with KICKTANET- Digital Access Project to drive Digital Access.",
 });
 
 const fundingPartners = [
@@ -17,7 +17,7 @@ const fundingPartners = [
     image: "/assets/images/partners/uk-id-logo.png",
     name: "FCDO",
     description:
-      "Supporting digital inclusion initiatives in Kenya through strategic partnerships.",
+      "Supporting Digital Access initiatives in Kenya through strategic partnerships.",
     website:
       "https://www.gov.uk/government/organisations/department-for-international-development",
   },
@@ -88,7 +88,7 @@ const implementingPartners = [
     name: "Gencad",
     image: "/assets/images/partners/gencad-logo.png",
     description:
-      "Generation for Change and Development (GENCAD) is involved in initiatives aimed at enhancing digital inclusion and community development in Mandera County.",
+      "Generation for Change and Development (GENCAD) is involved in initiatives aimed at enhancing Digital Access and community development in Mandera County.",
     website: "https://gencad.org/",
   },
   {
@@ -141,7 +141,7 @@ const implementingPartners = [
             <div class="inner-page-title text-center">
               <h2 class="s-52 w-700">Our Partners</h2>
               <p class="p-lg">
-                Collaborating with organizations to drive digital inclusion.
+                Collaborating with organizations to drive Digital Access.
               </p>
             </div>
           </div>

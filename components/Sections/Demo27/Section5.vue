@@ -9,7 +9,7 @@
               <h2 class="s-30">Our Project Objectives</h2>
               <!-- Text -->
               <p class="s-21 color--grey">
-                Advancing digital inclusion and economic empowerment in underserved communities.
+                Advancing Digital Access and economic empowerment in underserved communities.
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@
                   </div>
                 </div>
                 <div class="fbox-txt">
-                  <h6 class="s-20 w-700">Sustainable Digital Inclusion</h6>
+                  <h6 class="s-20 w-700">Sustainable Digital Access</h6>
                   <p class="p-sm">
                     Work with communities and partners to create long-term solutions for digital access.
                   </p>

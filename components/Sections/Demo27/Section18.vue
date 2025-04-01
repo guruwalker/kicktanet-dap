@@ -9,7 +9,7 @@
             <h2 class="s-30">Frequently Asked Questions</h2>
             <!-- Text -->
             <p class="s-21 color--grey">
-              Answers to common questions about the KICKTANet Digital Inclusion
+              Answers to common questions about the KICKTANet Digital Access
               Project.
             </p>
           </div>
@@ -24,7 +24,7 @@
               <!-- QUESTION #1 -->
               <div class="question mb-35 animate__animated animate__fadeInUp">
                 <h5 class="s-22 w-700">
-                  <span>1.</span> What is the KICKTANet Digital Inclusion
+                  <span>1.</span> What is the KICKTANet Digital Access
                   Project?
                 </h5>
                 <p class="color--grey">

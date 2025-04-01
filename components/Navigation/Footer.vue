@@ -96,13 +96,18 @@
             <ul class="foo-links clearfix">
               <li>
                 <p>
+                  <NuxtLink to="/visits">Special Events</NuxtLink>
+                </p>
+              </li>
+              <li>
+                <p>
                   <NuxtLink to="/project-impact-stories"
                     >Project Impact Stories</NuxtLink
                   >
                 </p>
               </li>
               <li>
-                <p><NuxtLink to="/news-and-press">News & Press</NuxtLink></p>
+                <p><NuxtLink to="/success-stories">Success Stories</NuxtLink></p>
               </li>
               <li>
                 <p><NuxtLink to="/visits">Visits</NuxtLink></p>
@@ -117,6 +122,11 @@
               <li>
                 <p>
                   <NuxtLink to="/success-stories">Success Stories</NuxtLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NuxtLink to="/change-diagram">Change diagram</NuxtLink>
                 </p>
               </li>
             </ul>

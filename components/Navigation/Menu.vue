@@ -54,11 +54,6 @@ const isActive = (path: string) => {
       <!-- MAIN MENU -->
       <nav class="wsmenu clearfix">
         <ul class="wsmenu-list nav-theme">
-          <!-- <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/about" class="h-link" :class="isActive('/')">
-              About
-            </NuxtLink>
-          </li> -->
           <li class="nl-simple" aria-haspopup="true">
             <NuxtLink to="/counties" class="h-link" :class="isActive('/')">
               Counties
@@ -69,12 +64,11 @@ const isActive = (path: string) => {
               Partners
             </NuxtLink>
           </li>
-          <!-- <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/news-and-press" class="h-link" :class="isActive('/')">
-              News & Press
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/about" class="h-link" :class="isActive('/')">
+              About the Project
             </NuxtLink>
-          </li> -->
-
+          </li>
           <li class="nl-simple" aria-haspopup="true">
             <NuxtLink
               to="/knowledge-products"
@@ -86,17 +80,11 @@ const isActive = (path: string) => {
           </li>
           <li class="nl-simple" aria-haspopup="true">
             <NuxtLink
-              to="/success-stories"
+              to="/news-and-press"
               class="h-link"
               :class="isActive('/')"
             >
-              Success Stories
-            </NuxtLink>
-          </li>
-
-          <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/visits" class="h-link" :class="isActive('/')">
-              Special Events
+              News & Press
             </NuxtLink>
           </li>
 

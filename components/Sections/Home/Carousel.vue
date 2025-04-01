@@ -22,7 +22,7 @@ const items = ref([
   },
   {
     title: "Collaboration for Change",
-    description: "Stakeholders Uniting for Digital Inclusion.",
+    description: "Stakeholders Uniting for Digital Access.",
     image: "/assets/images/carousel/hero5.jpeg",
   },
   {
