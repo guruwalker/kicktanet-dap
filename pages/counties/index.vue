@@ -6,7 +6,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Counties | Digital Access Programme",
+  title: "Counties | KICKTANet DAP",
 });
 
 const counties = [

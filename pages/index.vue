@@ -2,8 +2,8 @@
 import TestimonialsData from "~~/components/Data/Testimonials";
 
 useSeoMeta({
-  title: "KICKTANET / UK - Foreign, Commonwealth Development Office (FCDO)",
-  ogTitle: "KICKTANET / UK - Foreign, Commonwealth Development Office (FCDO)",
+  title: "KICKTANET | FCDO - Digital Access Program",
+  ogTitle: "KICKTANET | FCDO - Digital Access Program",
 });
 
 useHead({

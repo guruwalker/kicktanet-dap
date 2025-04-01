@@ -7,6 +7,10 @@ useHead({
   },
 });
 
+useSeoMeta({
+  title: "Component 5 - Partners  | KICKTANet DAP",
+});
+
 const partners = ref([
   {
     id: 1,
@@ -22,7 +26,7 @@ const partners = ref([
   <section id="partners-page" class="gr--whitesmoke inner-page-hero division">
     <div class="container">
       <div class="text-left">
-        <p class="s-28 w-700">
+        <p class="s-20 w-700">
           COMPONENT #5- Facilitate access to locally relevant digital content
           and services, including digital government services
         </p>

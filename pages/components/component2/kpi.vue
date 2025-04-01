@@ -5,6 +5,10 @@ useHead({
   },
 });
 
+useSeoMeta({
+  title: "Component 2 - KPIs | KICKTANet DAP",
+});
+
 const data = ref([
   {
     name: "KPI 1",

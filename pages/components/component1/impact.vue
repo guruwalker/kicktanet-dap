@@ -5,6 +5,10 @@ useHead({
   },
 });
 
+useSeoMeta({
+  title: "Component 1 - Impact | KICKTANet DAP",
+});
+
 const images = [
   "/assets/images/visits-mandera/me-visit/one.jpg",
   "/assets/images/visits-mandera/me-visit/two.jpg",

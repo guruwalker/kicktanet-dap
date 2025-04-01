@@ -6,7 +6,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Mandera County | Digital Access Programme",
+  title: "Mandera County | KICKTANet DAP",
 });
 </script>
 
@@ -85,24 +85,14 @@ useSeoMeta({
                 </p>
               </div>
               <div class="row">
-                <div class="col post-share-list">
-                  <ul class="share-social-icons ico-20 text-center clearfix">
-                    <li>
-                      <a href="#" class="share-ico"
-                        ><span class="flaticon-twitter"></span
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#" class="share-ico"
-                        ><span class="flaticon-facebook"></span
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#" class="share-ico"
-                        ><span class="flaticon-bookmark"></span
-                      ></a>
-                    </li>
-                  </ul>
+                <div class="txt-block-tra-link mt-25">
+                  <NuxtLink
+                    to="https://mandera.go.ke/"
+                    target="_blank"
+                    class="tra-link ico-20 color--theme"
+                  >
+                    Read more <span class="flaticon-next"></span>
+                  </NuxtLink>
                 </div>
               </div>
             </div>

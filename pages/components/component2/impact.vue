@@ -4,6 +4,10 @@ useHead({
     class: "navbar-dark navbar-dark-2",
   },
 });
+
+useSeoMeta({
+  title: "Component 2 - Impact | KICKTANet DAP",
+});
 </script>
 
 <template>
@@ -17,7 +21,6 @@ useHead({
         <h4 class="s-28">Impact</h4>
       </div>
 
-      <p class="mt-20"></p>
     </div>
   </section>
 </template>

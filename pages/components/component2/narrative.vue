@@ -4,6 +4,10 @@ useHead({
     class: "navbar-dark navbar-dark-2",
   },
 });
+
+useSeoMeta({
+  title: "Component 2 - Narrative | KICKTANet DAP",
+});
 </script>
 
 <template>

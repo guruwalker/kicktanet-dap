@@ -6,6 +6,11 @@ useHead({
     class: "navbar-dark navbar-dark-2",
   },
 });
+
+useSeoMeta({
+  title: "Component 1 - Partners | KICKTANet DAP",
+});
+
 const implementingPartners = ref([
   {
     id: 1,

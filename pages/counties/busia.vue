@@ -6,7 +6,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Busia County | Digital Access Programme",
+  title: "Busia County | KICKTANet DAP",
 });
 </script>
 
