@@ -41,13 +41,13 @@ const isActive = (path: string) => {
       <!-- HEADER BLACK LOGO -->
       <div class="desktoplogo">
         <NuxtLink to="/" class="logo-black"
-          ><img src="/assets/images/kicktanet-logo.png" alt="logo"
+          ><img src="/assets/images/header-logo.png" alt="logo"
         /></NuxtLink>
       </div>
       <!-- HEADER WHITE LOGO -->
       <div class="desktoplogo">
         <NuxtLink to="/" class="logo-white"
-          ><img src="/assets/images/kicktanet-logo.png" alt="logo"
+          ><img src="/assets/images/header-logo.png" alt="logo"
         /></NuxtLink>
       </div>
 
@@ -65,28 +65,38 @@ const isActive = (path: string) => {
             </NuxtLink>
           </li>
           <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink to="/partners" class="h-link" :class="isActive('/')">
+              Partners
+            </NuxtLink>
+          </li>
+          <!-- <li class="nl-simple" aria-haspopup="true">
             <NuxtLink to="/news-and-press" class="h-link" :class="isActive('/')">
               News & Press
             </NuxtLink>
+          </li> -->
+
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink
+              to="/knowledge-products"
+              class="h-link"
+              :class="isActive('/')"
+            >
+              Knowledge Products
+            </NuxtLink>
           </li>
+          <li class="nl-simple" aria-haspopup="true">
+            <NuxtLink
+              to="/success-stories"
+              class="h-link"
+              :class="isActive('/')"
+            >
+              Success Stories
+            </NuxtLink>
+          </li>
+
           <li class="nl-simple" aria-haspopup="true">
             <NuxtLink to="/visits" class="h-link" :class="isActive('/')">
-              Visits
-            </NuxtLink>
-          </li>
-          <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/team" class="h-link" :class="isActive('/')">
-              Team
-            </NuxtLink>
-          </li>
-          <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/testimonials" class="h-link" :class="isActive('/')">
-              Testimonials
-            </NuxtLink>
-          </li>
-          <li class="nl-simple" aria-haspopup="true">
-            <NuxtLink to="/partners" class="h-link" :class="isActive('/')">
-              Partners
+              Special Events
             </NuxtLink>
           </li>
 
@@ -94,7 +104,7 @@ const isActive = (path: string) => {
           <li class="nl-simple" aria-haspopup="true">
             <NuxtLink
               to="/login"
-              class="btn r-04 btn--theme hover--tra-white last-link"
+              class="btn r-04 btn--theme hover--tra-dark last-link"
               >Sign in</NuxtLink
             >
           </li>

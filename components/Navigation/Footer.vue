@@ -79,16 +79,19 @@
             <!-- Links -->
             <ul class="foo-links clearfix">
               <li>
+                <p><NuxtLink to="/project-impact-stories">Project Impact Stories</NuxtLink></p>
+              </li>
+              <li>
                 <p><NuxtLink to="/news-and-press">News & Press</NuxtLink></p>
               </li>
               <li>
                 <p><NuxtLink to="/visits">Visits</NuxtLink></p>
               </li>
               <li>
-                <p><NuxtLink to="/team">Team</NuxtLink></p>
+                <p><NuxtLink to="/knowledge-products">Knowledge Products</NuxtLink></p>
               </li>
               <li>
-                <p><NuxtLink to="/testimonials">Testimonials</NuxtLink></p>
+                <p><NuxtLink to="/success-stories">Success Stories</NuxtLink></p>
               </li>
             </ul>
           </div>

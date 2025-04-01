@@ -24,13 +24,13 @@ watch(
     <!-- Mobile logo black -->
     <NuxtLink to="/" class="logo-black"
       ><span class="smllogo"
-        ><img src="/assets/images/kicktanet-logo.png" alt="mobile-logo" /></span
+        ><img src="/assets/images/header-logo.png" alt="mobile-logo" /></span
     ></NuxtLink>
 
     <!-- Mobile logo white -->
     <NuxtLink to="/" class="logo-white"
       ><span class="smllogo"
-        ><img src="/assets/images/kicktanet-logo.png" alt="logo" /></span
+        ><img src="/assets/images/header-logo.png" alt="logo" /></span
     ></NuxtLink>
 
     <!-- Menu toggle -->

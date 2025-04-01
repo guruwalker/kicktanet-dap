@@ -1,32 +1,25 @@
 <script setup>
-import Team from "~~/components/Data/Team";
-
 useHead({
   bodyAttrs: {
     class: "navbar-dark navbar-dark-2",
   },
 });
-
-const teamMembers = ref(Team);
 </script>
 
 <template>
-  <section
-    id="team-2"
-    class="gr--whitesmoke pb-40 inner-page-hero team-section"
-  >
+  <section id="partners-page" class="gr--whitesmoke inner-page-hero division">
     <div class="container">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col">
-            <div class="inner-page-title text-center">
-              <h2 class="s-52 w-700">Component 1 - KPIs</h2>
-              <p class="p-lg">No content yet!
-</p>
-            </div>
-          </div>
-        </div>
+      <div class="text-left">
+        <p class="s-20 w-700">
+          COMPONENT #1- Providing foundational digital skills
+        </p>
+        <h4 class="s-28">KPIs</h4>
       </div>
+
+      <!-- Narrative -->
+      <p class="mt-20">
+
+      </p>
     </div>
   </section>
 </template>

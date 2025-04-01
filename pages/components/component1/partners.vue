@@ -86,10 +86,10 @@ const trainingPartners = ref([
   <section id="partners-page" class="gr--whitesmoke inner-page-hero division">
     <div class="container">
       <div class="text-left">
-        <p class="s-28 w-700">
+        <p class="s-20 w-700">
           COMPONENT #1- Providing foundational digital skills
         </p>
-        <h4 class="s-22">Implementing Partners</h4>
+        <h4 class="s-28">Implementing Partners</h4>
       </div>
 
       <!-- Implementing Partners -->

@@ -1,55 +1,31 @@
 <script setup>
-import Team from "~~/components/Data/Team";
-
 useHead({
   bodyAttrs: {
     class: "navbar-dark navbar-dark-2",
   },
 });
-
-const teamMembers = ref(Team);
 </script>
 
 <template>
-  <section
-    id="team-2"
-    class="gr--whitesmoke pb-40 inner-page-hero team-section"
-  >
+  <section id="partners-page" class="gr--whitesmoke inner-page-hero division">
     <div class="container">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col">
-            <div class="inner-page-title text-center">
-              <h2 class="s-52 w-700">Component 2 - Narrative</h2>
-              <p class="p-lg">
-                Partners - Intermediate and advanced skills and opportunities to
-                the communities
-              </p>
-
-              <ol class="simple-list pt-20">
-                <li class="list-item">
-                  <p>
-                    1. SoteHub - David Ogiga - david@sotehub.com,
-                    alvin@sotehub.com
-                  </p>
-                </li>
-                <li class="list-item">
-                  <p class="mb-0">
-                    2. EldoHub - Magdalene Chepkemoi - magdalene
-                    mchepkemoi@eldohub.co.ke
-                  </p>
-                </li>
-
-                <li class="list-item">
-                  <p class="mb-0">
-                    3. Plusfarm - Stepehen Moses - smoses@plusfarmkenya.co.ke
-                  </p>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
+      <div class="text-left">
+        <p class="s-20 w-700">
+          COMPONENT #2- Identifying and equipping high-potential young women and
+          youthful participants, including CDCs KPIs
+        </p>
+        <h4 class="s-28">Narrative</h4>
       </div>
+
+      <!-- Narrative -->
+      <p class="mt-20">
+        Demand: Identifying and equipping high-potential young women and
+        youthful participants, including Community Digital Champions, with
+        digital employability skills (intermediate to advanced), mentorship,
+        handholding, placement, financial literacy, entrepreneurial training,
+        and psychological skills and support to boost their digital
+        employability
+      </p>
     </div>
   </section>
 </template>
