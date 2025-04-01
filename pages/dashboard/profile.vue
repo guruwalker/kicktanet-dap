@@ -24,8 +24,6 @@ const items = [
   {
     key: "security",
     label: "Security",
-    description:
-      "Change your password here. After saving, you'll be logged out.",
   },
 ];
 </script>
@@ -58,7 +56,8 @@ const items = [
             <FormsProfileForm />
           </div>
           <div v-else-if="item.key === 'security'" class="space-y-3">
-            <FormsResetPasswordForm />
+            <!-- <FormsResetPasswordForm /> -->
+            Please contact the admin for assistance
           </div>
         </UCard>
       </template>

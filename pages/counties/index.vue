@@ -50,7 +50,7 @@ const counties = [
         </div>
       </div>
 
-      <div class="posts-wrapper">
+      <div class="container posts-wrapper">
         <div class="row d-flex justify-center">
           <div
             v-for="county in counties"

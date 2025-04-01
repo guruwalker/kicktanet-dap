@@ -50,22 +50,38 @@
             <ul class="foo-links clearfix">
               <li>
                 <p>
-                  <NuxtLink to="/">KICKTANet</NuxtLink>
+                  <NuxtLink to="https://www.kictanet.or.ke" target="_blank">KICKTANet</NuxtLink>
                 </p>
               </li>
               <li>
                 <p>
-                  <NuxtLink to="#">UK International Development</NuxtLink>
+                  <NuxtLink
+                    to="https://www.gov.uk/government/organisations/department-for-international-development"
+                    target="_blank"
+                    >UK International Development</NuxtLink
+                  >
                 </p>
               </li>
               <li>
-                <p><NuxtLink to="#">Government of Kenya</NuxtLink></p>
+                <p>
+                  <NuxtLink to="https://gok.kenya.go.ke/" target="_blank"
+                    >Government of Kenya</NuxtLink
+                  >
+                </p>
               </li>
               <li>
-                <p><NuxtLink to="#">Busia County Government</NuxtLink></p>
+                <p>
+                  <NuxtLink to="https://busiacounty.go.ke" target="_blank"
+                    >Busia County Government</NuxtLink
+                  >
+                </p>
               </li>
               <li>
-                <p><NuxtLink to="#">Mandera County Government</NuxtLink></p>
+                <p>
+                  <NuxtLink to="https://mandera.go.ke" target="_blank"
+                    >Mandera County Government</NuxtLink
+                  >
+                </p>
               </li>
             </ul>
           </div>
@@ -79,7 +95,11 @@
             <!-- Links -->
             <ul class="foo-links clearfix">
               <li>
-                <p><NuxtLink to="/project-impact-stories">Project Impact Stories</NuxtLink></p>
+                <p>
+                  <NuxtLink to="/project-impact-stories"
+                    >Project Impact Stories</NuxtLink
+                  >
+                </p>
               </li>
               <li>
                 <p><NuxtLink to="/news-and-press">News & Press</NuxtLink></p>
@@ -88,10 +108,16 @@
                 <p><NuxtLink to="/visits">Visits</NuxtLink></p>
               </li>
               <li>
-                <p><NuxtLink to="/knowledge-products">Knowledge Products</NuxtLink></p>
+                <p>
+                  <NuxtLink to="/knowledge-products"
+                    >Knowledge Products</NuxtLink
+                  >
+                </p>
               </li>
               <li>
-                <p><NuxtLink to="/success-stories">Success Stories</NuxtLink></p>
+                <p>
+                  <NuxtLink to="/success-stories">Success Stories</NuxtLink>
+                </p>
               </li>
             </ul>
           </div>

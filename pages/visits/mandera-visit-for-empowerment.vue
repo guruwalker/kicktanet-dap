@@ -49,7 +49,7 @@ useHead({
               <div class="single-post-txt">
                 <!-- Text -->
                 <p>
-                  The Digital Inclusion Project (DIP) aims to bridge the digital
+                  The Digital Access Program (DIP) aims to bridge the digital
                   divide by equipping underserved communities with essential
                   digital skills and access to online opportunities. During the
                   recent visit to Mandera County, the professor engaged with
@@ -66,7 +66,7 @@ useHead({
                 <p>
                   During the visit to Mandera County, the professor engaged in
                   in-depth discussions with local youth, highlighting how the
-                  Digital Inclusion Project (DIP) is set to transform their
+                  Digital Access Program (DIP) is set to transform their
                   access to technology, education, and economic opportunities.
                   Many of the youths shared their challenges, such as limited
                   internet connectivity, lack of digital skills, and the

@@ -3,16 +3,6 @@ export default [
     name: "Prof. Jimmy Macharia",
     role: "Elearning Innovations Limited",
     email: "machariajimmy@gmail.com",
-    image: "/assets/images/team-13.jpg",
+    image: "/assets/images/team/jimmy.jpeg",
   },
-  // {
-  //   name: "Edwin Njeru",
-  //   role: "CTO",
-  //   image: "/assets/images/team-13.jpg",
-  // },
-  // {
-  //   name: "Lydia Kemunto",
-  //   role: "CFO",
-  //   image: "/assets/images/team-13.jpg",
-  // },
-];
+]

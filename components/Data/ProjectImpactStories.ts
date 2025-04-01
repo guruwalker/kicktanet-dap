@@ -8,7 +8,7 @@ export default [
   },
   {
     id: 4,
-    text: "With KICKTANET- Digital Inclusion Project’s training, I have learned how to navigate the internet safely and even access online learning platforms. My children are also benefiting from this knowledge.",
+    text: "With KICKTANET DAP’s training, I have learned how to navigate the internet safely and even access online learning platforms. My children are also benefiting from this knowledge.",
     author: "Josephat Otieno",
     role: "County Resident",
     avatar: "/assets/images/team-13.jpg",

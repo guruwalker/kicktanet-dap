@@ -19,7 +19,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <UForm @submit.prevent="handleSubmit" :state="profileFormState">
+  <!-- <UForm @submit.prevent="handleSubmit" :state="profileFormState">
     <UFormGroup class="py-3" label="Full name" name="full_name">
       <UInput v-model="profileFormState.full_name" />
     </UFormGroup>
@@ -36,5 +36,10 @@ const handleSubmit = async () => {
       <UButton color="gray" @click="$emit('cancel')">Cancel</UButton>
       <UButton color="primary" type="submit">Save</UButton>
     </div>
-  </UForm>
+  </UForm> -->
+  <div>
+    <p>
+      Please contact the admin for assistance
+    </p>
+  </div>
 </template>

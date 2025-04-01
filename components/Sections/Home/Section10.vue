@@ -14,7 +14,7 @@
               <h2 class="s-46 w-700">Benefits for Participants</h2>
               <!-- Text -->
               <p>
-                Joining the KICKTANet Digital Inclusion Project provides participants with valuable skills, opportunities, and resources to thrive in the digital world.
+                Joining the KICKTANet Digital Access Program provides participants with valuable skills, opportunities, and resources to thrive in the digital world.
               </p>
               <!-- List -->
               <ul class="simple-list">

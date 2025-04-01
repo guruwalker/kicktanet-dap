@@ -24,7 +24,7 @@ const handleSubmit = async () => {
 <template>
   <UForm @submit.prevent="handleSubmit" :state="profileFormState">
     <UFormGroup class="py-3" label="Full name" name="full_name">
-      <UInput v-model="profileFormState.full_name" />
+      <UInput v-model="profileFormState.full_name" disabled />
     </UFormGroup>
 
     <UFormGroup class="py-3" label="Username" name="username">
@@ -57,7 +57,7 @@ const handleSubmit = async () => {
     </UFormGroup> -->
 
     <div class="flex justify-end space-x-2">
-      <UButton color="gray" @click="$emit('cancel')">Cancel</UButton>
+      <!-- <UButton color="gray" @click="$emit('cancel')">Cancel</UButton> -->
       <UButton color="primary" type="submit">Save</UButton>
     </div>
   </UForm>

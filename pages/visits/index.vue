@@ -8,9 +8,9 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Field Visits in Mandera & Busia | KICKTANET- Digital Inclusion Project",
+  title: "Field Visits in Mandera & Busia | KICKTANET DAP",
   description:
-    "Explore our field visits in Mandera and Busia as part of the KICKTANet Digital Inclusion Project, bridging the digital divide with real impact.",
+    "Explore our field visits in Mandera and Busia as part of the KICKTANet Digital Access Program, bridging the digital divide with real impact.",
 });
 
 const visits = ref([

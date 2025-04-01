@@ -7,8 +7,8 @@ useSeoMeta({
 });
 
 definePageMeta({
-  layout: 'dashboard'
-})
+  layout: "dashboard",
+});
 
 const {
   users,
@@ -34,7 +34,7 @@ const columns = ref([
   { key: "full_name", label: "Name" },
   { key: "username", label: "Username" },
   { key: "email", label: "Email" },
-  { key: "role", label: "Role" },
+  { key: "partner", label: "Partner Org" },
   { key: "phone_number", label: "Phone" },
 ]);
 
@@ -78,50 +78,9 @@ const handleDelete = async () => {
       <h1 class="text-xl font-semibold">Users</h1>
     </div>
 
-    <!-- View Toggle -->
-
-
     <!-- List View -->
     <UCard v-if="useListView">
-      <SharedDatagrid :columns="columns" :rows="users">
-      </SharedDatagrid>
+      <SharedDatagrid :columns="columns" :rows="users" />
     </UCard>
-
-    <!-- Grid View -->
-    <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <CardsUserCard v-for="user in users" :key="user.id" :user="user">
-        <template #actions>
-          <div class="flex justify-end space-x-2">
-            <UButton
-              color="primary"
-              variant="solid"
-              size="sm"
-              icon="lucide-pencil"
-              @click="openEditDrawer(user.id)"
-            />
-            <UButton
-              color="red"
-              variant="solid"
-              size="sm"
-              icon="lucide-trash"
-              @click="confirmDelete(user.id)"
-            />
-          </div>
-        </template>
-      </CardsUserCard>
-    </div>
-
-    <!-- Edit Drawer -->
-    <SharedDrawer v-model="isDrawerOpen" title="Edit User">
-      <FormsUserForm @cancel="refreshUsers" />
-    </SharedDrawer>
-
-    <!-- Delete Confirmation Modal -->
-    <SharedModal
-      :show="isDeleteModalOpen"
-      message="Are you sure you want to delete this user?"
-      @confirm="handleDelete"
-      @close="isDeleteModalOpen = false"
-    />
   </div>
 </template>

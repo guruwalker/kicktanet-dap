@@ -7,6 +7,11 @@ useHead({
   },
 });
 
+useSeoMeta({
+  title: "Knowledge Products | KICKTANet DAP",
+  ogTitle: "Knowledge Products | KICKTANet DAP",
+});
+
 const teamMembers = ref(Team);
 </script>
 
@@ -60,14 +65,14 @@ const teamMembers = ref(Team);
                 <div class="team-member-data">
                   <h6 class="s-20 w-700 color--theme">{{ member.name }}</h6>
                   <p class="color--grey my-3">{{ member.role }}</p>
-                  <!-- <p v-if="member.email">
-
-                    <a :href="'mailto:' + member.email">{{ member.email }}</a>
-                  </p> -->
-                  <div v-if="member.email" class="d-flex align-center gap-2">
+                  <NuxtLink
+                    v-if="member.email"
+                    class="d-flex align-center gap-2"
+                    :to="`mailto:{{ member.email }}`"
+                  >
                     <vue-feather type="mail" />
                     <span>{{ member.email }}</span>
-                  </div>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
