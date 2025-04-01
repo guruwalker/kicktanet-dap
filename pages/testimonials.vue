@@ -3,8 +3,8 @@ import { ref, computed } from "vue";
 import TestimonialsData from "~~/components/Data/Testimonials";
 
 useSeoMeta({
-  title: "Testimonials | KICKTANET DIP",
-  ogTitle: "Testimonials | KICKTANET DIP",
+  title: "Testimonials | KICKTANet DAP",
+  ogTitle: "Testimonials | KICKTANet DAP",
 });
 
 useHead({
