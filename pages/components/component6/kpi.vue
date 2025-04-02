@@ -100,7 +100,7 @@ const data = ref([
                 <NuxtLink
                   class="btn btn--theme hover--tra-dark"
                   target="_blank"
-                  :to="kpi.link"
+                  :to="`/document-viewer?file=${encodeURIComponent(kpi.link)}`"
                   >Open Content
                 </NuxtLink>
               </button>

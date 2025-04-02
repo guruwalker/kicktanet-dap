@@ -92,7 +92,14 @@ link: "",
             </td>
 
             <td class="border border-gray-300 p-2 whitespace-pre-line">
-              {{ kpi.link }}
+                           <button v-if="kpi.link !== ''">
+                <NuxtLink
+                  class="btn btn--theme hover--tra-dark"
+                  target="_blank"
+                  :to="kpi.link"
+                  >Open Content
+                </NuxtLink>
+              </button>
             </td>
           </tr>
         </tbody>
