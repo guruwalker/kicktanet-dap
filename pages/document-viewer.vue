@@ -53,7 +53,7 @@ const handleLoadError = () => {
   justify-content: center;
   padding: 20px;
   background-color: #f0f0f0;
-  overflow: hidden; /* Hide overflow to maintain clean layout */
+  overflow: auto; /* Ensure scrolling is allowed */
 }
 
 .pdf-wrapper {
@@ -66,6 +66,21 @@ iframe {
   height: 90vh; /* Set height relative to the viewport */
   border: none;
   object-fit: contain; /* Make the content fit inside the iframe */
+  pointer-events: none; /* Prevent interaction with the iframe content */
+}
+
+iframe::-webkit-scrollbar {
+  display: block; /* Show scrollbar */
+}
+
+/* Enable scrolling but prevent text selection */
+iframe {
+  pointer-events: auto; /* Re-enable pointer events for scrolling */
+}
+
+iframe * {
+  user-select: none; /* Disable text selection */
+  pointer-events: none; /* Prevent text selection inside the iframe */
 }
 
 /* Responsive Styles for Mobile Devices */

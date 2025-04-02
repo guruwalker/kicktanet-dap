@@ -1,6 +1,4 @@
 <script setup>
-import Team from "~~/components/Data/Team";
-
 useHead({
   bodyAttrs: {
     class: "navbar-dark navbar-dark-2",
@@ -12,7 +10,20 @@ useSeoMeta({
   ogTitle: "Knowledge Products | KICKTANet DAP",
 });
 
-const teamMembers = ref(Team);
+const products = ref([
+  {
+    id: 1,
+    name: "KPI 2 Journal Article Framework",
+    link: "/assets/documents/Component6-KPI2.pdf",
+    description: "Journal article publication (1).",
+  },
+  {
+    id: 2,
+    name: "KPI 8 Policy Brief No 1",
+    link: "/assets/documents/Component6-KPI8.pdf",
+    description: "Policy Briefs (1).",
+  },
+]);
 </script>
 
 <template>
@@ -27,60 +38,28 @@ const teamMembers = ref(Team);
           <div class="row justify-content-center">
             <div class="col">
               <div class="inner-page-title text-center">
-                <h2 class="s-40 w-700">Generating knowledge products</h2>
-                <p class="p-lg">
-                  Get to know the dedicated professionals driving the Digital
-                  Access Project.<br />
-                  They are committed to bridging the digital divide through
-                  innovation, research, and community engagement.
-                </p>
+                <h2 class="s-40 w-700">Knowledge products</h2>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- TEAM MEMBERS WRAPPER -->
-        <div class="team-members-wrapper">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-            <div
-              class="col"
-              v-for="(member, index) in teamMembers"
-              :key="index"
+        <!-- Documents list here -->
+        <div class="row mt-4">
+          <div v-for="product in products" :key="product.id" class="col-12">
+            <NuxtLink
+              target="_blank"
+              :to="`/document-viewer?file=${encodeURIComponent(product.link)}`"
             >
-              <div
-                class="team-member mb-50 animate__animated animate__fadeInUp"
-              >
-                <!-- Team Member Photo -->
-                <div class="team-member-photo r-14">
-                  <div class="hover-overlay">
-                    <img
-                      class="img-fluid"
-                      :src="member.image"
-                      alt="team-member-photo"
-                    />
-                    <div class="item-overlay"></div>
-                  </div>
-                </div>
-                <!-- Team Member Data -->
-                <div class="team-member-data">
-                  <h6 class="s-20 w-700 color--theme">{{ member.name }}</h6>
-                  <p class="color--grey my-3">{{ member.role }}</p>
-                  <NuxtLink
-                    v-if="member.email"
-                    class="d-flex align-center gap-2"
-                    :to="`mailto:{{ member.email }}`"
-                  >
-                    <vue-feather type="mail" />
-                    <span>{{ member.email }}</span>
-                  </NuxtLink>
-                </div>
-              </div>
-            </div>
+              <p class="w-700 d-flex gap-2">
+                {{ product.id }}. {{ product.name }} -
+                <span class="card-text mb-3">{{ product.description }}</span>
+                <vue-feather type="file" />
+              </p>
+            </NuxtLink>
           </div>
         </div>
-        <!-- TEAM MEMBERS WRAPPER -->
       </div>
-      <!-- End container -->
     </section>
   </div>
 </template>
