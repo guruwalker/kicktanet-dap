@@ -79,12 +79,12 @@ const handleUpload = async () => {
             "Failed to save report to media_files table:",
             response?.message
           );
-          toast.add({
-            title: "Warning",
-            description: `Failed to save the report to the media_files table.`,
-            color: "yellow",
-            id: "media-warning",
-          });
+          // toast.add({
+          //   title: "Warning",
+          //   description: `Failed to save the report to the media_files table.`,
+          //   color: "yellow",
+          //   id: "media-warning",
+          // });
         } else {
           toast.add({
             title: "Success",

@@ -150,7 +150,7 @@ fetchReports();
     </div>
   </div>
 
-  <DashboardRepoUploadForm
+  <FormsRepoUploadForm
     :show="isDrawerOpen"
     @close="hasClosedModal"
     @onUploadComplete="handleUploadComplete"
