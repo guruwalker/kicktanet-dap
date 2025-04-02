@@ -12,16 +12,19 @@ useSeoMeta({
 const data = ref([
   {
     name: "KPI 1",
+link: "",
     description:
       "Number of CDCs, SMEs, Small Holder farmers, Transporters, traders etc engaged in the intervention for occupation and income improvement/empowerment.",
   },
   {
     name: "KPI 2",
+link: "",
     description:
       "Percentage of target groups (women, girls, PWDs, etc.) actively participating in handholding, income improvement/empowerment intervention programs(s).",
   },
   {
     name: "KPI 3",
+link: "",
     description: `Percentage of program participants who are impacted within a specific timeframe by the income handholding improvement/empowerment programme by either:
   - Securing employment or internships in the digital sector
   - Starting a business /Occupation
@@ -32,36 +35,43 @@ const data = ref([
   },
   {
     name: "KPI 4",
+link: "",
     description:
       "Number of successful digital businesses started by program participants.",
   },
   {
     name: "KPI 5",
+link: "",
     description:
       "Percentage of participants who report improved financial literacy and management skills.",
   },
   {
     name: "KPI 6",
+link: "",
     description:
       "Training completion rates measured by the percentage of participants who complete digital employability courses.",
   },
   {
     name: "KPI 7",
+link: "",
     description:
       "Mentorship engagement measured by the number of participants actively engaged in mentorship programs.",
   },
   {
     name: "KPI 8",
+link: "",
     description:
       "Job placement rate measured by the percentage of participants who secure employment, internships, or entrepreneurial ventures after training.",
   },
   {
     name: "KPI 9",
+link: "",
     description:
       "Retention rates measured by the percentage of participants retained through the mentorship and training programs.",
   },
   {
     name: "KPI 10",
+link: "",
     description:
       "Impact in quantitative and qualitative evidence such as videos, cases, audio, narration etc.",
   },
@@ -87,6 +97,7 @@ const data = ref([
             <tr class="bg-gray-100">
               <th class="border border-gray-300 p-2 text-left">Name</th>
               <th class="border border-gray-300 p-2 text-left">Description</th>
+              <th class="border border-gray-300 p-2 text-left">Content</th>
             </tr>
           </thead>
           <tbody>
@@ -94,6 +105,9 @@ const data = ref([
               <td class="border border-gray-300 p-2">{{ kpi.name }}</td>
               <td class="border border-gray-300 p-2 whitespace-pre-line">
                 {{ kpi.description }}
+              </td>
+              <td class="border border-gray-300 p-2 whitespace-pre-line">
+                {{ kpi.link }}
               </td>
             </tr>
           </tbody>

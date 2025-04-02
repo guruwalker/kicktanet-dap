@@ -265,7 +265,7 @@ const menuItems = [
     }"
   >
 
-    <ul style="list-style: none; padding: 0; margin-top: 150px;">
+    <ul style="padding: 0; margin-top: 150px;">
       <li v-for="item in menuItems" :key="item.id" class="px-2">
         <div @click="toggleSection(item.id)" class="menu-item">
           <span :class="item.icon"></span>
@@ -334,18 +334,24 @@ const menuItems = [
 }
 
 /* Submenu styling */
+
+
+/* Submenu styling */
 .submenu {
   list-style: none;
-  padding-left: 15px;
+  padding-left: 0;
   margin-top: 5px;
 }
 
 .submenu-link {
-  text-decoration: none;
-  color: #007bff;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: block;
+  transition: background 0.2s;
 }
+
+.submenu-link:hover {
+  background: #f0f4ff;
+}
+
 </style>

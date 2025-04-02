@@ -12,45 +12,54 @@ useSeoMeta({
 const data = ref([
   {
     name: "KPI 1",
+link: "",
     description: "Train Twelve Basic Digital Literacy Modules to 10,000 CDCs",
   },
   {
     name: "KPI 2",
+link: "",
     description:
       "Train 500,000 Citizens (400,000 in Busia and 100,000 in Mandera County) ICTA Foundational Digital Literacy Six Modules",
   },
   {
     name: "KPI 3",
+link: "",
     description:
       "Baseline & endline tools completed accurately and matched by citizens supported by CDCs devoid of duplicates",
   },
   {
     name: "KPI 4",
+link: "",
     description:
       "Citizens completed training, ICTA DL Skills min 2 days for each citizen",
   },
   {
     name: "KPI 5",
+link: "",
     description:
       "Percentage of target groups (women, girls, PWDs, etc.) actively participating in digital literacy initiatives.",
   },
   {
     name: "KPI 6",
+link: "",
     description:
       "Number of partnerships established and sustained with local players",
   },
   {
     name: "KPI 7",
+link: "",
     description:
       "Skill gain by Citizen on the Foundational Digital Literacy Skills Training ICTA six modules evidence",
   },
   {
     name: "KPI 8",
+link: "",
     description:
       "KPI Monthly Income increases by more than 50% through use of the trained skills",
   },
   {
     name: "KPI 9",
+link: "",
     description:
       "Qualitative and quantitative Evidence of empowerment-stories, videos, audios etc",
   },
@@ -75,6 +84,7 @@ const data = ref([
             <tr class="bg-gray-100">
               <th class="border border-gray-300 p-2 text-left">Name</th>
               <th class="border border-gray-300 p-2 text-left">Description</th>
+              <th class="border border-gray-300 p-2 text-left">Content</th>
             </tr>
           </thead>
           <tbody>
@@ -82,6 +92,9 @@ const data = ref([
               <td class="border border-gray-300 p-2">{{ kpi.name }}</td>
               <td class="border border-gray-300 p-2 whitespace-pre-line">
                 {{ kpi.description }}
+              </td>
+              <td class="border border-gray-300 p-2 whitespace-pre-line">
+                {{ kpi.link }}
               </td>
             </tr>
           </tbody>
