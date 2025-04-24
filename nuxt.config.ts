@@ -70,11 +70,11 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      APP_URL: process.env.APP_URL,
+      APP_URL: process.env.NUXT_PUBLIC_APP_URL,
       supabaseUrl: "https://uujbxewichsqfnwasuxe.supabase.co",
       supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0OTE4MDgsImV4cCI6MjA1ODA2NzgwOH0.Ok33zThBGTPpfiLC3fL49H-vtcoN0iEqdqe5PdUp5nY",
       supabaseServiceRoleKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1amJ4ZXdpY2hzcWZud2FzdXhlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjQ5MTgwOCwiZXhwIjoyMDU4MDY3ODA4fQ.gaeKsVZN_qiMdfaVjBPJHBryzGhoZ9MzpAv3hQ22m9Y",
-      port: 4000,§
+      port: 4000,
 
       DO_SPACES_ENDPOINT: "",
       DO_SPACES_KEY: "",
