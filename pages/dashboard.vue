@@ -1,22 +1,5 @@
 <script setup lang="ts">
-// useSeoMeta({
-//   title: "Dashboard",
-//   ogTitle: "Dashboard",
-//   description: "View your dashboard overview.",
-//   ogDescription: "Stay updated with your dashboard insights.",
-// });
 
-// definePageMeta({
-//   layout: 'dashboard'
-// });
-
-// // Mocked stats (Replace with actual data from API)
-// const stats = [
-//   { label: "Users", count: 1, icon: "lucide-users", color: "bg-blue-100 text-blue-600" },
-//   { label: "Images", count: 0, icon: "lucide-image", color: "bg-green-100 text-green-600" },
-//   { label: "Documents", count: 0, icon: "lucide-file-text", color: "bg-yellow-100 text-yellow-600" },
-//   { label: "Videos", count: 0, icon: "lucide-video", color: "bg-red-100 text-red-600" },
-// ];
 useSeoMeta({
   title: "Dashboard",
   ogTitle: "Dashboard",

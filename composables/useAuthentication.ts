@@ -140,7 +140,7 @@ export function useAuthentication() {
         color: "green",
       });
 
-      router.push('dashboard')
+      router.push('/dashboard')
     } catch (error) {
       toast.add({
         title: "Error",
